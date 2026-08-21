@@ -1,18 +1,57 @@
 /* =========================================================
    HAMARASHOPS.AI — ABOUT PAGE
-   Professional Navy / Blue Design
+   Professional Blue / White Design
    ========================================================= */
 
 .about-page {
   width: 100%;
+  min-height: 100vh;
   background: #ffffff;
   color: #172033;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.about-page *,
+.about-page *::before,
+.about-page *::after {
+  box-sizing: border-box;
+}
+
+.about-page img {
+  display: block;
+  max-width: 100%;
+}
+
+.about-page a {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .about-container {
-  width: min(1180px, calc(100% - 64px));
+  width: min(1200px, calc(100% - 64px));
   margin: 0 auto;
+}
+
+
+/* =========================================================
+   LABELS
+   ========================================================= */
+
+.about-label,
+.about-small-label {
+  margin: 0 0 18px;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.about-label {
+  color: #7db3ff;
+}
+
+.about-small-label {
+  color: #1769ff;
 }
 
 
@@ -21,57 +60,51 @@
    ========================================================= */
 
 .about-hero {
-  padding: 105px 0 115px;
-  background: #071a33;
+  padding: 100px 0 110px;
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(48, 119, 255, 0.16),
+      transparent 35%
+    ),
+    #071a33;
   color: #ffffff;
 }
 
 .about-hero-grid {
   display: grid;
-  grid-template-columns: 1fr 0.72fr;
-  gap: 70px;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.82fr);
   align-items: center;
+  gap: 70px;
 }
 
 .about-hero-content {
   max-width: 680px;
-}
-
-.about-label,
-.about-small-label {
-  margin: 0 0 20px;
-
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 2.2px;
-}
-
-.about-label {
-  color: #82aefc;
+  min-width: 0;
 }
 
 .about-hero h1 {
-  max-width: 800px;
-
+  max-width: 760px;
   margin: 0 0 30px;
 
+  color: #ffffff;
+
   font-size: clamp(52px, 6vw, 78px);
+  font-weight: 700;
   line-height: 0.98;
   letter-spacing: -4px;
-  font-weight: 700;
 }
 
 .about-hero h1 span {
   display: block;
-  color: #69a0ff;
+  color: #63a4ff;
 }
 
 .about-hero-text {
-  max-width: 620px;
-
+  max-width: 610px;
   margin: 0;
 
-  color: #b9c7db;
+  color: #b9c8dc;
 
   font-size: 17px;
   line-height: 1.8;
@@ -80,30 +113,42 @@
 
 /* =========================================================
    HERO IMAGE
+   IMPORTANT:
+   contain prevents text inside image from being cut
    ========================================================= */
 
 .about-hero-image {
+  position: relative;
+
   width: 100%;
-  height: 370px;
+  min-width: 0;
+
+  height: 430px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   overflow: hidden;
 
-  border-radius: 4px;
+  background: #102b50;
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .about-hero-image img {
   width: 100%;
   height: 100%;
 
-  display: block;
+  object-fit: contain;
+  object-position: center;
 
-  object-fit: cover;
+  padding: 10px;
 
   transition: transform 0.6s ease;
 }
 
 .about-hero-image:hover img {
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 
@@ -113,29 +158,24 @@
 
 .about-introduction {
   padding: 125px 0;
-
   background: #ffffff;
 }
 
 .about-intro-grid {
   display: grid;
-
-  grid-template-columns: 1fr 0.85fr;
-
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+  align-items: start;
   gap: 100px;
-}
-
-.about-small-label {
-  color: #1769ff;
 }
 
 .about-intro-grid h2 {
   margin: 0;
 
-  color: #111b2d;
+  color: #101c30;
 
   font-size: clamp(42px, 4.5vw, 60px);
-  line-height: 1;
+  font-weight: 700;
+  line-height: 1.02;
   letter-spacing: -3px;
 }
 
@@ -158,28 +198,23 @@
    ========================================================= */
 
 .about-stats {
-  padding: 0;
+  background: #f3f7fc;
 
-  background: #f4f7fb;
-
-  border-top: 1px solid #dfe5ee;
-  border-bottom: 1px solid #dfe5ee;
+  border-top: 1px solid #dce5f0;
+  border-bottom: 1px solid #dce5f0;
 }
 
 .about-stats-grid {
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
 }
 
 .about-stat {
   display: flex;
-
   flex-direction: column;
-
   gap: 9px;
 
-  padding: 38px 28px;
+  padding: 42px 30px;
 
   border-right: 1px solid #d7e0eb;
 }
@@ -195,9 +230,9 @@
 .about-stat strong {
   color: #1769ff;
 
-  font-size: 42px;
+  font-size: 44px;
+  font-weight: 700;
   line-height: 1;
-
   letter-spacing: -2px;
 }
 
@@ -215,7 +250,6 @@
 
 .about-approach {
   padding: 125px 0;
-
   background: #ffffff;
 }
 
@@ -226,35 +260,39 @@
 .about-section-heading h2 {
   margin: 0;
 
-  color: #111b2d;
+  color: #101c30;
 
   font-size: clamp(42px, 4.5vw, 58px);
-  line-height: 1;
+  font-weight: 700;
+  line-height: 1.02;
   letter-spacing: -3px;
 }
 
 .about-approach-grid {
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
 
-  border-top: 1px solid #dfe5ee;
-  border-left: 1px solid #dfe5ee;
+  border-top: 1px solid #dce5f0;
+  border-left: 1px solid #dce5f0;
 }
 
 .about-approach-card {
-  min-height: 260px;
+  min-height: 270px;
+  padding: 32px;
 
-  padding: 30px;
+  background: #ffffff;
 
-  border-right: 1px solid #dfe5ee;
-  border-bottom: 1px solid #dfe5ee;
+  border-right: 1px solid #dce5f0;
+  border-bottom: 1px solid #dce5f0;
 
-  transition: 0.3s ease;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
 .about-approach-card:hover {
   background: #071a33;
+  transform: translateY(-4px);
 }
 
 .about-approach-card > span {
@@ -267,9 +305,10 @@
 .about-approach-card h3 {
   margin: 70px 0 15px;
 
-  color: #111b2d;
+  color: #101c30;
 
   font-size: 23px;
+  font-weight: 700;
   letter-spacing: -0.5px;
 }
 
@@ -287,7 +326,7 @@
 }
 
 .about-approach-card:hover p {
-  color: #b9c7db;
+  color: #b9c8dc;
 }
 
 
@@ -297,8 +336,7 @@
 
 .about-capabilities {
   padding: 125px 0;
-
-  background: #f4f7fb;
+  background: #f3f7fc;
 }
 
 .about-capabilities-list {
@@ -307,24 +345,22 @@
 
 .about-capability {
   display: grid;
-
-  grid-template-columns: 60px 1fr 40px;
-
+  grid-template-columns: 60px minmax(0, 1fr) 40px;
   align-items: center;
-
   gap: 30px;
 
   padding: 35px 20px;
 
   border-bottom: 1px solid #d7e0eb;
 
-  transition: 0.3s ease;
+  transition:
+    background 0.3s ease,
+    padding 0.3s ease;
 }
 
 .about-capability:hover {
   padding-left: 30px;
   padding-right: 30px;
-
   background: #ffffff;
 }
 
@@ -338,9 +374,10 @@
 .about-capability h3 {
   margin: 0 0 8px;
 
-  color: #111b2d;
+  color: #101c30;
 
   font-size: 25px;
+  font-weight: 700;
   letter-spacing: -0.7px;
 }
 
@@ -357,7 +394,6 @@
 
 .about-capability > strong {
   color: #1769ff;
-
   font-size: 24px;
 
   transition: transform 0.3s ease;
@@ -374,42 +410,38 @@
 
 .about-why {
   padding: 125px 0;
-
   background: #ffffff;
 }
 
 .about-why-grid {
   display: grid;
-
-  grid-template-columns: 1fr 0.85fr;
-
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
   gap: 100px;
 }
 
 .about-why h2 {
   margin: 0;
 
-  color: #111b2d;
+  color: #101c30;
 
   font-size: clamp(42px, 4.5vw, 58px);
-  line-height: 1;
+  font-weight: 700;
+  line-height: 1.02;
   letter-spacing: -3px;
 }
 
 .about-why-list > div {
   display: grid;
-
-  grid-template-columns: 45px 1fr;
-
+  grid-template-columns: 45px minmax(0, 1fr);
   gap: 20px;
 
   padding: 25px 0;
 
-  border-bottom: 1px solid #dfe5ee;
+  border-bottom: 1px solid #dce5f0;
 }
 
 .about-why-list > div:first-child {
-  border-top: 1px solid #dfe5ee;
+  border-top: 1px solid #dce5f0;
 }
 
 .about-why-list span {
@@ -422,7 +454,7 @@
 .about-why-list h3 {
   margin: 0 0 8px;
 
-  color: #111b2d;
+  color: #101c30;
 
   font-size: 18px;
 }
@@ -444,7 +476,13 @@
 .about-cta {
   padding: 125px 0;
 
-  background: #0b2447;
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(55, 130, 255, 0.18),
+      transparent 35%
+    ),
+    #0b2447;
 
   color: #ffffff;
 }
@@ -452,7 +490,7 @@
 .about-cta p {
   margin: 0 0 20px;
 
-  color: #82aefc;
+  color: #82b4ff;
 
   font-size: 11px;
   font-weight: 800;
@@ -460,20 +498,27 @@
 }
 
 .about-cta h2 {
+  max-width: 850px;
+
   margin: 0 0 40px;
 
+  color: #ffffff;
+
   font-size: clamp(50px, 5vw, 70px);
+  font-weight: 700;
   line-height: 0.98;
   letter-spacing: -3px;
 }
 
 .about-cta a {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-  padding: 15px 25px;
+  min-height: 52px;
+  padding: 15px 27px;
 
   background: #1769ff;
-
   color: #ffffff;
 
   text-decoration: none;
@@ -481,14 +526,14 @@
   font-size: 13px;
   font-weight: 700;
 
-  transition: 0.3s ease;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
 .about-cta a:hover {
-  background: #4085ff;
-
+  background: #3d83ff;
   color: #ffffff;
-
   transform: translateY(-2px);
 }
 
@@ -505,8 +550,7 @@
 
   .about-hero-grid {
     grid-template-columns: 1fr;
-
-    gap: 45px;
+    gap: 50px;
   }
 
   .about-hero-content {
@@ -514,16 +558,15 @@
   }
 
   .about-hero-image {
-    max-width: 700px;
-
-    height: 350px;
+    width: 100%;
+    max-width: 800px;
+    height: 430px;
   }
 
   .about-intro-grid,
   .about-why-grid {
     grid-template-columns: 1fr;
-
-    gap: 45px;
+    gap: 50px;
   }
 
   .about-stats-grid {
@@ -558,29 +601,41 @@
   /* HERO */
 
   .about-hero {
-    padding: 70px 0 75px;
+    padding: 70px 0 80px;
   }
 
   .about-hero-grid {
-    grid-template-columns: 1fr;
-
     gap: 35px;
   }
 
   .about-hero h1 {
     font-size: 47px;
-
     letter-spacing: -2.5px;
   }
 
   .about-hero-text {
     font-size: 15px;
+    line-height: 1.75;
   }
+
+  /*
+    IMPORTANT:
+    contain keeps text inside the image visible
+  */
 
   .about-hero-image {
     width: 100%;
+    height: auto;
+    min-height: 250px;
+    max-height: 330px;
+  }
 
-    height: 260px;
+  .about-hero-image img {
+    width: 100%;
+    height: auto;
+    max-height: 330px;
+    object-fit: contain;
+    padding: 6px;
   }
 
 
@@ -590,7 +645,7 @@
   .about-approach,
   .about-capabilities,
   .about-why {
-    padding: 75px 0;
+    padding: 80px 0;
   }
 
 
@@ -599,7 +654,6 @@
   .about-intro-grid h2,
   .about-why h2 {
     font-size: 39px;
-
     letter-spacing: -2px;
   }
 
@@ -631,7 +685,6 @@
 
   .about-section-heading h2 {
     font-size: 40px;
-
     letter-spacing: -2px;
   }
 
@@ -641,10 +694,9 @@
 
   .about-approach-card {
     min-height: auto;
-
     padding: 28px;
 
-    border-left: 1px solid #dfe5ee;
+    border-left: 1px solid #dce5f0;
   }
 
   .about-approach-card h3 {
@@ -655,8 +707,7 @@
   /* CAPABILITIES */
 
   .about-capability {
-    grid-template-columns: 40px 1fr 25px;
-
+    grid-template-columns: 40px minmax(0, 1fr) 25px;
     gap: 15px;
 
     padding: 28px 10px;
@@ -679,8 +730,7 @@
   /* WHY */
 
   .about-why-list > div {
-    grid-template-columns: 35px 1fr;
-
+    grid-template-columns: 35px minmax(0, 1fr);
     gap: 15px;
   }
 
@@ -693,7 +743,6 @@
 
   .about-cta h2 {
     font-size: 44px;
-
     letter-spacing: -2px;
   }
 }
@@ -724,5 +773,39 @@
 
   .about-cta h2 {
     font-size: 39px;
+  }
+
+  .about-hero-image {
+    min-height: 210px;
+  }
+
+  .about-hero-image img {
+    max-height: 250px;
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.about-page a:focus-visible {
+  outline: 3px solid rgba(23, 105, 255, 0.4);
+  outline-offset: 4px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .about-page *,
+  .about-page *::before,
+  .about-page *::after {
+    scroll-behavior: auto !important;
+    animation: none !important;
+    transition: none !important;
   }
 }

@@ -1,5 +1,5 @@
 /* =========================================================
-   HAMARASHOPS.AI — INDUSTRIES PAGE
+   HAMARASHOPS.AI — INDUSTRIES
    Professional Blue / Navy Design
    ========================================================= */
 
@@ -21,25 +21,25 @@
    ========================================================= */
 
 .industries-hero {
-  padding: 105px 0 115px;
+  padding: 95px 0 105px;
   background: #071a33;
   color: #ffffff;
 }
 
 .industries-hero-grid {
   display: grid;
-  grid-template-columns: 1fr 0.72fr;
-  gap: 70px;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
+  gap: 65px;
   align-items: center;
 }
 
 .industries-hero-content {
-  max-width: 650px;
+  max-width: 680px;
 }
 
 .industries-label,
 .industries-section-label {
-  margin: 0 0 20px;
+  margin: 0 0 18px;
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 2.2px;
@@ -49,14 +49,18 @@
   color: #82aefc;
 }
 
-.industries-hero h1 {
-  max-width: 900px;
-  margin: 0 0 30px;
+.industries-section-label {
+  color: #1769ff;
+}
 
-  font-size: clamp(52px, 6vw, 78px);
-  line-height: 0.97;
-  letter-spacing: -4px;
-  font-weight: 700;
+.industries-hero h1 {
+  max-width: 780px;
+  margin: 0 0 28px;
+
+  font-size: clamp(50px, 5.8vw, 74px);
+  line-height: 1;
+  letter-spacing: -3.5px;
+  font-weight: 750;
 }
 
 .industries-hero h1 span {
@@ -65,12 +69,11 @@
 }
 
 .industries-hero-text {
-  max-width: 650px;
+  max-width: 620px;
   margin: 0;
 
-  color: #b9c7db;
-
-  font-size: 17px;
+  color: #c0cee1;
+  font-size: 16px;
   line-height: 1.8;
 }
 
@@ -81,10 +84,20 @@
 
 .industries-hero-image {
   width: 100%;
-  height: 390px;
+  max-width: 500px;
+  height: 330px;
+
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   overflow: hidden;
 
-  border-radius: 4px;
+  border-radius: 10px;
+  background: #102d52;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .industries-hero-image img {
@@ -93,13 +106,19 @@
 
   display: block;
 
-  object-fit: cover;
+  /*
+    contain prevents text/logos inside the image
+    from being cut.
+  */
+  object-fit: contain;
 
-  transition: transform 0.6s ease;
+  padding: 12px;
+
+  transition: transform 0.5s ease;
 }
 
 .industries-hero-image:hover img {
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 
@@ -108,37 +127,33 @@
    ========================================================= */
 
 .industries-intro {
-  padding: 125px 0;
+  padding: 110px 0;
   background: #ffffff;
 }
 
 .industries-intro-grid {
   display: grid;
-  grid-template-columns: 1fr 0.85fr;
-  gap: 100px;
-}
-
-.industries-section-label {
-  color: #1769ff;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 90px;
 }
 
 .industries-intro h2,
-.industries-why-heading h2 {
+.industries-why h2 {
   margin: 0;
 
   color: #111b2d;
 
-  font-size: clamp(42px, 4.5vw, 60px);
-  line-height: 1;
-  letter-spacing: -3px;
+  font-size: clamp(40px, 4.4vw, 56px);
+  line-height: 1.04;
+  letter-spacing: -2.8px;
 }
 
 .industries-intro-grid > div:last-child {
-  padding-top: 8px;
+  padding-top: 7px;
 }
 
 .industries-intro-grid > div:last-child p {
-  margin: 0 0 23px;
+  margin: 0 0 22px;
 
   color: #667085;
 
@@ -152,60 +167,55 @@
    ========================================================= */
 
 .industries-list {
-  padding: 110px 0;
-
+  padding: 85px 0 105px;
   background: #f4f7fb;
 }
-
-
-/* =========================================================
-   INDUSTRY CARD
-   ========================================================= */
 
 .industry-card {
   display: grid;
 
-  grid-template-columns: 55px 250px 1fr 40px;
+  grid-template-columns: 55px 230px 1fr 40px;
 
-  gap: 35px;
+  align-items: center;
 
-  align-items: start;
+  gap: 28px;
 
-  padding: 45px 25px;
+  padding: 28px 15px;
 
-  border-top: 1px solid #d8e0eb;
+  background: transparent;
+
+  border-top: 1px solid #dbe3ed;
 
   transition:
     background 0.3s ease,
     padding 0.3s ease,
-    box-shadow 0.3s ease;
+    transform 0.3s ease;
 }
 
 .industry-card:last-child {
-  border-bottom: 1px solid #d8e0eb;
+  border-bottom: 1px solid #dbe3ed;
 }
 
 .industry-card:hover {
-  padding-left: 35px;
-  padding-right: 35px;
-
   background: #ffffff;
 
-  box-shadow: 0 12px 35px rgba(23, 105, 255, 0.07);
+  padding-left: 25px;
+  padding-right: 25px;
+
+  box-shadow: 0 12px 35px rgba(20, 50, 90, 0.06);
 }
 
 
 /* =========================================================
-   INDUSTRY NUMBER
+   NUMBER
    ========================================================= */
 
 .industry-number {
-  padding-top: 5px;
-
   color: #1769ff;
 
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
+  letter-spacing: 0.5px;
 }
 
 
@@ -214,12 +224,19 @@
    ========================================================= */
 
 .industry-image {
-  width: 250px;
-  height: 165px;
+  width: 230px;
+  height: 145px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   overflow: hidden;
 
-  border-radius: 3px;
+  border-radius: 8px;
+
+  background: #eaf2ff;
+  border: 1px solid #d9e5f5;
 }
 
 .industry-image img {
@@ -228,39 +245,50 @@
 
   display: block;
 
-  object-fit: cover;
+  /*
+    IMPORTANT:
+    contain keeps the complete image visible.
+    This prevents text inside your images from being cut.
+  */
+  object-fit: contain;
+
+  padding: 8px;
 
   transition: transform 0.5s ease;
 }
 
 .industry-card:hover .industry-image img {
-  transform: scale(1.06);
+  transform: scale(1.03);
 }
 
 
 /* =========================================================
-   INDUSTRY CONTENT
+   CONTENT
    ========================================================= */
 
+.industry-content {
+  min-width: 0;
+}
+
 .industry-content h2 {
-  margin: 0 0 15px;
+  margin: 0 0 11px;
 
-  color: #111b2d;
+  color: #172033;
 
-  font-size: 31px;
-  line-height: 1.1;
-  letter-spacing: -1.2px;
+  font-size: 27px;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
 }
 
 .industry-description {
-  max-width: 680px;
+  max-width: 700px;
 
   margin: 0;
 
   color: #667085;
 
-  font-size: 15px;
-  line-height: 1.75;
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 
@@ -270,48 +298,45 @@
 
 .industry-capabilities {
   display: flex;
-
   flex-wrap: wrap;
 
   gap: 7px;
 
-  margin-top: 24px;
+  margin-top: 17px;
 }
 
 .industry-capabilities span {
-  padding: 8px 12px;
+  padding: 7px 10px;
 
   background: #eaf2ff;
+
+  border: 1px solid #d7e6ff;
 
   color: #1769ff;
 
   font-size: 10px;
   font-weight: 700;
 
-  transition: 0.25s ease;
-}
-
-.industry-card:hover .industry-capabilities span {
-  background: #dce9ff;
+  border-radius: 3px;
 }
 
 
 /* =========================================================
-   INDUSTRY ARROW
+   ARROW
    ========================================================= */
 
 .industry-arrow {
-  align-self: start;
-
   color: #1769ff;
 
   font-size: 24px;
+
+  text-align: right;
 
   transition: transform 0.3s ease;
 }
 
 .industry-card:hover .industry-arrow {
-  transform: translate(4px, -4px);
+  transform: translate(3px, -3px);
 }
 
 
@@ -320,7 +345,7 @@
    ========================================================= */
 
 .industries-why {
-  padding: 125px 0;
+  padding: 115px 0;
 
   background: #ffffff;
 }
@@ -356,24 +381,23 @@
 
   grid-template-columns: repeat(4, 1fr);
 
-  border-top: 1px solid #dfe5ee;
-  border-left: 1px solid #dfe5ee;
+  border-top: 1px solid #dbe3ed;
+  border-left: 1px solid #dbe3ed;
 }
 
 .industries-points > div {
-  min-height: 230px;
+  min-height: 220px;
 
   padding: 28px;
 
-  border-right: 1px solid #dfe5ee;
-  border-bottom: 1px solid #dfe5ee;
+  border-right: 1px solid #dbe3ed;
+  border-bottom: 1px solid #dbe3ed;
 
   transition: 0.3s ease;
 }
 
 .industries-points > div:hover {
   background: #071a33;
-  color: #ffffff;
 }
 
 .industries-points span {
@@ -384,12 +408,15 @@
 }
 
 .industries-points h3 {
-  margin: 58px 0 13px;
+  margin: 60px 0 12px;
 
   color: #172033;
 
-  font-size: 22px;
-  letter-spacing: -0.5px;
+  font-size: 21px;
+}
+
+.industries-points > div:hover h3 {
+  color: #ffffff;
 }
 
 .industries-points p {
@@ -398,11 +425,7 @@
   color: #667085;
 
   font-size: 13px;
-  line-height: 1.65;
-}
-
-.industries-points > div:hover h3 {
-  color: #ffffff;
+  line-height: 1.7;
 }
 
 .industries-points > div:hover p {
@@ -415,39 +438,46 @@
    ========================================================= */
 
 .industries-stats {
-  padding: 85px 0;
+  padding: 0;
 
   background: #f4f7fb;
+
+  border-top: 1px solid #dbe3ed;
+  border-bottom: 1px solid #dbe3ed;
 }
 
 .stats-grid {
   display: grid;
 
   grid-template-columns: repeat(4, 1fr);
-
-  border-top: 1px solid #dfe5ee;
-  border-bottom: 1px solid #dfe5ee;
 }
 
 .stats-grid > div {
-  padding: 40px 25px;
+  display: flex;
 
-  border-right: 1px solid #dfe5ee;
+  flex-direction: column;
+
+  gap: 9px;
+
+  padding: 38px 25px;
+
+  border-right: 1px solid #d7e0eb;
 }
 
 .stats-grid > div:first-child {
-  border-left: 1px solid #dfe5ee;
+  padding-left: 0;
+}
+
+.stats-grid > div:last-child {
+  border-right: none;
 }
 
 .stats-grid strong {
-  display: block;
-
-  margin-bottom: 12px;
-
   color: #1769ff;
 
-  font-size: 42px;
+  font-size: 40px;
   line-height: 1;
+
   letter-spacing: -2px;
 }
 
@@ -464,7 +494,7 @@
    ========================================================= */
 
 .industries-cta {
-  padding: 130px 20px;
+  padding: 115px 20px;
 
   background: #0b2447;
 
@@ -478,15 +508,20 @@
 }
 
 .industries-cta h2 {
-  margin: 0 0 40px;
+  margin: 0 0 38px;
 
-  font-size: clamp(50px, 5vw, 72px);
-  line-height: 0.98;
+  font-size: clamp(46px, 5vw, 68px);
+
+  line-height: 1;
+
   letter-spacing: -3px;
 }
 
 .industries-cta-button {
-  display: inline-block;
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
 
   padding: 15px 25px;
 
@@ -526,13 +561,10 @@
     gap: 45px;
   }
 
-  .industries-hero-content {
-    max-width: 800px;
-  }
-
   .industries-hero-image {
-    max-width: 700px;
-    height: 350px;
+    max-width: 650px;
+    margin-left: 0;
+    height: 320px;
   }
 
   .industries-intro-grid,
@@ -542,14 +574,13 @@
   }
 
   .industry-card {
-    grid-template-columns: 50px 200px 1fr 30px;
-
-    gap: 25px;
+    grid-template-columns: 50px 210px 1fr 35px;
+    gap: 20px;
   }
 
   .industry-image {
-    width: 200px;
-    height: 145px;
+    width: 210px;
+    height: 135px;
   }
 
   .industries-points {
@@ -560,8 +591,12 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .stats-grid > div:nth-child(3) {
-    border-left: 1px solid #dfe5ee;
+  .stats-grid > div:nth-child(2) {
+    border-right: none;
+  }
+
+  .stats-grid > div {
+    border-bottom: 1px solid #d7e0eb;
   }
 }
 
@@ -570,7 +605,7 @@
    MOBILE
    ========================================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
   .industries-container {
     width: calc(100% - 36px);
@@ -583,13 +618,8 @@
     padding: 70px 0 75px;
   }
 
-  .industries-hero-grid {
-    grid-template-columns: 1fr;
-    gap: 35px;
-  }
-
   .industries-hero h1 {
-    font-size: 47px;
+    font-size: 46px;
     letter-spacing: -2.5px;
   }
 
@@ -599,126 +629,148 @@
 
   .industries-hero-image {
     width: 100%;
-    height: 270px;
+    height: 230px;
+
+    border-radius: 8px;
+  }
+
+  .industries-hero-image img {
+    padding: 10px;
   }
 
 
   /* INTRO */
 
-  .industries-intro,
-  .industries-list,
-  .industries-why {
+  .industries-intro {
     padding: 75px 0;
   }
 
+  .industries-intro-grid {
+    gap: 35px;
+  }
+
   .industries-intro h2,
-  .industries-why-heading h2 {
+  .industries-why h2 {
     font-size: 39px;
     letter-spacing: -2px;
   }
 
+  .industries-intro-grid > div:last-child p {
+    font-size: 15px;
+  }
 
-  /* INDUSTRY */
+
+  /* INDUSTRIES */
+
+  .industries-list {
+    padding: 55px 0 70px;
+  }
 
   .industry-card {
-    grid-template-columns: 40px 1fr;
+    grid-template-columns: 38px 1fr;
 
     gap: 15px;
 
-    padding: 35px 10px;
+    padding: 28px 5px;
   }
 
   .industry-card:hover {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .industry-number {
-    grid-column: 1;
-    grid-row: 1;
-
-    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .industry-image {
-    grid-column: 2;
+    grid-column: 1 / -1;
 
     width: 100%;
-    height: 210px;
+    height: 180px;
 
-    margin-bottom: 5px;
+    order: 2;
+  }
+
+  .industry-number {
+    order: 1;
   }
 
   .industry-content {
-    grid-column: 2;
-  }
+    order: 3;
 
-  .industry-content h2 {
-    font-size: 25px;
-  }
-
-  .industry-description {
-    font-size: 14px;
+    grid-column: 1 / -1;
   }
 
   .industry-arrow {
     display: none;
   }
 
-
-  /* CAPABILITIES */
-
-  .industry-capabilities {
-    gap: 6px;
+  .industry-content h2 {
+    font-size: 24px;
   }
 
-  .industry-capabilities span {
-    padding: 7px 9px;
+  .industry-description {
+    font-size: 14px;
+  }
+
+  .industry-capabilities {
+    margin-top: 15px;
   }
 
 
   /* WHY */
+
+  .industries-why {
+    padding: 75px 0;
+  }
+
+  .industries-why-heading {
+    gap: 35px;
+    margin-bottom: 40px;
+  }
+
+  .industries-why-heading > p {
+    font-size: 15px;
+  }
 
   .industries-points {
     grid-template-columns: 1fr;
   }
 
   .industries-points > div {
-    min-height: 200px;
+    min-height: auto;
+    padding: 26px;
   }
 
   .industries-points h3 {
-    margin-top: 45px;
+    margin-top: 35px;
   }
 
 
   /* STATS */
-
-  .industries-stats {
-    padding: 65px 0;
-  }
 
   .stats-grid {
     grid-template-columns: 1fr 1fr;
   }
 
   .stats-grid > div {
-    padding: 30px 18px;
+    padding: 28px 15px;
+  }
+
+  .stats-grid > div:first-child {
+    padding-left: 15px;
   }
 
   .stats-grid strong {
-    font-size: 34px;
+    font-size: 32px;
   }
 
 
   /* CTA */
 
   .industries-cta {
-    padding: 90px 20px;
+    padding: 80px 20px;
   }
 
   .industries-cta h2 {
-    font-size: 46px;
+    font-size: 43px;
     letter-spacing: -2px;
   }
 }
@@ -731,24 +783,35 @@
 @media (max-width: 400px) {
 
   .industries-hero h1 {
-    font-size: 40px;
+    font-size: 39px;
+  }
+
+  .industries-hero-image {
+    height: 200px;
   }
 
   .industries-intro h2,
-  .industries-why-heading h2 {
+  .industries-why h2 {
     font-size: 34px;
+  }
+
+  .industry-image {
+    height: 155px;
+  }
+
+  .industry-content h2 {
+    font-size: 22px;
   }
 
   .stats-grid {
     grid-template-columns: 1fr;
   }
 
-  .stats-grid > div,
-  .stats-grid > div:nth-child(3) {
-    border-left: 1px solid #dfe5ee;
+  .stats-grid > div {
+    border-right: none;
   }
 
   .industries-cta h2 {
-    font-size: 40px;
+    font-size: 37px;
   }
 }
