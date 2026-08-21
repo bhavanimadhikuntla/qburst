@@ -1,0 +1,728 @@
+/* =========================================================
+   HAMARASHOPS.AI — ABOUT PAGE
+   Professional Navy / Blue Design
+   ========================================================= */
+
+.about-page {
+  width: 100%;
+  background: #ffffff;
+  color: #172033;
+  overflow: hidden;
+}
+
+.about-container {
+  width: min(1180px, calc(100% - 64px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.about-hero {
+  padding: 105px 0 115px;
+  background: #071a33;
+  color: #ffffff;
+}
+
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.72fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.about-hero-content {
+  max-width: 680px;
+}
+
+.about-label,
+.about-small-label {
+  margin: 0 0 20px;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.2px;
+}
+
+.about-label {
+  color: #82aefc;
+}
+
+.about-hero h1 {
+  max-width: 800px;
+
+  margin: 0 0 30px;
+
+  font-size: clamp(52px, 6vw, 78px);
+  line-height: 0.98;
+  letter-spacing: -4px;
+  font-weight: 700;
+}
+
+.about-hero h1 span {
+  display: block;
+  color: #69a0ff;
+}
+
+.about-hero-text {
+  max-width: 620px;
+
+  margin: 0;
+
+  color: #b9c7db;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+   ========================================================= */
+
+.about-hero-image {
+  width: 100%;
+  height: 370px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+}
+
+.about-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+.about-hero-image:hover img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.about-introduction {
+  padding: 125px 0;
+
+  background: #ffffff;
+}
+
+.about-intro-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 0.85fr;
+
+  gap: 100px;
+}
+
+.about-small-label {
+  color: #1769ff;
+}
+
+.about-intro-grid h2 {
+  margin: 0;
+
+  color: #111b2d;
+
+  font-size: clamp(42px, 4.5vw, 60px);
+  line-height: 1;
+  letter-spacing: -3px;
+}
+
+.about-intro-content {
+  padding-top: 5px;
+}
+
+.about-intro-content p {
+  margin: 0 0 23px;
+
+  color: #667085;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   STATS
+   ========================================================= */
+
+.about-stats {
+  padding: 0;
+
+  background: #f4f7fb;
+
+  border-top: 1px solid #dfe5ee;
+  border-bottom: 1px solid #dfe5ee;
+}
+
+.about-stats-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.about-stat {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+
+  padding: 38px 28px;
+
+  border-right: 1px solid #d7e0eb;
+}
+
+.about-stat:first-child {
+  padding-left: 0;
+}
+
+.about-stat:last-child {
+  border-right: none;
+}
+
+.about-stat strong {
+  color: #1769ff;
+
+  font-size: 42px;
+  line-height: 1;
+
+  letter-spacing: -2px;
+}
+
+.about-stat span {
+  color: #667085;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   APPROACH
+   ========================================================= */
+
+.about-approach {
+  padding: 125px 0;
+
+  background: #ffffff;
+}
+
+.about-section-heading {
+  margin-bottom: 60px;
+}
+
+.about-section-heading h2 {
+  margin: 0;
+
+  color: #111b2d;
+
+  font-size: clamp(42px, 4.5vw, 58px);
+  line-height: 1;
+  letter-spacing: -3px;
+}
+
+.about-approach-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid #dfe5ee;
+  border-left: 1px solid #dfe5ee;
+}
+
+.about-approach-card {
+  min-height: 260px;
+
+  padding: 30px;
+
+  border-right: 1px solid #dfe5ee;
+  border-bottom: 1px solid #dfe5ee;
+
+  transition: 0.3s ease;
+}
+
+.about-approach-card:hover {
+  background: #071a33;
+}
+
+.about-approach-card > span {
+  color: #1769ff;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.about-approach-card h3 {
+  margin: 70px 0 15px;
+
+  color: #111b2d;
+
+  font-size: 23px;
+  letter-spacing: -0.5px;
+}
+
+.about-approach-card:hover h3 {
+  color: #ffffff;
+}
+
+.about-approach-card p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.about-approach-card:hover p {
+  color: #b9c7db;
+}
+
+
+/* =========================================================
+   CAPABILITIES
+   ========================================================= */
+
+.about-capabilities {
+  padding: 125px 0;
+
+  background: #f4f7fb;
+}
+
+.about-capabilities-list {
+  border-top: 1px solid #d7e0eb;
+}
+
+.about-capability {
+  display: grid;
+
+  grid-template-columns: 60px 1fr 40px;
+
+  align-items: center;
+
+  gap: 30px;
+
+  padding: 35px 20px;
+
+  border-bottom: 1px solid #d7e0eb;
+
+  transition: 0.3s ease;
+}
+
+.about-capability:hover {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  background: #ffffff;
+}
+
+.about-capability > span {
+  color: #1769ff;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.about-capability h3 {
+  margin: 0 0 8px;
+
+  color: #111b2d;
+
+  font-size: 25px;
+  letter-spacing: -0.7px;
+}
+
+.about-capability p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.about-capability > strong {
+  color: #1769ff;
+
+  font-size: 24px;
+
+  transition: transform 0.3s ease;
+}
+
+.about-capability:hover > strong {
+  transform: translate(4px, -4px);
+}
+
+
+/* =========================================================
+   WHY HAMARASHOPS
+   ========================================================= */
+
+.about-why {
+  padding: 125px 0;
+
+  background: #ffffff;
+}
+
+.about-why-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 0.85fr;
+
+  gap: 100px;
+}
+
+.about-why h2 {
+  margin: 0;
+
+  color: #111b2d;
+
+  font-size: clamp(42px, 4.5vw, 58px);
+  line-height: 1;
+  letter-spacing: -3px;
+}
+
+.about-why-list > div {
+  display: grid;
+
+  grid-template-columns: 45px 1fr;
+
+  gap: 20px;
+
+  padding: 25px 0;
+
+  border-bottom: 1px solid #dfe5ee;
+}
+
+.about-why-list > div:first-child {
+  border-top: 1px solid #dfe5ee;
+}
+
+.about-why-list span {
+  color: #1769ff;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.about-why-list h3 {
+  margin: 0 0 8px;
+
+  color: #111b2d;
+
+  font-size: 18px;
+}
+
+.about-why-list p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.about-cta {
+  padding: 125px 0;
+
+  background: #0b2447;
+
+  color: #ffffff;
+}
+
+.about-cta p {
+  margin: 0 0 20px;
+
+  color: #82aefc;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.2px;
+}
+
+.about-cta h2 {
+  margin: 0 0 40px;
+
+  font-size: clamp(50px, 5vw, 70px);
+  line-height: 0.98;
+  letter-spacing: -3px;
+}
+
+.about-cta a {
+  display: inline-flex;
+
+  padding: 15px 25px;
+
+  background: #1769ff;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.about-cta a:hover {
+  background: #4085ff;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .about-container {
+    width: calc(100% - 48px);
+  }
+
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .about-hero-content {
+    max-width: 800px;
+  }
+
+  .about-hero-image {
+    max-width: 700px;
+
+    height: 350px;
+  }
+
+  .about-intro-grid,
+  .about-why-grid {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .about-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-stat {
+    border-bottom: 1px solid #d7e0eb;
+  }
+
+  .about-stat:nth-child(2) {
+    border-right: none;
+  }
+
+  .about-approach-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .about-container {
+    width: calc(100% - 36px);
+  }
+
+
+  /* HERO */
+
+  .about-hero {
+    padding: 70px 0 75px;
+  }
+
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .about-hero h1 {
+    font-size: 47px;
+
+    letter-spacing: -2.5px;
+  }
+
+  .about-hero-text {
+    font-size: 15px;
+  }
+
+  .about-hero-image {
+    width: 100%;
+
+    height: 260px;
+  }
+
+
+  /* SECTIONS */
+
+  .about-introduction,
+  .about-approach,
+  .about-capabilities,
+  .about-why {
+    padding: 75px 0;
+  }
+
+
+  /* INTRO */
+
+  .about-intro-grid h2,
+  .about-why h2 {
+    font-size: 39px;
+
+    letter-spacing: -2px;
+  }
+
+
+  /* STATS */
+
+  .about-stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-stat {
+    padding: 28px 15px;
+  }
+
+  .about-stat:first-child {
+    padding-left: 15px;
+  }
+
+  .about-stat strong {
+    font-size: 32px;
+  }
+
+
+  /* APPROACH */
+
+  .about-section-heading {
+    margin-bottom: 40px;
+  }
+
+  .about-section-heading h2 {
+    font-size: 40px;
+
+    letter-spacing: -2px;
+  }
+
+  .about-approach-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-approach-card {
+    min-height: auto;
+
+    padding: 28px;
+
+    border-left: 1px solid #dfe5ee;
+  }
+
+  .about-approach-card h3 {
+    margin-top: 40px;
+  }
+
+
+  /* CAPABILITIES */
+
+  .about-capability {
+    grid-template-columns: 40px 1fr 25px;
+
+    gap: 15px;
+
+    padding: 28px 10px;
+  }
+
+  .about-capability:hover {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .about-capability h3 {
+    font-size: 19px;
+  }
+
+  .about-capability p {
+    font-size: 13px;
+  }
+
+
+  /* WHY */
+
+  .about-why-list > div {
+    grid-template-columns: 35px 1fr;
+
+    gap: 15px;
+  }
+
+
+  /* CTA */
+
+  .about-cta {
+    padding: 85px 0;
+  }
+
+  .about-cta h2 {
+    font-size: 44px;
+
+    letter-spacing: -2px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+  .about-hero h1 {
+    font-size: 40px;
+  }
+
+  .about-intro-grid h2,
+  .about-why h2 {
+    font-size: 34px;
+  }
+
+  .about-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stat {
+    border-right: none;
+  }
+
+  .about-cta h2 {
+    font-size: 39px;
+  }
+}

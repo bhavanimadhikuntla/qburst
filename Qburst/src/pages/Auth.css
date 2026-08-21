@@ -1,0 +1,386 @@
+
+/* =========================================================
+   HAMARASHOPS.AI
+   AUTHENTICATION PAGE
+   ========================================================= */
+
+.auth-page {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  padding: 70px 30px;
+  background:
+    linear-gradient(
+      135deg,
+      #f4f8ff 0%,
+      #eef5ff 55%,
+      #ffffff 100%
+    );
+  color: #14213d;
+}
+
+.auth-container {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+
+  gap: 80px;
+}
+
+/* =========================================================
+   LEFT CONTENT
+   ========================================================= */
+
+.auth-info {
+  max-width: 500px;
+}
+
+.auth-label {
+  margin: 0 0 20px;
+
+  color: #2563eb;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.auth-info h1 {
+  margin: 0;
+
+  color: #14213d;
+
+  font-size: clamp(55px, 6vw, 78px);
+  font-weight: 800;
+
+  line-height: 0.98;
+  letter-spacing: -4px;
+}
+
+.auth-info > p:last-child {
+  max-width: 450px;
+
+  margin: 30px 0 0;
+
+  color: #64748b;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.auth-card {
+  width: 100%;
+  max-width: 520px;
+
+  margin-left: auto;
+
+  padding: 42px;
+
+  background: #ffffff;
+
+  border: 1px solid #dbe5f3;
+  border-radius: 12px;
+
+  box-shadow:
+    0 25px 70px rgba(30, 64, 175, 0.10);
+}
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.auth-card-header {
+  margin-bottom: 30px;
+}
+
+.auth-card-header h2 {
+  margin: 0 0 8px;
+
+  color: #14213d;
+
+  font-size: 32px;
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+.auth-card-header p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+/* =========================================================
+   ERROR / SUCCESS
+   ========================================================= */
+
+.auth-error,
+.auth-success {
+  margin-bottom: 22px;
+
+  padding: 13px 15px;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.auth-error {
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #be123c;
+}
+
+.auth-success {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #15803d;
+}
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.form-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 15px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #14213d;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.form-group input {
+  width: 100%;
+
+  min-height: 50px;
+
+  padding: 13px 15px;
+
+  background: #ffffff;
+
+  color: #14213d;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+
+  outline: none;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.form-group input::placeholder {
+  color: #94a3b8;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.auth-button {
+  width: 100%;
+
+  min-height: 52px;
+
+  margin-top: 5px;
+
+  padding: 14px 20px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  border: 1px solid #2563eb;
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.auth-button:hover:not(:disabled) {
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(37, 99, 235, 0.20);
+}
+
+.auth-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.auth-footer {
+  margin-top: 25px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #e2e8f0;
+
+  text-align: center;
+}
+
+.auth-footer p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+.auth-footer a {
+  color: #2563eb;
+
+  text-decoration: none;
+
+  font-weight: 700;
+}
+
+.auth-footer a:hover {
+  color: #1d4ed8;
+
+  text-decoration: underline;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .auth-container {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    max-width: 600px;
+  }
+
+  .auth-info {
+    max-width: 600px;
+
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .auth-info h1 {
+    font-size: 58px;
+  }
+
+  .auth-info > p:last-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .auth-card {
+    margin: 0 auto;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .auth-page {
+    min-height: calc(100vh - 65px);
+
+    padding: 45px 18px;
+  }
+
+  .auth-container {
+    gap: 35px;
+  }
+
+  .auth-info h1 {
+    font-size: 48px;
+
+    letter-spacing: -2.5px;
+  }
+
+  .auth-info > p:last-child {
+    font-size: 15px;
+  }
+
+  .auth-card {
+    padding: 28px 22px;
+  }
+
+  .auth-card-header h2 {
+    font-size: 28px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+  .auth-page {
+    padding: 35px 15px;
+  }
+
+  .auth-info h1 {
+    font-size: 42px;
+  }
+
+  .auth-card {
+    padding: 25px 18px;
+  }
+}
+

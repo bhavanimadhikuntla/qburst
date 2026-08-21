@@ -1,0 +1,754 @@
+/* =========================================================
+   HAMARASHOPS.AI — INDUSTRIES PAGE
+   Professional Blue / Navy Design
+   ========================================================= */
+
+.industries-page {
+  width: 100%;
+  background: #ffffff;
+  color: #172033;
+  overflow: hidden;
+}
+
+.industries-container {
+  width: min(1180px, calc(100% - 64px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.industries-hero {
+  padding: 105px 0 115px;
+  background: #071a33;
+  color: #ffffff;
+}
+
+.industries-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.72fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.industries-hero-content {
+  max-width: 650px;
+}
+
+.industries-label,
+.industries-section-label {
+  margin: 0 0 20px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.2px;
+}
+
+.industries-label {
+  color: #82aefc;
+}
+
+.industries-hero h1 {
+  max-width: 900px;
+  margin: 0 0 30px;
+
+  font-size: clamp(52px, 6vw, 78px);
+  line-height: 0.97;
+  letter-spacing: -4px;
+  font-weight: 700;
+}
+
+.industries-hero h1 span {
+  display: block;
+  color: #69a0ff;
+}
+
+.industries-hero-text {
+  max-width: 650px;
+  margin: 0;
+
+  color: #b9c7db;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+   ========================================================= */
+
+.industries-hero-image {
+  width: 100%;
+  height: 390px;
+  overflow: hidden;
+
+  border-radius: 4px;
+}
+
+.industries-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+.industries-hero-image:hover img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.industries-intro {
+  padding: 125px 0;
+  background: #ffffff;
+}
+
+.industries-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 100px;
+}
+
+.industries-section-label {
+  color: #1769ff;
+}
+
+.industries-intro h2,
+.industries-why-heading h2 {
+  margin: 0;
+
+  color: #111b2d;
+
+  font-size: clamp(42px, 4.5vw, 60px);
+  line-height: 1;
+  letter-spacing: -3px;
+}
+
+.industries-intro-grid > div:last-child {
+  padding-top: 8px;
+}
+
+.industries-intro-grid > div:last-child p {
+  margin: 0 0 23px;
+
+  color: #667085;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   INDUSTRIES LIST
+   ========================================================= */
+
+.industries-list {
+  padding: 110px 0;
+
+  background: #f4f7fb;
+}
+
+
+/* =========================================================
+   INDUSTRY CARD
+   ========================================================= */
+
+.industry-card {
+  display: grid;
+
+  grid-template-columns: 55px 250px 1fr 40px;
+
+  gap: 35px;
+
+  align-items: start;
+
+  padding: 45px 25px;
+
+  border-top: 1px solid #d8e0eb;
+
+  transition:
+    background 0.3s ease,
+    padding 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.industry-card:last-child {
+  border-bottom: 1px solid #d8e0eb;
+}
+
+.industry-card:hover {
+  padding-left: 35px;
+  padding-right: 35px;
+
+  background: #ffffff;
+
+  box-shadow: 0 12px 35px rgba(23, 105, 255, 0.07);
+}
+
+
+/* =========================================================
+   INDUSTRY NUMBER
+   ========================================================= */
+
+.industry-number {
+  padding-top: 5px;
+
+  color: #1769ff;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   INDUSTRY IMAGE
+   ========================================================= */
+
+.industry-image {
+  width: 250px;
+  height: 165px;
+
+  overflow: hidden;
+
+  border-radius: 3px;
+}
+
+.industry-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.industry-card:hover .industry-image img {
+  transform: scale(1.06);
+}
+
+
+/* =========================================================
+   INDUSTRY CONTENT
+   ========================================================= */
+
+.industry-content h2 {
+  margin: 0 0 15px;
+
+  color: #111b2d;
+
+  font-size: 31px;
+  line-height: 1.1;
+  letter-spacing: -1.2px;
+}
+
+.industry-description {
+  max-width: 680px;
+
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   CAPABILITIES
+   ========================================================= */
+
+.industry-capabilities {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 24px;
+}
+
+.industry-capabilities span {
+  padding: 8px 12px;
+
+  background: #eaf2ff;
+
+  color: #1769ff;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  transition: 0.25s ease;
+}
+
+.industry-card:hover .industry-capabilities span {
+  background: #dce9ff;
+}
+
+
+/* =========================================================
+   INDUSTRY ARROW
+   ========================================================= */
+
+.industry-arrow {
+  align-self: start;
+
+  color: #1769ff;
+
+  font-size: 24px;
+
+  transition: transform 0.3s ease;
+}
+
+.industry-card:hover .industry-arrow {
+  transform: translate(4px, -4px);
+}
+
+
+/* =========================================================
+   WHY HAMARASHOPS
+   ========================================================= */
+
+.industries-why {
+  padding: 125px 0;
+
+  background: #ffffff;
+}
+
+.industries-why-heading {
+  display: grid;
+
+  grid-template-columns: 1fr 0.8fr;
+
+  gap: 90px;
+
+  align-items: end;
+
+  margin-bottom: 60px;
+}
+
+.industries-why-heading > p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   WHY POINTS
+   ========================================================= */
+
+.industries-points {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid #dfe5ee;
+  border-left: 1px solid #dfe5ee;
+}
+
+.industries-points > div {
+  min-height: 230px;
+
+  padding: 28px;
+
+  border-right: 1px solid #dfe5ee;
+  border-bottom: 1px solid #dfe5ee;
+
+  transition: 0.3s ease;
+}
+
+.industries-points > div:hover {
+  background: #071a33;
+  color: #ffffff;
+}
+
+.industries-points span {
+  color: #1769ff;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.industries-points h3 {
+  margin: 58px 0 13px;
+
+  color: #172033;
+
+  font-size: 22px;
+  letter-spacing: -0.5px;
+}
+
+.industries-points p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.industries-points > div:hover h3 {
+  color: #ffffff;
+}
+
+.industries-points > div:hover p {
+  color: #b9c7db;
+}
+
+
+/* =========================================================
+   STATS
+   ========================================================= */
+
+.industries-stats {
+  padding: 85px 0;
+
+  background: #f4f7fb;
+}
+
+.stats-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid #dfe5ee;
+  border-bottom: 1px solid #dfe5ee;
+}
+
+.stats-grid > div {
+  padding: 40px 25px;
+
+  border-right: 1px solid #dfe5ee;
+}
+
+.stats-grid > div:first-child {
+  border-left: 1px solid #dfe5ee;
+}
+
+.stats-grid strong {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #1769ff;
+
+  font-size: 42px;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.stats-grid span {
+  color: #667085;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.industries-cta {
+  padding: 130px 20px;
+
+  background: #0b2447;
+
+  color: #ffffff;
+
+  text-align: center;
+}
+
+.industries-cta .industries-section-label {
+  color: #82aefc;
+}
+
+.industries-cta h2 {
+  margin: 0 0 40px;
+
+  font-size: clamp(50px, 5vw, 72px);
+  line-height: 0.98;
+  letter-spacing: -3px;
+}
+
+.industries-cta-button {
+  display: inline-block;
+
+  padding: 15px 25px;
+
+  background: #1769ff;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.industries-cta-button:hover {
+  background: #4085ff;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .industries-container {
+    width: calc(100% - 48px);
+  }
+
+  .industries-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .industries-hero-content {
+    max-width: 800px;
+  }
+
+  .industries-hero-image {
+    max-width: 700px;
+    height: 350px;
+  }
+
+  .industries-intro-grid,
+  .industries-why-heading {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .industry-card {
+    grid-template-columns: 50px 200px 1fr 30px;
+
+    gap: 25px;
+  }
+
+  .industry-image {
+    width: 200px;
+    height: 145px;
+  }
+
+  .industries-points {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-grid > div:nth-child(3) {
+    border-left: 1px solid #dfe5ee;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .industries-container {
+    width: calc(100% - 36px);
+  }
+
+
+  /* HERO */
+
+  .industries-hero {
+    padding: 70px 0 75px;
+  }
+
+  .industries-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .industries-hero h1 {
+    font-size: 47px;
+    letter-spacing: -2.5px;
+  }
+
+  .industries-hero-text {
+    font-size: 15px;
+  }
+
+  .industries-hero-image {
+    width: 100%;
+    height: 270px;
+  }
+
+
+  /* INTRO */
+
+  .industries-intro,
+  .industries-list,
+  .industries-why {
+    padding: 75px 0;
+  }
+
+  .industries-intro h2,
+  .industries-why-heading h2 {
+    font-size: 39px;
+    letter-spacing: -2px;
+  }
+
+
+  /* INDUSTRY */
+
+  .industry-card {
+    grid-template-columns: 40px 1fr;
+
+    gap: 15px;
+
+    padding: 35px 10px;
+  }
+
+  .industry-card:hover {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .industry-number {
+    grid-column: 1;
+    grid-row: 1;
+
+    padding-top: 5px;
+  }
+
+  .industry-image {
+    grid-column: 2;
+
+    width: 100%;
+    height: 210px;
+
+    margin-bottom: 5px;
+  }
+
+  .industry-content {
+    grid-column: 2;
+  }
+
+  .industry-content h2 {
+    font-size: 25px;
+  }
+
+  .industry-description {
+    font-size: 14px;
+  }
+
+  .industry-arrow {
+    display: none;
+  }
+
+
+  /* CAPABILITIES */
+
+  .industry-capabilities {
+    gap: 6px;
+  }
+
+  .industry-capabilities span {
+    padding: 7px 9px;
+  }
+
+
+  /* WHY */
+
+  .industries-points {
+    grid-template-columns: 1fr;
+  }
+
+  .industries-points > div {
+    min-height: 200px;
+  }
+
+  .industries-points h3 {
+    margin-top: 45px;
+  }
+
+
+  /* STATS */
+
+  .industries-stats {
+    padding: 65px 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stats-grid > div {
+    padding: 30px 18px;
+  }
+
+  .stats-grid strong {
+    font-size: 34px;
+  }
+
+
+  /* CTA */
+
+  .industries-cta {
+    padding: 90px 20px;
+  }
+
+  .industries-cta h2 {
+    font-size: 46px;
+    letter-spacing: -2px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+  .industries-hero h1 {
+    font-size: 40px;
+  }
+
+  .industries-intro h2,
+  .industries-why-heading h2 {
+    font-size: 34px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid > div,
+  .stats-grid > div:nth-child(3) {
+    border-left: 1px solid #dfe5ee;
+  }
+
+  .industries-cta h2 {
+    font-size: 40px;
+  }
+}

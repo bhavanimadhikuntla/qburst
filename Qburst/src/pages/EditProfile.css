@@ -1,0 +1,699 @@
+/* ============================================================
+   HAMARASHOPS.AI - EDIT PROFILE
+   ============================================================ */
+
+.edit-profile-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  color: #172033;
+  padding-bottom: 70px;
+}
+
+/* ============================================================
+   CONTAINER
+   ============================================================ */
+
+.edit-profile-container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.edit-profile-hero {
+  background: linear-gradient(
+    135deg,
+    #071a3d 0%,
+    #0d2f6f 55%,
+    #1455b8 100%
+  );
+
+  color: #ffffff;
+  padding: 55px 0 65px;
+}
+
+.edit-profile-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  margin-bottom: 35px;
+
+  transition: 0.25s ease;
+}
+
+.edit-profile-back:hover {
+  color: #d8e7ff;
+  transform: translateX(-4px);
+}
+
+.edit-profile-hero p {
+  margin: 0 0 10px;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+
+  color: #8db8ff;
+}
+
+.edit-profile-hero h1 {
+  margin: 0;
+
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.1;
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+.edit-profile-hero span {
+  display: block;
+
+  margin-top: 16px;
+
+  font-size: 17px;
+  line-height: 1.7;
+
+  color: #d9e7ff;
+}
+
+/* ============================================================
+   CONTENT
+   ============================================================ */
+
+.edit-profile-content {
+  padding: 55px 0;
+}
+
+/* ============================================================
+   FORM
+   ============================================================ */
+
+.edit-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* ============================================================
+   CARD
+   ============================================================ */
+
+.edit-profile-card {
+  background: #ffffff;
+
+  border: 1px solid #dce3ef;
+  border-radius: 24px;
+
+  padding: 34px;
+
+  box-shadow:
+    0 12px 35px rgba(16, 36, 70, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.edit-profile-card:hover {
+  box-shadow:
+    0 18px 42px rgba(16, 36, 70, 0.09);
+}
+
+/* ============================================================
+   CARD HEADING
+   ============================================================ */
+
+.edit-profile-heading {
+  margin-bottom: 28px;
+}
+
+.edit-profile-heading p {
+  margin: 0 0 8px;
+
+  color: #2d67df;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.edit-profile-heading h2 {
+  margin: 0;
+
+  color: #101a2e;
+
+  font-size: 28px;
+  font-weight: 750;
+}
+
+/* ============================================================
+   FORM GRID
+   ============================================================ */
+
+.edit-profile-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 22px 24px;
+}
+
+/* ============================================================
+   FORM GROUP
+   ============================================================ */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group-full {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  margin-bottom: 9px;
+
+  color: #24334d;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* ============================================================
+   INPUTS
+   ============================================================ */
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d5ddea;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  color: #172033;
+
+  font-family: inherit;
+  font-size: 15px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.form-group input {
+  min-height: 50px;
+  padding: 0 15px;
+}
+
+.form-group textarea {
+  padding: 14px 15px;
+
+  min-height: 110px;
+
+  resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9aa6b8;
+}
+
+/* ============================================================
+   INPUT FOCUS
+   ============================================================ */
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #3474e6;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 4px rgba(52, 116, 230, 0.10);
+}
+
+/* ============================================================
+   RESUME SECTION
+   ============================================================ */
+
+.resume-upload {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 28px 20px;
+
+  border: 2px dashed #cbd7e8;
+  border-radius: 18px;
+
+  background: #f8faff;
+
+  box-sizing: border-box;
+
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.resume-upload:hover {
+  border-color: #3474e6;
+  background: #f3f7ff;
+}
+
+.resume-upload > label {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: #172033;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* ============================================================
+   FILE INPUT
+   ============================================================ */
+
+.resume-upload input[type="file"] {
+  width: min(100%, 500px);
+
+  padding: 12px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d5ddea;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  color: #4a5870;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+/* Browser file button */
+
+.resume-upload input[type="file"]::file-selector-button {
+  margin-right: 14px;
+
+  padding: 10px 18px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2864d7;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.resume-upload input[type="file"]::file-selector-button:hover {
+  background: #174fae;
+}
+
+/* ============================================================
+   SELECTED FILE
+   ============================================================ */
+
+.selected-file {
+  display: inline-flex;
+  align-items: center;
+
+  margin-top: 16px;
+
+  padding: 9px 14px;
+
+  border-radius: 8px;
+
+  background: #eaf2ff;
+
+  color: #245ab8;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  max-width: 100%;
+
+  word-break: break-word;
+}
+
+/* ============================================================
+   MESSAGES
+   ============================================================ */
+
+.profile-success {
+  padding: 15px 18px;
+
+  border: 1px solid #b7e4c7;
+  border-radius: 12px;
+
+  background: #ecfdf3;
+
+  color: #16713b;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.profile-form-error {
+  padding: 15px 18px;
+
+  border: 1px solid #f1b8b8;
+  border-radius: 12px;
+
+  background: #fff1f1;
+
+  color: #b42318;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* ============================================================
+   ACTION BUTTONS
+   ============================================================ */
+
+.edit-profile-actions {
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 15px;
+
+  padding-top: 5px;
+}
+
+/* Cancel */
+
+.cancel-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 50px;
+
+  padding: 0 25px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d4dce9;
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  color: #3a4962;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition: 0.25s ease;
+}
+
+.cancel-button:hover {
+  background: #f1f4f8;
+
+  border-color: #bbc7d8;
+
+  color: #172033;
+}
+
+/* Save */
+
+.save-profile-button {
+  min-height: 50px;
+
+  padding: 0 28px;
+
+  border: none;
+  border-radius: 11px;
+
+  background: linear-gradient(
+    135deg,
+    #2864d7,
+    #174fae
+  );
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 18px rgba(40, 100, 215, 0.20);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.save-profile-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 24px rgba(40, 100, 215, 0.28);
+}
+
+.save-profile-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.save-profile-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+/* ============================================================
+   LOADING
+   ============================================================ */
+
+.edit-profile-loading {
+  min-height: 70vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #f5f7fb;
+
+  color: #344054;
+}
+
+.edit-profile-loading p {
+  margin-top: 18px;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ============================================================
+   LOADER
+   ============================================================ */
+
+.edit-profile-loader {
+  width: 42px;
+  height: 42px;
+
+  border: 4px solid #dce5f3;
+
+  border-top-color: #2864d7;
+
+  border-radius: 50%;
+
+  animation: editProfileSpin 0.8s linear infinite;
+}
+
+@keyframes editProfileSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
+@media (max-width: 800px) {
+
+  .edit-profile-hero {
+    padding: 45px 0 50px;
+  }
+
+  .edit-profile-content {
+    padding: 40px 0;
+  }
+
+  .edit-profile-card {
+    padding: 28px 24px;
+    border-radius: 20px;
+  }
+
+  .edit-profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group-full {
+    grid-column: auto;
+  }
+
+  .edit-profile-actions {
+    justify-content: stretch;
+  }
+
+  .cancel-button,
+  .save-profile-button {
+    flex: 1;
+  }
+}
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+  .edit-profile-container {
+    width: 90%;
+  }
+
+  .edit-profile-hero {
+    padding: 35px 0 42px;
+  }
+
+  .edit-profile-back {
+    margin-bottom: 25px;
+  }
+
+  .edit-profile-hero h1 {
+    font-size: 38px;
+  }
+
+  .edit-profile-hero span {
+    font-size: 15px;
+  }
+
+  .edit-profile-content {
+    padding: 30px 0;
+  }
+
+  .edit-profile-form {
+    gap: 20px;
+  }
+
+  .edit-profile-card {
+    padding: 22px 18px;
+
+    border-radius: 18px;
+  }
+
+  .edit-profile-heading {
+    margin-bottom: 22px;
+  }
+
+  .edit-profile-heading h2 {
+    font-size: 24px;
+  }
+
+  .edit-profile-grid {
+    gap: 18px;
+  }
+
+  .form-group input {
+    min-height: 48px;
+  }
+
+  .resume-upload {
+    padding: 24px 14px;
+  }
+
+  .resume-upload input[type="file"] {
+    width: 100%;
+  }
+
+  .resume-upload input[type="file"]::file-selector-button {
+    display: block;
+
+    margin: 0 0 10px;
+
+    width: 100%;
+  }
+
+  .edit-profile-actions {
+    flex-direction: column-reverse;
+
+    width: 100%;
+  }
+
+  .cancel-button,
+  .save-profile-button {
+    width: 100%;
+  }
+}
+
+/* ============================================================
+   SMALL MOBILE
+   ============================================================ */
+
+@media (max-width: 400px) {
+
+  .edit-profile-hero h1 {
+    font-size: 32px;
+  }
+
+  .edit-profile-card {
+    padding: 20px 15px;
+  }
+
+  .edit-profile-heading h2 {
+    font-size: 22px;
+  }
+
+  .edit-profile-heading p {
+    font-size: 11px;
+  }
+}

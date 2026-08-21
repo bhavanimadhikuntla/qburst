@@ -1,0 +1,555 @@
+/* =========================================================
+   HAMARASHOPS.AI — SOLUTIONS PAGE
+   ========================================================= */
+
+.solutions-page {
+  width: 100%;
+  background: #ffffff;
+  color: #172033;
+  overflow: hidden;
+}
+
+.solutions-container {
+  width: min(1180px, calc(100% - 56px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.solutions-hero {
+  padding: 105px 0 115px;
+  background: #0b2447;
+  color: #ffffff;
+}
+
+.solutions-label,
+.solutions-section-label {
+  margin: 0 0 20px;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.solutions-label {
+  color: #8eb4ff;
+}
+
+.solutions-section-label {
+  color: #1769ff;
+}
+
+.solutions-hero h1 {
+  max-width: 920px;
+
+  margin: 0 0 30px;
+
+  font-size: clamp(52px, 6vw, 76px);
+  line-height: 1;
+  letter-spacing: -4px;
+  font-weight: 800;
+}
+
+.solutions-hero h1 span {
+  display: block;
+  color: #79a9ff;
+}
+
+.solutions-hero-text {
+  max-width: 690px;
+
+  margin: 0;
+
+  color: #c2d0e3;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.solutions-intro {
+  padding: 110px 0;
+  background: #ffffff;
+}
+
+.solutions-intro-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 90px;
+}
+
+.solutions-intro h2,
+.solutions-technology h2 {
+  margin: 0;
+
+  color: #172033;
+
+  font-size: clamp(42px, 4.5vw, 54px);
+  line-height: 1.06;
+  letter-spacing: -2.5px;
+}
+
+.solutions-intro-grid > div:last-child {
+  padding-top: 8px;
+}
+
+.solutions-intro-grid > div:last-child p {
+  margin: 0 0 24px;
+
+  color: #667085;
+
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   SOLUTIONS LIST
+   ========================================================= */
+
+.solutions-list {
+  padding: 85px 0;
+
+  background: #f5f8fc;
+}
+
+.solution-card {
+  display: grid;
+
+  grid-template-columns: 80px 1fr 45px;
+
+  gap: 30px;
+
+  padding: 48px 15px;
+
+  border-top: 1px solid #d9e1ec;
+
+  transition:
+    background 0.3s ease,
+    padding 0.3s ease;
+}
+
+.solution-card:last-child {
+  border-bottom: 1px solid #d9e1ec;
+}
+
+.solution-card:hover {
+  background: #ffffff;
+
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.solution-number {
+  color: #1769ff;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.solution-content h2 {
+  margin: 0 0 14px;
+
+  color: #172033;
+
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.solution-description {
+  max-width: 720px;
+
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.solution-capabilities {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 23px;
+}
+
+.solution-capabilities span {
+  padding: 8px 13px;
+
+  background: #eaf2ff;
+
+  color: #1769ff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  border: 1px solid #d9e7ff;
+}
+
+.solution-arrow {
+  color: #1769ff;
+
+  font-size: 25px;
+
+  text-align: right;
+
+  transition: transform 0.3s ease;
+}
+
+.solution-card:hover .solution-arrow {
+  transform: translate(3px, -3px);
+}
+
+
+/* =========================================================
+   TECHNOLOGY
+   ========================================================= */
+
+.solutions-technology {
+  padding: 110px 0;
+
+  background: #ffffff;
+}
+
+.solutions-technology-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 90px;
+}
+
+.solutions-technology-text {
+  max-width: 600px;
+
+  margin: 0 0 30px;
+
+  color: #667085;
+
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.solutions-tech-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.solutions-tech-list span {
+  padding: 11px 17px;
+
+  background: #f5f8fc;
+
+  border: 1px solid #d8e1ec;
+
+  color: #344054;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.solutions-tech-list span:hover {
+  background: #eaf2ff;
+
+  border-color: #bcd2ff;
+
+  color: #1769ff;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.solutions-cta {
+  padding: 110px 20px;
+
+  background: #12345b;
+
+  color: #ffffff;
+
+  text-align: center;
+}
+
+.solutions-cta .solutions-section-label {
+  color: #8eb4ff;
+}
+
+.solutions-cta h2 {
+  max-width: 700px;
+
+  margin: 0 auto 35px;
+
+  font-size: clamp(44px, 5vw, 62px);
+
+  line-height: 1.05;
+
+  letter-spacing: -3px;
+}
+
+.solutions-cta-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 15px 25px;
+
+  background: #1769ff;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.solutions-cta-button:hover {
+  background: #4085ff;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .solutions-container {
+    width: min(100% - 48px, 720px);
+  }
+
+  .solutions-hero {
+    padding: 90px 0 100px;
+  }
+
+  .solutions-hero h1 {
+    font-size: 62px;
+  }
+
+  .solutions-intro-grid,
+  .solutions-technology-grid {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .solutions-intro,
+  .solutions-technology {
+    padding: 90px 0;
+  }
+
+  .solution-card {
+    grid-template-columns: 65px 1fr 35px;
+
+    gap: 20px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .solutions-container {
+    width: calc(100% - 40px);
+  }
+
+
+  /* HERO */
+
+  .solutions-hero {
+    padding: 72px 0 78px;
+  }
+
+  .solutions-hero h1 {
+    margin-bottom: 25px;
+
+    font-size: 45px;
+
+    line-height: 1.03;
+
+    letter-spacing: -2.5px;
+  }
+
+  .solutions-hero-text {
+    font-size: 15px;
+
+    line-height: 1.75;
+  }
+
+
+  /* INTRO */
+
+  .solutions-intro {
+    padding: 75px 0;
+  }
+
+  .solutions-intro-grid {
+    gap: 35px;
+  }
+
+  .solutions-intro h2,
+  .solutions-technology h2 {
+    font-size: 39px;
+
+    letter-spacing: -2px;
+  }
+
+  .solutions-intro-grid > div:last-child p {
+    font-size: 15px;
+  }
+
+
+  /* SOLUTIONS */
+
+  .solutions-list {
+    padding: 55px 0;
+  }
+
+  .solution-card {
+    grid-template-columns: 38px 1fr;
+
+    gap: 14px;
+
+    padding: 38px 5px;
+  }
+
+  .solution-card:hover {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .solution-content h2 {
+    font-size: 25px;
+
+    letter-spacing: -0.8px;
+  }
+
+  .solution-description {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+  .solution-capabilities {
+    margin-top: 18px;
+  }
+
+  .solution-capabilities span {
+    padding: 7px 10px;
+
+    font-size: 10px;
+  }
+
+  .solution-arrow {
+    display: none;
+  }
+
+
+  /* TECHNOLOGY */
+
+  .solutions-technology {
+    padding: 75px 0;
+  }
+
+  .solutions-technology-grid {
+    gap: 35px;
+  }
+
+  .solutions-technology-text {
+    font-size: 15px;
+  }
+
+  .solutions-tech-list {
+    gap: 8px;
+  }
+
+  .solutions-tech-list span {
+    padding: 9px 13px;
+
+    font-size: 12px;
+  }
+
+
+  /* CTA */
+
+  .solutions-cta {
+    padding: 80px 20px;
+  }
+
+  .solutions-cta h2 {
+    font-size: 42px;
+
+    letter-spacing: -2px;
+  }
+
+  .solutions-cta-button {
+    width: 100%;
+
+    max-width: 220px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+  .solutions-hero h1 {
+    font-size: 40px;
+  }
+
+  .solutions-intro h2,
+  .solutions-technology h2 {
+    font-size: 35px;
+  }
+
+  .solution-content h2 {
+    font-size: 23px;
+  }
+
+  .solutions-cta h2 {
+    font-size: 36px;
+  }
+
+}
