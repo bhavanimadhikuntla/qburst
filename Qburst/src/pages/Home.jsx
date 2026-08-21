@@ -14,12 +14,15 @@ function Home() {
       {/* =====================================================
           HERO
       ===================================================== */}
+
       <section className="home-hero">
+
         <div className="home-container">
 
           <div className="hero-content">
 
             {/* LEFT - TEXT */}
+
             <div className="hero-text-content">
 
               <p className="home-label">
@@ -28,7 +31,9 @@ function Home() {
 
               <h1>
                 Engineering digital
-                <span>solutions for what's next.</span>
+                <span>
+                  solutions for what's next.
+                </span>
               </h1>
 
               <p className="home-hero-text">
@@ -55,7 +60,9 @@ function Home() {
 
               </div>
 
+
               {/* HERO HIGHLIGHTS */}
+
               <div className="hero-highlights">
 
                 <div className="hero-highlight">
@@ -79,6 +86,7 @@ function Home() {
 
 
             {/* RIGHT - IMAGE */}
+
             <div className="home-hero-image">
 
               <img
@@ -91,12 +99,14 @@ function Home() {
           </div>
 
         </div>
+
       </section>
 
 
       {/* =====================================================
           ABOUT / INTRODUCTION
       ===================================================== */}
+
       <section className="home-intro">
 
         <div className="home-container">
@@ -104,6 +114,7 @@ function Home() {
           <div className="intro-layout">
 
             {/* LEFT */}
+
             <div className="intro-heading">
 
               <p className="home-section-label">
@@ -119,6 +130,7 @@ function Home() {
 
 
             {/* RIGHT */}
+
             <div className="intro-content">
 
               <p>
@@ -144,6 +156,7 @@ function Home() {
       {/* =====================================================
           SERVICES
       ===================================================== */}
+
       <section className="home-services">
 
         <div className="home-container">
@@ -176,13 +189,16 @@ function Home() {
           <div className="home-service-grid">
 
             {/* SERVICE 01 */}
+
             <article className="service-card">
 
               <div className="service-image">
+
                 <img
                   src={digitalEngineering}
                   alt="Digital Engineering"
                 />
+
               </div>
 
               <div className="service-content">
@@ -208,13 +224,16 @@ function Home() {
 
 
             {/* SERVICE 02 */}
+
             <article className="service-card">
 
               <div className="service-image">
+
                 <img
                   src={cloudSolutions}
                   alt="Cloud Solutions"
                 />
+
               </div>
 
               <div className="service-content">
@@ -240,13 +259,16 @@ function Home() {
 
 
             {/* SERVICE 03 */}
+
             <article className="service-card">
 
               <div className="service-image">
+
                 <img
                   src={aiAutomation}
                   alt="AI and Automation"
                 />
+
               </div>
 
               <div className="service-content">
@@ -272,13 +294,16 @@ function Home() {
 
 
             {/* SERVICE 04 */}
+
             <article className="service-card">
 
               <div className="service-image">
+
                 <img
                   src={dataAnalytics}
                   alt="Data and Analytics"
                 />
+
               </div>
 
               <div className="service-content">
@@ -310,125 +335,211 @@ function Home() {
 
 
       {/* =====================================================
-          SOLUTIONS
+          SOLUTIONS — PREMIUM SHOWCASE
       ===================================================== */}
+
       <section className="home-solutions">
 
         <div className="home-container">
 
-          <div className="solutions-heading">
+          {/* TOP */}
 
-            <p className="home-section-label">
-              OUR SOLUTIONS
-            </p>
+          <div className="solutions-top">
 
-            <h2>
-              Solving complex business
-              <br />
-              challenges with technology.
-            </h2>
+            <div className="solutions-heading">
 
-            <p>
-              We help businesses modernize their technology,
-              accelerate innovation and create better digital
-              experiences.
-            </p>
+              <p className="home-section-label">
+                OUR SOLUTIONS
+              </p>
+
+              <h2>
+                Technology that
+                <br />
+                moves business
+                <br />
+                forward.
+              </h2>
+
+            </div>
+
+
+            <div className="solutions-intro">
+
+              <p>
+                We combine engineering, cloud, AI and data to solve
+                complex business challenges and create technology
+                that delivers measurable value.
+              </p>
+
+              <Link to="/solutions">
+                View All Solutions <span>↗</span>
+              </Link>
+
+            </div>
 
           </div>
 
 
-          <div className="solutions-grid">
+          {/* SHOWCASE */}
 
-            {/* SOLUTION 01 */}
-            <article className="solution-card">
+          <div className="solutions-showcase">
 
-              <span className="solution-number">
-                01
-              </span>
 
-              <h3>
-                Digital Transformation
-              </h3>
+            {/* LEFT VISUAL */}
 
-              <p>
-                Modernize business processes and create connected
-                digital experiences.
-              </p>
+            <div className="solutions-visual">
 
-              <Link to="/solutions">
-                Explore Solution →
+              <img
+                src={heroTech}
+                alt="HamaraShops.ai technology solutions"
+              />
+
+              <div className="solutions-visual-overlay">
+
+                <span>
+                  HAMARASHOPS.AI
+                </span>
+
+                <strong>
+                  ENGINEERING
+                  <br />
+                  WHAT&apos;S NEXT.
+                </strong>
+
+              </div>
+
+            </div>
+
+
+            {/* RIGHT SOLUTIONS */}
+
+            <div className="solutions-list">
+
+
+              {/* SOLUTION 01 */}
+
+              <Link
+                to="/solutions"
+                className="solution-row"
+              >
+
+                <span className="solution-row-number">
+                  01
+                </span>
+
+                <div className="solution-row-content">
+
+                  <h3>
+                    Digital Transformation
+                  </h3>
+
+                  <p>
+                    Modernize business processes and create
+                    connected digital experiences.
+                  </p>
+
+                </div>
+
+                <span className="solution-row-arrow">
+                  ↗
+                </span>
+
               </Link>
 
-            </article>
 
+              {/* SOLUTION 02 */}
 
-            {/* SOLUTION 02 */}
-            <article className="solution-card">
+              <Link
+                to="/solutions"
+                className="solution-row"
+              >
 
-              <span className="solution-number">
-                02
-              </span>
+                <span className="solution-row-number">
+                  02
+                </span>
 
-              <h3>
-                Intelligent Automation
-              </h3>
+                <div className="solution-row-content">
 
-              <p>
-                Use AI and automation to simplify operations and
-                improve productivity.
-              </p>
+                  <h3>
+                    Intelligent Automation
+                  </h3>
 
-              <Link to="/solutions">
-                Explore Solution →
+                  <p>
+                    Apply AI and automation to simplify operations,
+                    improve productivity and reduce complexity.
+                  </p>
+
+                </div>
+
+                <span className="solution-row-arrow">
+                  ↗
+                </span>
+
               </Link>
 
-            </article>
 
+              {/* SOLUTION 03 */}
 
-            {/* SOLUTION 03 */}
-            <article className="solution-card">
+              <Link
+                to="/solutions"
+                className="solution-row"
+              >
 
-              <span className="solution-number">
-                03
-              </span>
+                <span className="solution-row-number">
+                  03
+                </span>
 
-              <h3>
-                Cloud Modernization
-              </h3>
+                <div className="solution-row-content">
 
-              <p>
-                Move applications toward scalable and resilient
-                cloud-native architectures.
-              </p>
+                  <h3>
+                    Cloud Modernization
+                  </h3>
 
-              <Link to="/solutions">
-                Explore Solution →
+                  <p>
+                    Build scalable, secure and resilient
+                    cloud-ready technology platforms.
+                  </p>
+
+                </div>
+
+                <span className="solution-row-arrow">
+                  ↗
+                </span>
+
               </Link>
 
-            </article>
 
+              {/* SOLUTION 04 */}
 
-            {/* SOLUTION 04 */}
-            <article className="solution-card">
+              <Link
+                to="/solutions"
+                className="solution-row"
+              >
 
-              <span className="solution-number">
-                04
-              </span>
+                <span className="solution-row-number">
+                  04
+                </span>
 
-              <h3>
-                Product Engineering
-              </h3>
+                <div className="solution-row-content">
 
-              <p>
-                Design and develop reliable digital products that
-                create measurable value.
-              </p>
+                  <h3>
+                    Product Engineering
+                  </h3>
 
-              <Link to="/solutions">
-                Explore Solution →
+                  <p>
+                    Design and develop reliable digital products
+                    built around real customer needs.
+                  </p>
+
+                </div>
+
+                <span className="solution-row-arrow">
+                  ↗
+                </span>
+
               </Link>
 
-            </article>
+            </div>
 
           </div>
 
@@ -440,6 +551,7 @@ function Home() {
       {/* =====================================================
           INDUSTRIES
       ===================================================== */}
+
       <section className="home-industries">
 
         <div className="home-container">
@@ -447,6 +559,7 @@ function Home() {
           <div className="industries-layout">
 
             {/* LEFT - CONTENT */}
+
             <div className="industries-content">
 
               <p className="home-section-label">
@@ -517,6 +630,7 @@ function Home() {
 
 
             {/* RIGHT - IMAGE */}
+
             <div className="industries-image">
 
               <img
@@ -536,6 +650,7 @@ function Home() {
       {/* =====================================================
           WHY HAMARASHOPS
       ===================================================== */}
+
       <section className="home-why">
 
         <div className="home-container">
@@ -583,7 +698,7 @@ function Home() {
 
               <p>
                 We focus on business objectives instead of technology
-                for technology's sake.
+                for technology&apos;s sake.
               </p>
 
             </article>
@@ -630,6 +745,7 @@ function Home() {
       {/* =====================================================
           FEATURED WORK
       ===================================================== */}
+
       <section className="featured-work">
 
         <div className="home-container">
@@ -657,10 +773,11 @@ function Home() {
           </div>
 
 
-          {/* TEXT + IMAGE SIDE BY SIDE */}
           <div className="featured-work-content">
 
+
             {/* LEFT TEXT */}
+
             <div className="featured-work-text">
 
               <p className="featured-category">
@@ -680,9 +797,17 @@ function Home() {
 
               <div className="featured-technologies">
 
-                <span>Digital Engineering</span>
-                <span>Cloud</span>
-                <span>AI</span>
+                <span>
+                  Digital Engineering
+                </span>
+
+                <span>
+                  Cloud
+                </span>
+
+                <span>
+                  AI
+                </span>
 
               </div>
 
@@ -697,6 +822,7 @@ function Home() {
 
 
             {/* RIGHT IMAGE */}
+
             <div className="featured-work-image">
 
               <img
@@ -716,6 +842,7 @@ function Home() {
       {/* =====================================================
           CAREERS
       ===================================================== */}
+
       <section className="home-careers">
 
         <div className="careers-content">
@@ -725,7 +852,7 @@ function Home() {
           </p>
 
           <h2>
-            Build what's next
+            Build what&apos;s next
             <br />
             with us.
           </h2>
@@ -747,6 +874,7 @@ function Home() {
       {/* =====================================================
           FINAL CTA
       ===================================================== */}
+
       <section className="home-cta">
 
         <p>
