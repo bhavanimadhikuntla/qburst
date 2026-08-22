@@ -215,14 +215,14 @@ Candidate Dashboard
 
 The backend is divided into six major services.
 
-| Service | Responsibility | Typical Port |
+| Service                 | Responsibility                                   | Typical Port |
 |---|---|---:|
-| **Eureka Service** | Service discovery and registration | `8761` |
-| **API Gateway** | Centralized API routing | `8080` |
-| **Auth Service** | Authentication and user management | `8086`* |
-| **Job Service** | Job creation, retrieval and management | `8082` |
-| **Application Service** | Job applications and application processing | `8084`* |
-| **Contact Service** | Contact form submissions and enquiries | `8085`* |
+| **Eureka Service**      | Service discovery and registration               | `8761` |
+| **API Gateway**         | Centralized API routing                          | `8080` |
+| **Auth Service**        | Authentication and user management               | `8086`* |
+| **Job Service**         | Job creation, retrieval and management           | `8082` |
+| **Application Service** | Job applications and application processing      | `8084`* |
+| **Contact Service**     | Contact form submissions and enquiries           | `8085`* |
 
 ## 1. Eureka Service
 
@@ -584,20 +584,20 @@ HTTP Response
 
 > The table below is a functional overview. Keep exact paths synchronized with the controller mappings in the repository before treating this section as a formal API contract.
 
-| Area | Method | Example Endpoint | Purpose |
+| Area          | Method         | Example Endpoint                  | Purpose |
 |---|---|---|---|
-| Auth | `POST` | `/api/auth/login` | Authenticate user |
-| Auth | `POST` | `/api/auth/register` | Register user |
-| Jobs | `GET` | `/api/jobs` | Get available jobs |
-| Jobs | `GET` | `/api/jobs/{id}` | Get job details |
-| Jobs | `POST` | `/api/jobs` | Create job |
-| Jobs | `PUT` | `/api/jobs/{id}` | Update job |
-| Jobs | `DELETE` | `/api/jobs/{id}` | Delete job |
-| Applications | `POST` | `/api/applications` | Submit application |
-| Applications | `GET` | `/api/applications/{id}` | Get application |
-| Applications | `GET` | `/api/applications/candidate/{id}` | Get candidate applications |
-| Contact | `POST` | `/api/contact` | Submit enquiry |
-| Contact | `GET` | `/api/contact` | Get enquiries |
+| Auth          | `POST`         | `/api/auth/login`                  | Authenticate user |
+| Auth          | `POST`         | `/api/auth/register`               | Register user |
+| Jobs          | `GET`          | `/api/jobs`                        | Get available jobs |
+| Jobs          | `GET`          | `/api/jobs/{id}`                   | Get job details |
+| Jobs          | `POST`         | `/api/jobs`                        | Create job |
+| Jobs          | `PUT`          | `/api/jobs/{id}`                   | Update job |
+| Jobs          | `DELETE`       | `/api/jobs/{id}`                   | Delete job |
+| Applications  | `POST`         | `/api/applications`                | Submit application |
+| Applications  | `GET`          | `/api/applications/{id}`           | Get application |
+| Applications  | `GET`          | `/api/applications/candidate/{id}` | Get candidate applications |
+| Contact       | `POST`         | `/api/contact`                     | Submit enquiry |
+| Contact       | `GET`          | `/api/contact`                     | Get enquiries |
 
 ---
 
@@ -613,12 +613,6 @@ Make sure the following are installed:
 - Maven / Maven Wrapper
 - MySQL
 - Git
-
-## Clone Repository
-
-git clone https://github.com/bhavanimadhikuntla/job-portal.git
-cd job-portal
-
 
 ## Install Frontend Dependencies
 
@@ -931,16 +925,16 @@ New capabilities can be introduced as additional services without redesigning th
 
 HamaraShops.ai currently presents the following technology and business capabilities:
 
-| Capability | Focus |
+| Capability                                | Focus |
 |---|---|
-| Digital Engineering | Modern application development |
-| AI & Automation | Intelligent process improvement |
-| Cloud Solutions | Cloud-native modernization |
-| Data & Analytics | Data-driven decision support |
-| Digital Transformation | Modernizing business operations |
-| Product Engineering | Customer-focused digital products |
-| Recruitment Platform | Jobs, candidates and applications |
-| Contact Management | Business enquiries and communication |
+| Digital Engineering                       | Modern application development |
+| AI & Automation                           | Intelligent process improvement |
+| Cloud Solutions                           | Cloud-native modernization |
+| Data & Analytics                          | Data-driven decision support |
+| Digital Transformation                    | Modernizing business operations |
+| Product Engineering                       | Customer-focused digital products |
+| Recruitment Platform                      | Jobs, candidates and applications |
+| Contact Management                        | Business enquiries and communication |
 
 
 ---
@@ -949,7 +943,7 @@ HamaraShops.ai currently presents the following technology and business capabili
 
 **GitHub:**
 
-https://github.com/bhavanimadhikuntla/job-portal.git
+https://github.com/bhavanimadhikuntla/qburst.git
 
 ---
 
