@@ -96,6 +96,8 @@ The project is built to demonstrate a professional, scalable application archite
 The frontend is a responsive React application built with Vite and designed as a professional technology-services website with integrated recruitment functionality.
 
 ## Frontend Navigation
+
+```text
 HamaraShops.ai
 │
 ├── Home
@@ -178,7 +180,7 @@ Provides a contact form connected to the backend Contact Service through the API
 # 👤 Recruitment Frontend
 
 The recruitment portion of the frontend provides a complete candidate journey.
-
+```text
 Visitor
   │
   ▼
@@ -214,7 +216,7 @@ Candidate Dashboard
 # 🔧 Backend Microservices
 
 The backend is divided into six major services.
-
+```text
 | Service                 | Responsibility                                   | Typical Port |
 |---|---|---:|
 | **Eureka Service**      | Service discovery and registration               | `8761` |
@@ -250,7 +252,7 @@ http://localhost:8761
 ### Purpose
 
 Acts as the single backend entry point for the frontend.
-
+```text
 
 React Frontend
       │
@@ -372,7 +374,7 @@ Status
 
 ## Login Flow
 
-
+```text
 Candidate
    │
    ▼
@@ -398,7 +400,7 @@ React Dashboard
 
 
 ## Job Search Flow
-
+```text
 Candidate
    │
    ▼
@@ -421,7 +423,7 @@ React UI
 
 
 ## Job Application Flow
-
+```text
 
 Candidate
    │
@@ -446,7 +448,7 @@ Application Created
 
 ## Contact Flow
 
-
+```text
 Visitor
    │
    ▼
@@ -483,7 +485,7 @@ contact
 
 
 A simplified relationship is:
-
+```text
 USER
  │
  └────────────── Candidate Profile
@@ -502,10 +504,10 @@ USER
 # 📁 Recommended Project Structure
 
 A typical full-stack repository layout is:
-
-job-portal/
+```text
+Qburst/
 │
-├── frontend/                     # React / Vite application
+├── Qburst/                     # React / Vite application
 │   ├── src/
 │   │   ├── assets/
 │   │   ├── components/
@@ -516,30 +518,30 @@ job-portal/
 │   ├── public/
 │   ├── package.json
 │   └── vite.config.*
+|QburstBACKEND
+     ├── eureka-service/
+   │ ├── src/
+   │   └── pom.xml
+
+     ├── api-gateway/
+ |   ├── src/
+ │   └── pom.xml
+
+     ├── auth-service/
+   │ ├── src/
+   |   └── pom.xml
 │
-├── eureka-service/
+    ├── job-service/
 │   ├── src/
-│   └── pom.xml
+│       └── pom.xml
 │
-├── api-gateway/
+    ├── application-service/
 │   ├── src/
-│   └── pom.xml
+│       └── pom.xml
 │
-├── auth-service/
+    ├── contact-service/
 │   ├── src/
-│   └── pom.xml
-│
-├── job-service/
-│   ├── src/
-│   └── pom.xml
-│
-├── application-service/
-│   ├── src/
-│   └── pom.xml
-│
-├── contact-service/
-│   ├── src/
-│   └── pom.xml
+│       └── pom.xml
 │
 └── README.md
 
@@ -549,7 +551,7 @@ job-portal/
 # 🧱 Backend Layered Architecture
 
 Each Spring Boot microservice follows a layered pattern:
-
+```text
 service-name/
 │
 ├── controller/      # REST endpoints
@@ -560,7 +562,7 @@ service-name/
 └── config/          # Application configuration
 
 Typical request lifecycle:
-
+```text
 HTTP Request
      │
      ▼
@@ -583,7 +585,7 @@ HTTP Response
 # 🧩 API Overview
 
 > The table below is a functional overview. Keep exact paths synchronized with the controller mappings in the repository before treating this section as a formal API contract.
-
+```text
 | Area          | Method         | Example Endpoint                  | Purpose |
 |---|---|---|---|
 | Auth          | `POST`         | `/api/auth/login`                  | Authenticate user |
@@ -725,12 +727,6 @@ Example frontend environment file:
 VITE_API_URL=http://localhost:8080/api
 ```
 
-For production, use the public API Gateway URL:
-
-```env
-VITE_API_URL=https://<your-gateway-domain>/api
-```
-
 Example Spring configuration pattern:
 
 ```properties
@@ -786,7 +782,7 @@ Testing can be performed at multiple layers:
 - End-to-end API testing
 
 Suggested verification flow:
-
+```text
 Frontend
    ↓
 API Gateway
@@ -865,7 +861,7 @@ Potential future enhancements include:
 
 HamaraShops.ai can evolve beyond traditional recruitment by introducing AI capabilities such as:
 
-
+```text
 Resume
   │
   ▼
@@ -924,7 +920,7 @@ New capabilities can be introduced as additional services without redesigning th
 # 🏢 Business Capabilities
 
 HamaraShops.ai currently presents the following technology and business capabilities:
-
+```text
 | Capability                                | Focus |
 |---|---|
 | Digital Engineering                       | Modern application development |
@@ -950,7 +946,7 @@ https://github.com/bhavanimadhikuntla/qburst.git
 # 👨‍💻 Project Summary
 
 **HamaraShops.ai** is a full-stack application combining an enterprise-style digital technology website with a recruitment platform implemented using modern frontend and microservice technologies.
-
+```text
 React + Vite
       │
       ▼
