@@ -1,835 +1,265 @@
-import { Link } from "react-router-dom";
 import "./Home.css";
-
-import heroTech from "../assets/images/hero-tec.png";
-import digitalEngineering from "../assets/images/digital-engineering.png";
-import cloudSolutions from "../assets/images/cloud-solutions.png";
-import aiAutomation from "../assets/images/ai-automation.png";
-import dataAnalytics from "../assets/images/data-analytics.png";
 
 function Home() {
   return (
     <div className="home-page">
 
       {/* =====================================================
-          HERO
+          HAMARASHOPS.COM INFORMATION
       ===================================================== */}
 
-      <section className="home-hero">
-
+      <section className="company-information">
         <div className="home-container">
 
-          <div className="hero-content">
+          {/* =====================================================
+              COMPANY HEADER
+          ===================================================== */}
 
-            {/* LEFT - TEXT */}
+          <div className="company-header">
 
-            <div className="hero-text-content">
+            {/* TEXT LOGO */}
+            <div className="company-logo">
 
-              <p className="home-label">
-                DIGITAL ENGINEERING • AI • CLOUD • DATA
-              </p>
-
-              <h1>
-                Engineering digital
-                <span>
-                  solutions for what's next.
-                </span>
-              </h1>
-
-              <p className="home-hero-text">
-                HamaraShops.ai helps businesses transform ideas into
-                scalable digital products through modern engineering,
-                cloud, AI and data.
-              </p>
-
-              <div className="home-hero-buttons">
-
-                <Link
-                  to="/services"
-                  className="primary-button"
-                >
-                  Explore Our Services →
-                </Link>
-
-                <Link
-                  to="/contact"
-                  className="secondary-button"
-                >
-                  Talk to Us
-                </Link>
-
+              <div className="company-logo-circle">
+                H
               </div>
 
+              <div className="company-logo-content">
 
-              {/* HERO HIGHLIGHTS */}
-
-              <div className="hero-highlights">
-
-                <div className="hero-highlight">
-                  <strong>Digital</strong>
-                  <span>Engineering</span>
+                <div className="company-logo-name">
+                  HAMARA<span>SHOPS</span>
                 </div>
 
-                <div className="hero-highlight">
-                  <strong>AI</strong>
-                  <span>Automation</span>
-                </div>
-
-                <div className="hero-highlight">
-                  <strong>Cloud</strong>
-                  <span>Modernization</span>
+                <div className="company-logo-tagline">
+                  THINKING THE WAY FORWARD.
                 </div>
 
               </div>
 
             </div>
 
-
-            {/* RIGHT - IMAGE */}
-
-            <div className="home-hero-image">
-
-              <img
-                src={heroTech}
-                alt="HamaraShops.ai digital technology solutions"
-              />
-
+            {/* DOMAIN */}
+            <div className="company-domain">
+              Hamarashops.com
             </div>
 
           </div>
 
-        </div>
 
-      </section>
+          {/* =====================================================
+              TECHNOLOGY CENTRE
+          ===================================================== */}
 
-
-      {/* =====================================================
-          ABOUT / INTRODUCTION
-      ===================================================== */}
-
-      <section className="home-intro">
-
-        <div className="home-container">
-
-          <div className="intro-layout">
-
-            {/* LEFT */}
-
-            <div className="intro-heading">
-
-              <p className="home-section-label">
-                TECHNOLOGY THAT CREATES IMPACT
-              </p>
-
-              <h2>
-                We combine technology,
-                creativity and business thinking.
-              </h2>
-
-            </div>
-
-
-            {/* RIGHT */}
-
-            <div className="intro-content">
-
-              <p>
-                We work with organizations to build digital products,
-                modernize technology platforms and automate business
-                operations. Our approach combines engineering expertise
-                with practical business understanding.
-              </p>
-
-              <Link to="/about">
-                Discover HamaraShops.ai →
-              </Link>
-
-            </div>
-
+          <div className="technology-centre">
+            Hamarashops Technology Centre
           </div>
 
-        </div>
 
-      </section>
+          {/* =====================================================
+              HAMARASHOPS.AI MAIN TAGLINE
+          ===================================================== */}
 
+          <div className="ai-main-tagline">
 
-      {/* =====================================================
-          SERVICES
-      ===================================================== */}
+            <h1>
+              HamaraShops.ai
+            </h1>
 
-      <section className="home-services">
-
-        <div className="home-container">
-
-          <div className="section-heading">
-
-            <div>
-
-              <p className="home-section-label">
-                WHAT WE DO
-              </p>
-
-              <h2>
-                Capabilities built for
-                <br />
-                modern business.
-              </h2>
-
-            </div>
-
-            <p className="home-section-text">
-              From digital engineering to intelligent automation,
-              we help organizations build, modernize and scale
-              technology.
+            <p>
+              An AI-Powered Application Driving Innovation
+              in the Race of AI
             </p>
 
           </div>
 
 
-          <div className="home-service-grid">
-
-            {/* SERVICE 01 */}
-
-            <article className="service-card">
-
-              <div className="service-image">
-
-                <img
-                  src={digitalEngineering}
-                  alt="Digital Engineering"
-                />
-
-              </div>
-
-              <div className="service-content">
-
-                <span>01</span>
-
-                <h3>
-                  Digital Engineering
-                </h3>
-
-                <p>
-                  Build scalable and secure digital applications
-                  designed for modern customer experiences.
-                </p>
-
-                <Link to="/services">
-                  Explore Service →
-                </Link>
-
-              </div>
-
-            </article>
-
-
-            {/* SERVICE 02 */}
-
-            <article className="service-card">
-
-              <div className="service-image">
-
-                <img
-                  src={cloudSolutions}
-                  alt="Cloud Solutions"
-                />
-
-              </div>
-
-              <div className="service-content">
-
-                <span>02</span>
-
-                <h3>
-                  Cloud Solutions
-                </h3>
-
-                <p>
-                  Modernize applications and infrastructure using
-                  flexible cloud-native technologies.
-                </p>
-
-                <Link to="/services">
-                  Explore Service →
-                </Link>
-
-              </div>
-
-            </article>
-
-
-            {/* SERVICE 03 */}
-
-            <article className="service-card">
-
-              <div className="service-image">
-
-                <img
-                  src={aiAutomation}
-                  alt="AI and Automation"
-                />
-
-              </div>
-
-              <div className="service-content">
-
-                <span>03</span>
-
-                <h3>
-                  AI &amp; Automation
-                </h3>
-
-                <p>
-                  Apply AI and intelligent automation to improve
-                  productivity and business operations.
-                </p>
-
-                <Link to="/services">
-                  Explore Service →
-                </Link>
-
-              </div>
-
-            </article>
-
-
-            {/* SERVICE 04 */}
-
-            <article className="service-card">
-
-              <div className="service-image">
-
-                <img
-                  src={dataAnalytics}
-                  alt="Data and Analytics"
-                />
-
-              </div>
-
-              <div className="service-content">
-
-                <span>04</span>
-
-                <h3>
-                  Data &amp; Analytics
-                </h3>
-
-                <p>
-                  Turn business data into actionable insights
-                  that support smarter decisions.
-                </p>
-
-                <Link to="/services">
-                  Explore Service →
-                </Link>
-
-              </div>
-
-            </article>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* =====================================================
-          SOLUTIONS — PREMIUM SHOWCASE
-      ===================================================== */}
-
-      <section className="home-solutions">
-
-        <div className="home-container">
-
-          {/* TOP */}
-
-          <div className="solutions-top">
-
-            <div className="solutions-heading">
-
-              <p className="home-section-label">
-                OUR SOLUTIONS
-              </p>
-
-              <h2>
-                Technology that
-                <br />
-                moves business
-                <br />
-                forward.
-              </h2>
-
-            </div>
-
-
-            <div className="solutions-intro">
-
-              <p>
-                We combine engineering, cloud, AI and data to solve
-                complex business challenges and create technology
-                that delivers measurable value.
-              </p>
-
-              <Link to="/solutions">
-                View All Solutions <span>↗</span>
-              </Link>
-
-            </div>
-
-          </div>
-
-
-          {/* SHOWCASE */}
-
-          <div className="solutions-showcase">
-
-
-            {/* LEFT VISUAL */}
-
-            <div className="solutions-visual">
-
-              <img
-                src={heroTech}
-                alt="HamaraShops.ai technology solutions"
-              />
-
-              <div className="solutions-visual-overlay">
+          {/* =====================================================
+              BHAVANI PROFILE + LINKEDIN
+          ===================================================== */}
+
+          <div className="home-profile">
+
+            <img
+              src="/bhavani.jpeg"
+              alt="Bhavani"
+              className="home-profile-image"
+            />
+
+            <div className="home-profile-info">
+
+              <h4>
+                Bhavani
+              </h4>
+
+              <a
+                href="https://www.linkedin.com/in/madhikuntla-bhavani-7943ab1b0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="home-linkedin"
+              >
+
+                <span className="home-linkedin-icon">
+                  in
+                </span>
 
                 <span>
-                  HAMARASHOPS.AI
+                  View LinkedIn Profile
                 </span>
+
+                <span>
+                  ↗
+                </span>
+
+              </a>
+
+            </div>
+
+          </div>
+
+
+          {/* =====================================================
+              SUPPORTED INFORMATION
+          ===================================================== */}
+
+          <div className="company-supported">
+
+            {/* SUPPORTED COUNTRIES */}
+            <div className="supported-item">
+
+              <span className="supported-icon">
+                🌐
+              </span>
+
+              <div>
 
                 <strong>
-                  ENGINEERING
-                  <br />
-                  WHAT&apos;S NEXT.
+                  Supported countries:
                 </strong>
 
-              </div>
-
-            </div>
-
-
-            {/* RIGHT SOLUTIONS */}
-
-            <div className="solutions-list">
-
-
-              {/* SOLUTION 01 */}
-
-              <Link
-                to="/solutions"
-                className="solution-row"
-              >
-
-                <span className="solution-row-number">
-                  01
+                <span>
+                  {" "}United Kingdom, India,
                 </span>
 
-                <div className="solution-row-content">
-
-                  <h3>
-                    Digital Transformation
-                  </h3>
-
-                  <p>
-                    Modernize business processes and create
-                    connected digital experiences.
-                  </p>
-
-                </div>
-
-                <span className="solution-row-arrow">
-                  ↗
-                </span>
-
-              </Link>
-
-
-              {/* SOLUTION 02 */}
-
-              <Link
-                to="/solutions"
-                className="solution-row"
-              >
-
-                <span className="solution-row-number">
-                  02
-                </span>
-
-                <div className="solution-row-content">
-
-                  <h3>
-                    Intelligent Automation
-                  </h3>
-
-                  <p>
-                    Apply AI and automation to simplify operations,
-                    improve productivity and reduce complexity.
-                  </p>
-
-                </div>
-
-                <span className="solution-row-arrow">
-                  ↗
-                </span>
-
-              </Link>
-
-
-              {/* SOLUTION 03 */}
-
-              <Link
-                to="/solutions"
-                className="solution-row"
-              >
-
-                <span className="solution-row-number">
-                  03
-                </span>
-
-                <div className="solution-row-content">
-
-                  <h3>
-                    Cloud Modernization
-                  </h3>
-
-                  <p>
-                    Build scalable, secure and resilient
-                    cloud-ready technology platforms.
-                  </p>
-
-                </div>
-
-                <span className="solution-row-arrow">
-                  ↗
-                </span>
-
-              </Link>
-
-
-              {/* SOLUTION 04 */}
-
-              <Link
-                to="/solutions"
-                className="solution-row"
-              >
-
-                <span className="solution-row-number">
-                  04
-                </span>
-
-                <div className="solution-row-content">
-
-                  <h3>
-                    Product Engineering
-                  </h3>
-
-                  <p>
-                    Design and develop reliable digital products
-                    built around real customer needs.
-                  </p>
-
-                </div>
-
-                <span className="solution-row-arrow">
-                  ↗
-                </span>
-
-              </Link>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* =====================================================
-          INDUSTRIES
-      ===================================================== */}
-
-      <section className="home-industries">
-
-        <div className="home-container">
-
-          <div className="industries-layout">
-
-            {/* LEFT - CONTENT */}
-
-            <div className="industries-content">
-
-              <p className="home-section-label">
-                INDUSTRIES
-              </p>
-
-              <h2>
-                Technology shaped
                 <br />
-                around your industry.
-              </h2>
 
-              <p className="industries-description">
-                We combine technology expertise with industry
-                understanding to create solutions that solve real
-                business challenges.
-              </p>
-
-
-              <div className="industry-links">
-
-                <div>
-                  <span>01</span>
-                  <strong>Retail &amp; E-Commerce</strong>
-                  <b>↗</b>
-                </div>
-
-                <div>
-                  <span>02</span>
-                  <strong>Healthcare</strong>
-                  <b>↗</b>
-                </div>
-
-                <div>
-                  <span>03</span>
-                  <strong>Financial Services</strong>
-                  <b>↗</b>
-                </div>
-
-                <div>
-                  <span>04</span>
-                  <strong>Education</strong>
-                  <b>↗</b>
-                </div>
-
-                <div>
-                  <span>05</span>
-                  <strong>Manufacturing</strong>
-                  <b>↗</b>
-                </div>
-
-                <div>
-                  <span>06</span>
-                  <strong>Technology</strong>
-                  <b>↗</b>
-                </div>
+                <span>
+                  United States
+                </span>
 
               </div>
-
-              <Link
-                to="/industries"
-                className="industry-button"
-              >
-                Explore Industries →
-              </Link>
 
             </div>
 
 
-            {/* RIGHT - IMAGE */}
+            {/* SUPPORTED LANGUAGES */}
+            <div className="supported-item">
 
-            <div className="industries-image">
+              <span className="supported-icon">
+                ▣
+              </span>
 
-              <img
-                src={heroTech}
-                alt="Technology solutions across industries"
-              />
+              <div>
+
+                <strong>
+                  Supported languages:
+                </strong>
+
+                <span>
+                  {" "}English
+                </span>
+
+              </div>
 
             </div>
 
           </div>
 
-        </div>
 
-      </section>
+          {/* =====================================================
+              ABOUT HAMARASHOPS
+          ===================================================== */}
 
-
-      {/* =====================================================
-          WHY HAMARASHOPS
-      ===================================================== */}
-
-      <section className="home-why">
-
-        <div className="home-container">
-
-          <div className="why-heading">
-
-            <p className="home-section-label">
-              WHY HAMARASHOPS.AI
-            </p>
+          <div className="company-about">
 
             <h2>
-              Technology built around
-              <br />
-              real business outcomes.
+              About Hamarashops.com
             </h2>
 
-          </div>
+            <p>
+              Hamarashops.ai is a leading global IT solutions
+              organisation, enabling its clients to transform at the
+              intersection of unparalleled domain expertise and
+              emerging technologies to achieve real-world business
+              impact. A focus on very select industries, a detailed
+              understanding of the underlying processes of those
+              industries and partnerships with leading platforms
+              provide us a distinct vantage.
+            </p>
 
-
-          <div className="why-grid">
-
-            <article className="why-card">
-
-              <span>01</span>
-
-              <h3>
-                Engineering Excellence
-              </h3>
-
-              <p>
-                Strong engineering practices help us build reliable,
-                maintainable and scalable solutions.
-              </p>
-
-            </article>
-
-
-            <article className="why-card">
-
-              <span>02</span>
-
-              <h3>
-                Business First
-              </h3>
-
-              <p>
-                We focus on business objectives instead of technology
-                for technology&apos;s sake.
-              </p>
-
-            </article>
-
-
-            <article className="why-card">
-
-              <span>03</span>
-
-              <h3>
-                Modern Technology
-              </h3>
-
-              <p>
-                We use modern cloud, AI, data and software engineering
-                practices.
-              </p>
-
-            </article>
-
-
-            <article className="why-card">
-
-              <span>04</span>
-
-              <h3>
-                Long-Term Partnership
-              </h3>
-
-              <p>
-                We build technology relationships that evolve with
-                your business.
-              </p>
-
-            </article>
+            <p>
+              We leverage AI, Cloud and insight-driven technologies,
+              allied with our industry expertise, to transform client
+              businesses into intelligent, high-growth enterprises.
+              Today our proprietary platforms power critical business
+              processes across the Insurance, Financial Services and
+              Travel industries. Our skill-certified technology and
+              process consultants engineer, design, consult, operate,
+              and modernise systems across the world.
+            </p>
 
           </div>
 
         </div>
-
       </section>
 
 
       {/* =====================================================
-          FEATURED WORK
+          AI PRODUCTS
       ===================================================== */}
 
-      <section className="featured-work">
+      <section id="ai-products" className="ai-products">
 
         <div className="home-container">
 
-          <div className="featured-work-header">
+          <div className="ai-products-content">
 
-            <div>
+            <h2>
+              AI Products
+            </h2>
 
-              <p className="home-section-label">
-                FEATURED WORK
-              </p>
+            <p>
+              Empowering global businesses with HamaraShops.ai.
+              We design and deliver production-ready AI products
+              that automate complexity and unlock hidden growth.
+            </p>
 
-              <h2>
-                Turning ideas into
-                <br />
-                digital experiences.
-              </h2>
-
-            </div>
-
-            <Link to="/solutions">
-              Explore Our Solutions →
-            </Link>
-
-          </div>
+            <a
+              href="#ai-products"
+              className="ai-products-button"
+            >
+              View All Products
+            </a>
 
 
-          <div className="featured-work-content">
-
-
-            {/* LEFT TEXT */}
-
-            <div className="featured-work-text">
-
-              <p className="featured-category">
-                DIGITAL TRANSFORMATION
-              </p>
+            {/* TRUSTED AI */}
+            <div className="trusted-ai">
 
               <h3>
-                Building scalable digital platforms
-                for growing businesses.
+                Trusted by AI Research Teams
               </h3>
 
-              <p>
-                We help businesses transform their ideas into
-                scalable digital platforms using modern
-                engineering, cloud and AI technologies.
-              </p>
-
-              <div className="featured-technologies">
+              <div className="ai-companies">
 
                 <span>
-                  Digital Engineering
+                  OpenAI
                 </span>
 
                 <span>
-                  Cloud
-                </span>
-
-                <span>
-                  AI
+                  Google AI
                 </span>
 
               </div>
 
-              <Link
-                to="/contact"
-                className="featured-link"
-              >
-                Start a Conversation →
-              </Link>
-
-            </div>
-
-
-            {/* RIGHT IMAGE */}
-
-            <div className="featured-work-image">
-
-              <img
-                src={heroTech}
-                alt="Digital transformation project"
-              />
-
             </div>
 
           </div>
@@ -840,56 +270,171 @@ function Home() {
 
 
       {/* =====================================================
-          CAREERS
+          LOCATIONS
       ===================================================== */}
 
-      <section className="home-careers">
+      <section className="company-locations">
 
-        <div className="careers-content">
+        <div className="home-container">
 
-          <p className="home-section-label">
-            CAREERS AT HAMARASHOPS
-          </p>
-
-          <h2>
-            Build what&apos;s next
-            <br />
-            with us.
+          <h2 className="locations-title">
+            Locations
           </h2>
 
-          <p>
-            Join a team creating practical technology solutions
-            for businesses and people.
-          </p>
 
-          <Link to="/jobs">
-            Explore Careers →
-          </Link>
+          <div className="locations-grid">
+
+            {/* =================================================
+                UNITED STATES
+            ================================================= */}
+
+            <article className="location-card">
+
+              <div className="location-heading">
+
+                <div className="location-name">
+
+                  <span className="location-pin">
+                    ♧
+                  </span>
+
+                  <h3>
+                    United States
+                  </h3>
+
+                </div>
+
+                <span className="headquarters">
+                  HEADQUARTERS
+                </span>
+
+              </div>
+
+
+              <p className="location-address">
+                Hamarashops.ai, 2611 Ross Ave, Dallas,
+                TX, 75201, United States
+              </p>
+
+
+              <div className="location-contact">
+
+                <a href="tel:+16269224456">
+                  +1 626 922 4456
+                </a>
+
+                <a href="mailto:info@hamarashops.ai">
+                  info@hamarashops.ai
+                </a>
+
+                <a href="/ai-products">
+                  https://hamarashops.ai
+                </a>
+
+              </div>
+
+            </article>
+
+
+            {/* =================================================
+                INDIA
+            ================================================= */}
+
+            <article className="location-card">
+
+              <div className="location-heading">
+
+                <div className="location-name">
+
+                  <span className="location-pin">
+                    ♧
+                  </span>
+
+                  <h3>
+                    India
+                  </h3>
+
+                </div>
+
+              </div>
+
+
+              <p className="location-address">
+                Hyderabad, Telangana,
+                500091, India
+              </p>
+
+
+              <div className="location-contact">
+
+                <a href="tel:+918639551911">
+                  +91 86395 51911
+                </a>
+
+                <a href="mailto:info@hamarashops.ai">
+                  info@hamarashops.ai
+                </a>
+
+                <a href="/ai-products">
+                  https://hamarashops.ai
+                </a>
+
+              </div>
+
+            </article>
+
+
+            {/* =================================================
+                UNITED KINGDOM
+            ================================================= */}
+
+            <article className="location-card">
+
+              <div className="location-heading">
+
+                <div className="location-name">
+
+                  <span className="location-pin">
+                    ♧
+                  </span>
+
+                  <h3>
+                    United Kingdom
+                  </h3>
+
+                </div>
+
+              </div>
+
+
+              <p className="location-address">
+                85 Harberton Road,
+                London, N19 3JT,
+                United Kingdom
+              </p>
+
+
+              <div className="location-contact">
+
+                <a href="tel:+918639551911">
+                  +91 86395 51911
+                </a>
+
+                <a href="mailto:info@hamarashops.ai">
+                  info@hamarashops.ai
+                </a>
+
+                <a href="/ai-products">
+                  https://hamarashops.ai
+                </a>
+
+              </div>
+
+            </article>
+
+          </div>
 
         </div>
-
-      </section>
-
-
-      {/* =====================================================
-          FINAL CTA
-      ===================================================== */}
-
-      <section className="home-cta">
-
-        <p>
-          LET&apos;S BUILD SOMETHING BETTER
-        </p>
-
-        <h2>
-          Have a challenge?
-          <br />
-          Let&apos;s solve it together.
-        </h2>
-
-        <Link to="/contact">
-          Let&apos;s Connect →
-        </Link>
 
       </section>
 

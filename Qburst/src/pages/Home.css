@@ -1,1083 +1,1122 @@
 /* =========================================================
-   HAMARASHOPS.AI — HOME PAGE
-   ========================================================= */
+   GLOBAL
+========================================================= */
 
 .home-page {
   width: 100%;
-  overflow-x: hidden;
+  min-height: 100vh;
   background: #ffffff;
   color: #172033;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.home-page *,
+.home-page *::before,
+.home-page *::after {
+  box-sizing: border-box;
 }
 
 .home-container {
-  width: min(1240px, calc(100% - 80px));
+  width: min(1200px, 92%);
   margin: 0 auto;
 }
 
 
 /* =========================================================
-   HERO
-   ========================================================= */
+   COMPANY INFORMATION
+========================================================= */
 
-.home-hero {
-  background: #f7f9fc;
-  padding: 100px 0 90px;
+.company-information {
+  padding: 80px 0 90px;
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #f8fbff 50%,
+      #eef6ff 100%
+    );
 }
 
-.hero-content {
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(420px, 0.95fr);
+
+/* =========================================================
+   COMPANY HEADER
+========================================================= */
+
+.company-header {
+  display: flex;
   align-items: center;
-  gap: 70px;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid #e5e7eb;
 }
 
-.hero-text-content {
-  max-width: 650px;
+
+/* =========================================================
+   COMPANY LOGO
+========================================================= */
+
+.company-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-.home-label {
-  margin: 0 0 24px;
-  font-size: 12px;
+.company-logo-circle {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #00c6ff
+    );
+
+  color: #ffffff;
+
+  font-size: 27px;
+  font-weight: 800;
+
+  box-shadow:
+    0 8px 25px rgba(37, 99, 235, 0.20);
+}
+
+.company-logo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.company-logo-name {
+  color: #111827;
+
+  font-size: 24px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.company-logo-name span {
+  color: #2563eb;
+}
+
+.company-logo-tagline {
+  color: #6b7280;
+
+  font-size: 10px;
   font-weight: 700;
-  letter-spacing: 2.5px;
-  color: #3157d5;
+
+  letter-spacing: 2px;
 }
 
-.hero-text-content h1 {
+
+/* =========================================================
+   DOMAIN
+========================================================= */
+
+.company-domain {
+  color: #2563eb;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   TECHNOLOGY CENTRE
+========================================================= */
+
+.technology-centre {
+  margin-top: 35px;
+
+  text-align: center;
+
+  color: #374151;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   HAMARASHOPS.AI MAIN TAGLINE
+========================================================= */
+
+.ai-main-tagline {
+  text-align: center;
+
+  margin: 35px auto 30px;
+
+  padding: 30px 25px;
+
+  max-width: 900px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eff6ff 0%,
+      #ffffff 50%,
+      #f8fafc 100%
+    );
+
+  border: 1px solid #dbeafe;
+
+  border-left: 5px solid #2563eb;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 30px rgba(37, 99, 235, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.ai-main-tagline:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 35px rgba(37, 99, 235, 0.13);
+}
+
+.ai-main-tagline h1 {
+  margin: 0 0 12px;
+
+  color: #111827;
+
+  font-size: 42px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.ai-main-tagline p {
   margin: 0;
-  font-size: clamp(48px, 5vw, 76px);
-  line-height: 1.02;
-  letter-spacing: -3px;
+
+  color: #2563eb;
+
+  font-size: 21px;
+  font-weight: 600;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   BHAVANI PROFILE
+========================================================= */
+
+.home-profile {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  width: fit-content;
+
+  margin: 0 auto 40px;
+
+  padding: 18px 25px;
+
+  background: rgba(255, 255, 255, 0.90);
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 8px 25px rgba(37, 99, 235, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.home-profile:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 14px 35px rgba(37, 99, 235, 0.14);
+}
+
+
+/* =========================================================
+   PROFILE IMAGE
+========================================================= */
+
+.home-profile-image {
+  width: 70px;
+  height: 70px;
+
+  min-width: 70px;
+
+  object-fit: cover;
+
+  display: block;
+
+  border-radius: 50%;
+
+  border: 2px solid #2563eb;
+
+  background: #f1f5f9;
+
+  box-shadow:
+    0 0 20px rgba(37, 99, 235, 0.15);
+}
+
+
+/* =========================================================
+   PROFILE INFORMATION
+========================================================= */
+
+.home-profile-info {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.home-profile-info h4 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 18px;
   font-weight: 700;
+}
+
+
+/* =========================================================
+   LINKEDIN
+========================================================= */
+
+.home-linkedin {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #2563eb;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.home-linkedin:hover {
   color: #111827;
 }
 
-.hero-text-content h1 span {
-  display: block;
-  color: #3157d5;
-}
+.home-linkedin-icon {
+  width: 25px;
+  height: 25px;
 
-.home-hero-text {
-  max-width: 600px;
-  margin: 30px 0 0;
-  font-size: 18px;
-  line-height: 1.75;
-  color: #596579;
-}
-
-.home-hero-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 35px;
-}
-
-.primary-button,
-.secondary-button {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 50px;
-  padding: 0 24px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  transition: all 0.25s ease;
-}
 
-.primary-button {
-  background: #172033;
-  color: #ffffff;
-}
-
-.primary-button:hover {
-  background: #3157d5;
-  color: #ffffff;
-  transform: translateY(-2px);
-}
-
-.secondary-button {
-  border: 1px solid #d7dce5;
-  color: #172033;
-  background: #ffffff;
-}
-
-.secondary-button:hover {
-  border-color: #3157d5;
-  color: #3157d5;
-}
-
-
-/* HERO HIGHLIGHTS */
-
-.hero-highlights {
-  display: flex;
-  gap: 0;
-  margin-top: 50px;
-  border-top: 1px solid #dfe4ec;
-  padding-top: 22px;
-}
-
-.hero-highlight {
-  min-width: 145px;
-  padding-right: 28px;
-  margin-right: 28px;
-  border-right: 1px solid #dfe4ec;
-}
-
-.hero-highlight:last-child {
-  border-right: none;
-}
-
-.hero-highlight strong,
-.hero-highlight span {
-  display: block;
-}
-
-.hero-highlight strong {
-  font-size: 15px;
-  color: #172033;
-}
-
-.hero-highlight span {
-  margin-top: 5px;
-  font-size: 12px;
-  color: #788398;
-}
-
-
-/* =========================================================
-   HERO IMAGE — IMPORTANT FIX
-   ========================================================= */
-
-.home-hero-image {
-  width: 100%;
-  min-width: 0;
-
-  /* Do NOT force a short height */
-  height: auto;
-
-  display: flex;
   align-items: center;
   justify-content: center;
 
-  overflow: visible;
-  background: transparent;
-}
+  border-radius: 4px;
 
-.home-hero-image img {
-  display: block;
+  background: #0077b5;
 
-  width: 100%;
-  height: auto;
+  color: #ffffff;
 
-  /*
-    IMPORTANT:
-    Don't use cover here.
-    Your artwork contains text/details.
-  */
-  object-fit: contain;
-  object-position: center;
-
-  max-width: 100%;
-  max-height: none;
-}
-
-
-/* =========================================================
-   INTRO
-   ========================================================= */
-
-.home-intro {
-  padding: 110px 0;
-  background: #ffffff;
-}
-
-.intro-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
-  align-items: start;
-}
-
-.home-section-label {
-  margin: 0 0 18px;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: 2.5px;
-  color: #3157d5;
 }
 
-.intro-heading h2,
-.section-heading h2,
-.solutions-heading h2,
-.industries-content h2,
-.why-heading h2,
-.featured-work-header h2,
-.careers-content h2 {
-  margin: 0;
-  font-size: clamp(34px, 4vw, 54px);
-  line-height: 1.08;
-  letter-spacing: -1.8px;
-  font-weight: 650;
-  color: #172033;
+
+/* =========================================================
+   SUPPORTED INFORMATION
+========================================================= */
+
+.company-supported {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px;
+
+  margin: 20px 0 60px;
 }
 
-.intro-content {
-  max-width: 580px;
+.supported-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 15px;
+
+  padding: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 8px 25px rgba(15, 23, 42, 0.05);
 }
 
-.intro-content p {
+.supported-icon {
+  width: 42px;
+  height: 42px;
+
+  min-width: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 20px;
+}
+
+.supported-item strong {
+  color: #111827;
+
+  font-size: 14px;
+}
+
+.supported-item span {
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   ABOUT HAMARASHOPS
+========================================================= */
+
+.company-about {
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.company-about h2 {
   margin: 0 0 25px;
-  font-size: 17px;
-  line-height: 1.8;
-  color: #687386;
+
+  color: #111827;
+
+  font-size: 38px;
+  font-weight: 800;
+
+  letter-spacing: -1px;
 }
 
-.intro-content a {
-  display: inline-block;
-  margin-top: 5px;
-  color: #172033;
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: none;
-  border-bottom: 1px solid #172033;
-  padding-bottom: 5px;
+.company-about p {
+  margin: 0 auto 20px;
+
+  color: #64748b;
+
+  font-size: 16px;
+
+  line-height: 1.9;
 }
 
 
 /* =========================================================
-   SERVICES
-   ========================================================= */
+   AI PRODUCTS
+========================================================= */
 
-.home-services {
-  padding: 110px 0;
-  background: #f7f9fc;
+.ai-products {
+  position: relative;
+
+  padding: 100px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0f172a,
+      #111827,
+      #172554
+    );
+
+  color: #ffffff;
+
+  overflow: hidden;
 }
 
-.section-heading {
-  display: grid;
-  grid-template-columns: 1fr 420px;
-  gap: 70px;
-  align-items: end;
-  margin-bottom: 60px;
+.ai-products::before {
+  content: "";
+
+  position: absolute;
+
+  width: 400px;
+  height: 400px;
+
+  top: -150px;
+  right: -100px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 198, 255, 0.20),
+      transparent 70%
+    );
+
+  pointer-events: none;
 }
 
-.home-section-text {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.75;
-  color: #687386;
+.ai-products-content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  text-align: center;
 }
 
-.home-service-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.ai-products-content h2 {
+  margin: 0 0 20px;
+
+  font-size: 48px;
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+.ai-products-content p {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  color: #cbd5e1;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   AI PRODUCTS BUTTON
+========================================================= */
+
+.ai-products-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 30px;
+
+  padding: 15px 28px;
+
+  background: #00c6ff;
+
+  color: #031018;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  border-radius: 6px;
+
+  transition: 0.3s ease;
+}
+
+.ai-products-button:hover {
+  background: #ffffff;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   TRUSTED AI
+========================================================= */
+
+.trusted-ai {
+  margin-top: 55px;
+
+  padding-top: 35px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.trusted-ai h3 {
+  margin: 0 0 20px;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+}
+
+.ai-companies {
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
   gap: 20px;
 }
 
-.service-card {
-  background: #ffffff;
-  border: 1px solid #e3e7ee;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+.ai-companies span {
+  padding: 12px 22px;
 
-.service-card:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 20px 45px rgba(23, 32, 51, 0.09);
-}
+  color: #ffffff;
 
-.service-image {
-  width: 100%;
-  height: 230px;
-  background: #eef2f7;
+  background: rgba(255, 255, 255, 0.06);
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
 
-  overflow: hidden;
-}
+  border-radius: 8px;
 
-.service-image img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: center;
-}
-
-.service-content {
-  padding: 28px;
-}
-
-.service-content > span {
-  font-size: 12px;
-  font-weight: 700;
-  color: #3157d5;
-}
-
-.service-content h3 {
-  margin: 16px 0 12px;
-  font-size: 22px;
-  line-height: 1.2;
-  color: #172033;
-}
-
-.service-content p {
-  margin: 0 0 22px;
   font-size: 14px;
-  line-height: 1.7;
-  color: #697487;
-}
-
-.service-content a {
-  font-size: 13px;
-  font-weight: 700;
-  color: #172033;
-  text-decoration: none;
+  font-weight: 600;
 }
 
 
 /* =========================================================
-   SOLUTIONS
-   ========================================================= */
+   LOCATIONS
+========================================================= */
 
-.home-solutions {
-  padding: 120px 0;
-  background: #172033;
-  color: #ffffff;
+.company-locations {
+  padding: 100px 0;
+
+  background: #f8fafc;
 }
 
-.solutions-heading {
-  max-width: 850px;
-  margin-bottom: 70px;
-}
+.locations-title {
+  margin: 0 0 45px;
 
-.solutions-heading .home-section-label {
-  color: #7f9cff;
-}
+  text-align: center;
 
-.solutions-heading h2 {
-  color: #ffffff;
-}
+  color: #111827;
 
-.solutions-heading > p:last-child {
-  max-width: 680px;
-  margin: 25px 0 0;
-  font-size: 17px;
-  line-height: 1.75;
-  color: #b8c1d1;
-}
-
-.solutions-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
-}
-
-.solution-card {
-  min-height: 330px;
-  padding: 35px 30px;
-  border-right: 1px solid rgba(255, 255, 255, 0.16);
-  display: flex;
-  flex-direction: column;
-}
-
-.solution-card:last-child {
-  border-right: none;
-}
-
-.solution-number {
-  font-size: 12px;
-  color: #8ca4ff;
-  font-weight: 700;
-}
-
-.solution-card h3 {
-  margin: 55px 0 15px;
-  font-size: 23px;
-  line-height: 1.2;
-  color: #ffffff;
-}
-
-.solution-card p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.7;
-  color: #aeb8ca;
-}
-
-.solution-card a {
-  margin-top: auto;
-  padding-top: 30px;
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: 700;
-  text-decoration: none;
+  font-size: 42px;
+  font-weight: 800;
 }
 
 
 /* =========================================================
-   INDUSTRIES
-   ========================================================= */
+   LOCATIONS GRID
+========================================================= */
 
-.home-industries {
-  padding: 120px 0;
+.locations-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+/* =========================================================
+   LOCATION CARD
+========================================================= */
+
+.location-card {
+  padding: 30px;
+
   background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.06);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-.industries-layout {
-  display: grid;
-  grid-template-columns: 1fr 0.9fr;
-  gap: 90px;
-  align-items: center;
+.location-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 18px 40px rgba(15, 23, 42, 0.10);
 }
 
-.industries-content {
-  max-width: 620px;
-}
 
-.industries-description {
-  margin: 28px 0 35px;
-  max-width: 550px;
-  font-size: 16px;
-  line-height: 1.75;
-  color: #687386;
-}
+/* =========================================================
+   LOCATION HEADING
+========================================================= */
 
-.industry-links {
-  border-top: 1px solid #dfe4eb;
-}
+.location-heading {
+  display: flex;
 
-.industry-links > div {
-  display: grid;
-  grid-template-columns: 40px 1fr 30px;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
+
   gap: 15px;
 
-  padding: 17px 0;
-  border-bottom: 1px solid #dfe4eb;
+  margin-bottom: 20px;
 }
 
-.industry-links span {
-  font-size: 11px;
-  color: #3157d5;
-  font-weight: 700;
-}
-
-.industry-links strong {
-  font-size: 14px;
-  color: #172033;
-}
-
-.industry-links b {
-  text-align: right;
-  font-size: 17px;
-  font-weight: 400;
-  color: #7b8495;
-}
-
-.industry-button {
-  display: inline-flex;
-  margin-top: 30px;
-  padding: 14px 22px;
-  background: #172033;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.industry-button:hover {
-  background: #3157d5;
-}
-
-
-/* =========================================================
-   INDUSTRIES IMAGE — IMPORTANT FIX
-   ========================================================= */
-
-.industries-image {
-  width: 100%;
-  height: auto;
-
+.location-name {
   display: flex;
+
   align-items: center;
-  justify-content: center;
 
-  overflow: visible;
+  gap: 10px;
 }
 
-.industries-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-
-  object-fit: contain;
-  object-position: center;
-
-  max-width: 100%;
-}
-
-
-/* =========================================================
-   WHY HAMARASHOPS
-   ========================================================= */
-
-.home-why {
-  padding: 115px 0;
-  background: #f7f9fc;
-}
-
-.why-heading {
-  max-width: 850px;
-  margin-bottom: 65px;
-}
-
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid #dce2eb;
-}
-
-.why-card {
-  padding: 32px 28px 20px;
-  border-right: 1px solid #dce2eb;
-}
-
-.why-card:last-child {
-  border-right: none;
-}
-
-.why-card > span {
-  font-size: 12px;
-  color: #3157d5;
-  font-weight: 700;
-}
-
-.why-card h3 {
-  margin: 45px 0 15px;
-  font-size: 21px;
-  color: #172033;
-}
-
-.why-card p {
+.location-name h3 {
   margin: 0;
-  font-size: 14px;
-  line-height: 1.7;
-  color: #697487;
-}
 
+  color: #111827;
 
-/* =========================================================
-   FEATURED WORK
-   ========================================================= */
-
-.featured-work {
-  padding: 120px 0;
-  background: #ffffff;
-}
-
-.featured-work-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  gap: 40px;
-  margin-bottom: 65px;
-}
-
-.featured-work-header > a {
-  color: #172033;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
-  text-decoration: none;
+}
+
+.location-pin {
+  color: #2563eb;
+
+  font-size: 22px;
+}
+
+.headquarters {
+  padding: 5px 8px;
+
+  color: #2563eb;
+
+  background: #eff6ff;
+
+  border-radius: 5px;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
   white-space: nowrap;
 }
 
-.featured-work-content {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  min-height: 560px;
-  background: #f4f6fa;
-}
 
-.featured-work-text {
-  padding: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+/* =========================================================
+   LOCATION ADDRESS
+========================================================= */
 
-.featured-category {
-  margin: 0 0 20px;
-  font-size: 11px;
-  letter-spacing: 2px;
-  font-weight: 700;
-  color: #3157d5;
-}
-
-.featured-work-text h3 {
-  max-width: 530px;
+.location-address {
   margin: 0 0 25px;
-  font-size: clamp(30px, 3vw, 45px);
-  line-height: 1.1;
-  letter-spacing: -1.2px;
-  color: #172033;
-}
 
-.featured-work-text > p:not(.featured-category) {
-  max-width: 520px;
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.75;
-  color: #697487;
-}
+  color: #64748b;
 
-.featured-technologies {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 28px;
-}
+  font-size: 14px;
 
-.featured-technologies span {
-  padding: 8px 12px;
-  background: #ffffff;
-  border: 1px solid #dce1e9;
-  font-size: 11px;
-  color: #4f5b6e;
-}
-
-.featured-link {
-  margin-top: 30px;
-  color: #172033;
-  font-size: 13px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-
-/* FEATURED IMAGE — NO CROPPING */
-
-.featured-work-image {
-  width: 100%;
-  height: 100%;
-  min-height: 560px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: #eef2f7;
-  overflow: hidden;
-}
-
-.featured-work-image img {
-  display: block;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: contain;
-  object-position: center;
-
-  max-width: 100%;
-  max-height: 100%;
+  line-height: 1.8;
 }
 
 
 /* =========================================================
-   CAREERS
-   ========================================================= */
+   LOCATION CONTACT
+========================================================= */
 
-.home-careers {
-  min-height: 500px;
-  padding: 100px 40px;
-
+.location-contact {
   display: flex;
-  align-items: center;
 
-  background: #172033;
+  flex-direction: column;
+
+  gap: 10px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #eef2f7;
 }
 
-.careers-content {
-  width: min(1240px, 100%);
-  margin: 0 auto;
-}
+.location-contact a {
+  color: #2563eb;
 
-.careers-content .home-section-label {
-  color: #8da4ff;
-}
-
-.careers-content h2 {
-  color: #ffffff;
-}
-
-.careers-content > p:not(.home-section-label) {
-  max-width: 520px;
-  margin: 25px 0;
-  font-size: 17px;
-  line-height: 1.7;
-  color: #b6c0d1;
-}
-
-.careers-content a {
-  display: inline-flex;
-  padding: 14px 22px;
-  color: #172033;
-  background: #ffffff;
   text-decoration: none;
+
   font-size: 13px;
-  font-weight: 700;
+
+  transition: 0.3s ease;
 }
 
-.careers-content a:hover {
-  background: #3157d5;
-  color: #ffffff;
-}
+.location-contact a:hover {
+  color: #111827;
 
-
-/* =========================================================
-   FINAL CTA
-   ========================================================= */
-
-.home-cta {
-  padding: 130px 30px;
-  text-align: center;
-  background: #f7f9fc;
-}
-
-.home-cta > p {
-  margin: 0 0 20px;
-  font-size: 11px;
-  letter-spacing: 2.5px;
-  font-weight: 700;
-  color: #3157d5;
-}
-
-.home-cta h2 {
-  margin: 0;
-  font-size: clamp(40px, 5vw, 68px);
-  line-height: 1.05;
-  letter-spacing: -2.5px;
-  color: #172033;
-}
-
-.home-cta a {
-  display: inline-flex;
-  margin-top: 35px;
-  padding: 15px 25px;
-  background: #172033;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.home-cta a:hover {
-  background: #3157d5;
+  transform: translateX(3px);
 }
 
 
 /* =========================================================
    TABLET
-   ========================================================= */
+========================================================= */
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
 
-  .home-container {
-    width: min(100% - 50px, 1000px);
+  .company-information {
+    padding: 70px 0 80px;
   }
 
-  .hero-content {
-    grid-template-columns: 1fr 0.85fr;
-    gap: 40px;
+  .company-header {
+    flex-direction: column;
+
+    text-align: center;
   }
 
-  .home-service-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .company-logo {
+    justify-content: center;
   }
 
-  .solutions-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .company-supported {
+    grid-template-columns: 1fr;
   }
 
-  .solution-card:nth-child(2) {
-    border-right: none;
+  .locations-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
   }
 
-  .solution-card:nth-child(1),
-  .solution-card:nth-child(2) {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
-  }
+  .location-card:last-child {
+    grid-column: 1 / -1;
 
-  .why-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    max-width: 500px;
 
-  .why-card:nth-child(2) {
-    border-right: none;
-  }
+    width: 100%;
 
-  .why-card:nth-child(1),
-  .why-card:nth-child(2) {
-    border-bottom: 1px solid #dce2eb;
+    margin: 0 auto;
   }
-
-  .featured-work-text {
-    padding: 50px;
-  }
-
 }
 
 
 /* =========================================================
    MOBILE
-   ========================================================= */
+========================================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 650px) {
 
   .home-container {
-    width: calc(100% - 36px);
+    width: 90%;
   }
 
-  /* HERO */
 
-  .home-hero {
-    padding: 70px 0;
+  /* COMPANY */
+
+  .company-information {
+    padding: 55px 0 65px;
   }
 
-  .hero-content {
-    grid-template-columns: 1fr;
-    gap: 45px;
+  .company-logo-circle {
+    width: 50px;
+    height: 50px;
+
+    font-size: 23px;
   }
 
-  .hero-text-content h1 {
-    font-size: clamp(42px, 12vw, 58px);
-    letter-spacing: -2px;
+  .company-logo-name {
+    font-size: 20px;
   }
 
-  .home-hero-text {
+  .company-domain {
+    font-size: 15px;
+  }
+
+  .technology-centre {
+    margin-top: 28px;
+
     font-size: 16px;
   }
 
-  .home-hero-image {
+
+  /* TAGLINE */
+
+  .ai-main-tagline {
+    margin: 28px auto;
+
+    padding: 22px 18px;
+
+    border-radius: 14px;
+  }
+
+  .ai-main-tagline h1 {
+    font-size: 32px;
+  }
+
+  .ai-main-tagline p {
+    font-size: 16px;
+
+    line-height: 1.55;
+  }
+
+
+  /* PROFILE */
+
+  .home-profile {
     width: 100%;
-    height: auto;
+
+    justify-content: flex-start;
+
+    margin-bottom: 30px;
+
+    padding: 16px 18px;
   }
 
-  .home-hero-image img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+  .home-profile-image {
+    width: 60px;
+    height: 60px;
+
+    min-width: 60px;
   }
 
-  .hero-highlights {
-    flex-wrap: wrap;
-    gap: 20px 0;
+  .home-profile-info h4 {
+    font-size: 16px;
   }
 
-  /* INTRO */
-
-  .home-intro {
-    padding: 80px 0;
+  .home-linkedin {
+    font-size: 13px;
   }
 
-  .intro-layout {
-    grid-template-columns: 1fr;
-    gap: 35px;
+
+  /* SUPPORTED */
+
+  .supported-item {
+    padding: 20px;
   }
 
-  /* SERVICES */
 
-  .home-services {
-    padding: 80px 0;
+  /* ABOUT */
+
+  .company-about h2 {
+    font-size: 32px;
   }
 
-  .section-heading {
-    grid-template-columns: 1fr;
-    gap: 25px;
-    margin-bottom: 45px;
+  .company-about p {
+    font-size: 15px;
+
+    line-height: 1.8;
   }
 
-  .home-service-grid {
-    grid-template-columns: 1fr;
+
+  /* AI PRODUCTS */
+
+  .ai-products {
+    padding: 75px 0;
   }
 
-  .service-image {
-    height: auto;
-    min-height: 240px;
+  .ai-products-content h2 {
+    font-size: 38px;
   }
 
-  /* SOLUTIONS */
-
-  .home-solutions {
-    padding: 80px 0;
+  .ai-products-content p {
+    font-size: 15px;
   }
 
-  .solutions-grid {
-    grid-template-columns: 1fr;
+
+  /* LOCATIONS */
+
+  .company-locations {
+    padding: 75px 0;
   }
 
-  .solution-card {
-    min-height: 270px;
-    border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  .locations-title {
+    font-size: 36px;
+
+    margin-bottom: 35px;
   }
 
-  .solution-card:last-child {
-    border-bottom: none;
-  }
-
-  /* INDUSTRIES */
-
-  .home-industries {
-    padding: 80px 0;
-  }
-
-  .industries-layout {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-
-  .industries-image {
-    order: 2;
-  }
-
-  .industries-image img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-
-  /* WHY */
-
-  .home-why {
-    padding: 80px 0;
-  }
-
-  .why-grid {
+  .locations-grid {
     grid-template-columns: 1fr;
   }
 
-  .why-card {
-    border-right: none;
-    border-bottom: 1px solid #dce2eb;
+  .location-card:last-child {
+    grid-column: auto;
+
+    max-width: none;
   }
-
-  .why-card:last-child {
-    border-bottom: none;
-  }
-
-  /* FEATURED */
-
-  .featured-work {
-    padding: 80px 0;
-  }
-
-  .featured-work-header {
-    display: block;
-  }
-
-  .featured-work-header > a {
-    display: inline-block;
-    margin-top: 25px;
-  }
-
-  .featured-work-content {
-    grid-template-columns: 1fr;
-    min-height: auto;
-  }
-
-  .featured-work-text {
-    padding: 40px 28px;
-  }
-
-  .featured-work-image {
-    min-height: 350px;
-    height: auto;
-  }
-
-  .featured-work-image img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-
-  /* CAREERS */
-
-  .home-careers {
-    min-height: 420px;
-    padding: 80px 25px;
-  }
-
-  /* CTA */
-
-  .home-cta {
-    padding: 90px 20px;
-  }
-
 }
 
 
 /* =========================================================
    SMALL MOBILE
-   ========================================================= */
+========================================================= */
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
 
   .home-container {
-    width: calc(100% - 28px);
+    width: 92%;
   }
 
-  .home-hero-buttons {
-    flex-direction: column;
-    align-items: stretch;
+  .company-logo {
+    gap: 10px;
   }
 
-  .primary-button,
-  .secondary-button {
-    width: 100%;
+  .company-logo-circle {
+    width: 45px;
+    height: 45px;
+
+    font-size: 21px;
   }
 
-  .hero-highlights {
-    display: grid;
-    grid-template-columns: 1fr;
+  .company-logo-name {
+    font-size: 18px;
   }
 
-  .hero-highlight {
-    border-right: none;
-    border-bottom: 1px solid #dfe4ec;
-    padding: 0 0 15px;
-    margin: 0 0 15px;
+  .company-logo-tagline {
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
   }
 
-  .hero-highlight:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
+  .company-domain {
+    font-size: 14px;
   }
 
-  .intro-heading h2,
-  .section-heading h2,
-  .solutions-heading h2,
-  .industries-content h2,
-  .why-heading h2,
-  .featured-work-header h2,
-  .careers-content h2 {
-    font-size: 35px;
+  .technology-centre {
+    font-size: 15px;
   }
 
-  .home-hero-image img {
-    width: 100%;
+
+  /* TAGLINE */
+
+  .ai-main-tagline {
+    padding: 18px 14px;
   }
 
-  .featured-work-image {
-    min-height: 280px;
+  .ai-main-tagline h1 {
+    font-size: 27px;
   }
 
-  .home-cta h2 {
-    font-size: 40px;
+  .ai-main-tagline p {
+    font-size: 14px;
   }
 
+
+  /* PROFILE */
+
+  .home-profile {
+    gap: 12px;
+
+    padding: 14px;
+  }
+
+  .home-profile-image {
+    width: 55px;
+    height: 55px;
+
+    min-width: 55px;
+  }
+
+  .home-profile-info h4 {
+    font-size: 15px;
+  }
+
+  .home-linkedin {
+    font-size: 12px;
+  }
+
+  .home-linkedin-icon {
+    width: 23px;
+    height: 23px;
+
+    font-size: 12px;
+  }
+
+
+  /* ABOUT */
+
+  .company-about h2 {
+    font-size: 28px;
+  }
+
+
+  /* PRODUCTS */
+
+  .ai-products-content h2 {
+    font-size: 32px;
+  }
+
+
+  /* LOCATIONS */
+
+  .locations-title {
+    font-size: 31px;
+  }
+
+  .location-card {
+    padding: 22px;
+  }
+
+  .location-name h3 {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================================================
+   EXTRA SMALL
+========================================================= */
+
+@media (max-width: 320px) {
+
+  .ai-main-tagline h1 {
+    font-size: 24px;
+  }
+
+  .ai-main-tagline p {
+    font-size: 13px;
+  }
+
+  .home-profile-info h4 {
+    font-size: 14px;
+  }
+
+  .home-linkedin {
+    font-size: 11px;
+  }
+
+  .company-about h2 {
+    font-size: 25px;
+  }
+
+  .ai-products-content h2 {
+    font-size: 29px;
+  }
 }

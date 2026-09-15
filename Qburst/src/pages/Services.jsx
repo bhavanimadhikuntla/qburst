@@ -1,11 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Services.css";
 
-import digitalEngineering from "../assets/images/digital-engineering.png";
-import cloudSolutions from "../assets/images/cloud-solutions.png";
-import aiAutomation from "../assets/images/ai-automation.png";
-import dataAnalytics from "../assets/images/data-analytics.png";
-
 const services = [
   {
     number: "01",
@@ -15,7 +10,6 @@ const services = [
     details:
       "We build modern applications using reliable engineering practices, intuitive user experiences and scalable architectures.",
     technologies: ["React", "Java", "Spring Boot", "REST APIs"],
-    image: digitalEngineering,
   },
   {
     number: "02",
@@ -25,7 +19,6 @@ const services = [
     details:
       "We help businesses move toward cloud-native architectures that improve scalability, reliability and operational efficiency.",
     technologies: ["Cloud", "Microservices", "DevOps", "Deployment"],
-    image: cloudSolutions,
   },
   {
     number: "03",
@@ -35,7 +28,6 @@ const services = [
     details:
       "We integrate intelligent technologies into business workflows to reduce repetitive tasks and create smarter digital experiences.",
     technologies: ["AI", "Automation", "Machine Learning", "Chatbots"],
-    image: aiAutomation,
   },
   {
     number: "04",
@@ -45,7 +37,6 @@ const services = [
     details:
       "We help organizations organize, analyze and visualize their data so teams can make informed business decisions.",
     technologies: ["Analytics", "Data", "Dashboards", "Reporting"],
-    image: dataAnalytics,
   },
 ];
 
@@ -53,54 +44,49 @@ function Services() {
   return (
     <div className="services-page">
 
-      {/* ================= HERO ================= */}
-      <section className="services-hero">
+      {/* =====================================================
+          HERO
+      ===================================================== */}
 
+      <section className="services-hero">
         <div className="services-container">
 
-          <div className="services-hero-grid">
+          <div className="services-hero-content">
 
-            <div className="services-hero-content">
+            <p className="services-label">
+              OUR SERVICES
+            </p>
 
-              <p className="services-label">
-                OUR SERVICES
-              </p>
+            <h1>
+              Technology
+              <br />
+              <span>built around your goals.</span>
+            </h1>
 
-              <h1>
-                Technology
-                <span> built around your goals.</span>
-              </h1>
+            <p className="services-hero-text">
+              We combine engineering, cloud, AI and data
+              capabilities to create digital solutions that
+              help organizations move forward.
+            </p>
 
-              <p className="services-hero-text">
-                We combine engineering, cloud, AI and data capabilities
-                to create digital solutions that help organizations
-                move forward.
-              </p>
-
-              <Link
-                to="/contact"
-                className="services-hero-button"
-              >
-                Start a Conversation →
-              </Link>
-
-            </div>
-
-            <div className="services-hero-visual">
-              <img
-                src={digitalEngineering}
-                alt="Digital technology solutions"
-              />
-            </div>
+            <Link
+              to="/contact"
+              className="services-hero-button"
+            >
+              Start a Conversation
+              <span>→</span>
+            </Link>
 
           </div>
 
         </div>
-
       </section>
 
 
-      {/* ================= INTRO ================= */}
+      {/* =====================================================
+          INTRO
+      ===================================================== */}
+
       <section className="services-intro">
 
         <div className="services-container services-intro-grid">
@@ -122,14 +108,16 @@ function Services() {
           <div className="services-intro-text">
 
             <p>
-              Every business has different challenges. Our services are
-              designed to provide the technology expertise required to
-              turn those challenges into practical digital solutions.
+              Every business has different challenges. Our
+              services are designed to provide the technology
+              expertise required to turn those challenges into
+              practical digital solutions.
             </p>
 
             <p>
-              We focus on quality engineering, modern technologies and
-              solutions that can grow with your organization.
+              We focus on quality engineering, modern
+              technologies and solutions that can grow with
+              your organization.
             </p>
 
           </div>
@@ -139,7 +127,10 @@ function Services() {
       </section>
 
 
-      {/* ================= SERVICES ================= */}
+      {/* =====================================================
+          SERVICES
+      ===================================================== */}
+
       <section className="services-list">
 
         <div className="services-container">
@@ -168,21 +159,19 @@ function Services() {
                 key={service.number}
               >
 
-                <div className="service-detail-image">
-
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                  />
-
-                  <span className="service-detail-number">
-                    {service.number}
-                  </span>
-
-                </div>
-
-
                 <div className="service-detail-content">
+
+                  <div className="service-card-top">
+
+                    <span className="service-detail-number">
+                      {service.number}
+                    </span>
+
+                    <span className="service-card-arrow">
+                      ↗
+                    </span>
+
+                  </div>
 
                   <h2>
                     {service.title}
@@ -195,7 +184,6 @@ function Services() {
                   <p className="service-details">
                     {service.details}
                   </p>
-
 
                   <div className="service-tech-list">
 
@@ -222,7 +210,10 @@ function Services() {
       </section>
 
 
-      {/* ================= APPROACH ================= */}
+      {/* =====================================================
+          APPROACH
+      ===================================================== */}
+
       <section className="services-approach">
 
         <div className="services-container">
@@ -244,9 +235,9 @@ function Services() {
             </div>
 
             <p>
-              We follow a structured approach that keeps technology aligned
-              with business objectives from the beginning to the final
-              delivery.
+              We follow a structured approach that keeps
+              technology aligned with business objectives
+              from the beginning to the final delivery.
             </p>
 
           </div>
@@ -256,33 +247,56 @@ function Services() {
 
             <div className="approach-card">
               <span>01</span>
-              <h3>Discover</h3>
+
+              <h3>
+                Discover
+              </h3>
+
               <p>
-                Understand the business problem, users and objectives.
+                Understand the business problem, users and
+                objectives.
               </p>
             </div>
+
 
             <div className="approach-card">
               <span>02</span>
-              <h3>Design</h3>
+
+              <h3>
+                Design
+              </h3>
+
               <p>
-                Create a practical solution and experience around those needs.
+                Create a practical solution and experience
+                around those needs.
               </p>
             </div>
+
 
             <div className="approach-card">
               <span>03</span>
-              <h3>Develop</h3>
+
+              <h3>
+                Develop
+              </h3>
+
               <p>
-                Build secure, scalable and maintainable technology solutions.
+                Build secure, scalable and maintainable
+                technology solutions.
               </p>
             </div>
 
+
             <div className="approach-card">
               <span>04</span>
-              <h3>Deliver</h3>
+
+              <h3>
+                Deliver
+              </h3>
+
               <p>
-                Launch, improve and continuously evolve the solution.
+                Launch, improve and continuously evolve
+                the solution.
               </p>
             </div>
 
@@ -293,7 +307,10 @@ function Services() {
       </section>
 
 
-      {/* ================= TECHNOLOGY ================= */}
+      {/* =====================================================
+          TECHNOLOGY
+      ===================================================== */}
+
       <section className="services-technology">
 
         <div className="services-container services-technology-grid">
@@ -312,12 +329,12 @@ function Services() {
 
           </div>
 
-
           <div className="technology-content">
 
             <p>
-              Our engineering approach combines proven technologies with
-              modern development practices to create reliable digital products.
+              Our engineering approach combines proven
+              technologies with modern development practices
+              to create reliable digital products.
             </p>
 
             <div className="technology-cloud">
@@ -341,7 +358,10 @@ function Services() {
       </section>
 
 
-      {/* ================= CTA ================= */}
+      {/* =====================================================
+          CTA
+      ===================================================== */}
+
       <section className="services-cta">
 
         <p className="services-section-label">
@@ -358,10 +378,144 @@ function Services() {
           to="/contact"
           className="services-cta-button"
         >
-          Talk to Us →
+          Talk to Us
+          <span>→</span>
         </Link>
 
       </section>
+
+
+      {/* =====================================================
+          FOOTER
+      ===================================================== */}
+
+      <footer className="services-footer">
+
+        <div className="services-container">
+
+          <div className="services-footer-grid">
+
+            <div className="services-footer-brand">
+
+              <Link
+                to="/"
+                className="services-footer-logo"
+              >
+                HamaraShops.ai
+              </Link>
+
+              <p>
+                Delivering modern technology solutions
+                through engineering, cloud, AI and data.
+              </p>
+
+            </div>
+
+
+            <div className="services-footer-column">
+
+              <h4>
+                Resources
+              </h4>
+
+              <Link to="/about">
+                About AI
+              </Link>
+
+              <Link to="/services">
+                Services
+              </Link>
+
+              <Link to="/integrations">
+                Integrations
+              </Link>
+
+              <Link to="/case-studies">
+                Case Studies
+              </Link>
+
+              <Link to="/api-docs">
+                API Docs
+              </Link>
+
+            </div>
+
+
+            <div className="services-footer-column">
+
+              <h4>
+                Solutions
+              </h4>
+
+              <Link to="/solutions">
+                Solutions
+              </Link>
+
+              <Link to="/industries">
+                Industries
+              </Link>
+
+              <Link to="/product/cognitive-automation">
+                Cognitive Automation
+              </Link>
+
+              <Link to="/product/data-intelligence">
+                Data Intelligence
+              </Link>
+
+              <Link to="/product/vision-ai">
+                Vision AI
+              </Link>
+
+            </div>
+
+
+            <div className="services-footer-column">
+
+              <h4>
+                Company
+              </h4>
+
+              <Link to="/about">
+                About Us
+              </Link>
+
+              <Link to="/careers">
+                Careers
+              </Link>
+
+              <Link to="/contact">
+                Contact Us
+              </Link>
+
+              <Link to="/privacy">
+                Privacy Policy
+              </Link>
+
+              <Link to="/sales-terms">
+                Sales Terms
+              </Link>
+
+            </div>
+
+          </div>
+
+
+          <div className="services-footer-bottom">
+
+            <span>
+              © 2026 HamaraShops.ai. All Rights Reserved.
+            </span>
+
+            <span>
+              Technology. Intelligence. Impact.
+            </span>
+
+          </div>
+
+        </div>
+
+      </footer>
 
     </div>
   );

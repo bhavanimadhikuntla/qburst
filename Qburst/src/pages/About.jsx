@@ -1,45 +1,138 @@
 import { Link } from "react-router-dom";
 import "./About.css";
 
-import heroTech from "../assets/images/hero-tec.png";
-
 function About() {
+  const linkedinUrl =
+    "https://www.linkedin.com/in/madhikuntla-bhavani-7943ab1b0";
+
+  const youtubeUrl =
+    "https://www.youtube.com/embed/StfCYk5l2kI?autoplay=1&rel=0";
+
   return (
     <div className="about-page">
 
       {/* =====================================================
-          HERO
-          ===================================================== */}
+          HERO SECTION
+      ===================================================== */}
 
-      <section className="about-hero">
+      <section className="about-ai-hero">
 
-        <div className="about-container about-hero-grid">
+        <div className="about-ai-container">
 
-          <div className="about-hero-content">
+          <div className="about-ai-hero-content">
 
-            <p className="about-label">
-              ABOUT HAMARASHOPS.AI
-            </p>
+            {/* ABOUT AI LABEL */}
+
+            <div className="about-ai-label-wrap">
+
+              <span className="about-ai-label-line"></span>
+
+              <p className="about-ai-label">
+                ABOUT AI
+              </p>
+
+            </div>
+
+
+            {/* HERO TITLE */}
 
             <h1>
-              Technology with
-              <span> purpose.</span>
+              About AI
+              <br />
+              <span>Excellence</span>
             </h1>
 
-            <p className="about-hero-text">
-              We create digital solutions that connect technology,
-              people and business goals to help organizations move
-              forward.
+
+            {/* HERO DESCRIPTION */}
+
+            <p className="about-ai-hero-text">
+              At HamaraShops.ai, we believe that artificial
+              intelligence is the ultimate tool for human
+              advancement. Our mission is to democratize
+              complex AI technologies, making them accessible
+              and actionable for businesses of all sizes.
             </p>
+
+
+            {/* =================================================
+                HAMARASHOPS.AI TAGLINE
+            ================================================= */}
+
+            <div className="about-ai-main-tagline">
+
+              <h2>
+                HamaraShops.ai
+              </h2>
+
+              <p>
+                An AI-Powered Application Driving Innovation
+                in the Race of AI
+              </p>
+
+            </div>
+
+
+            {/* HERO BUTTONS */}
+
+            <div className="about-ai-hero-actions">
+
+              <Link
+                to="/contact"
+                className="about-ai-primary-btn"
+              >
+                Let's Connect
+                <span>→</span>
+              </Link>
+
+
+              <Link
+                to="/services"
+                className="about-ai-secondary-btn"
+              >
+                Explore Services
+              </Link>
+
+            </div>
 
           </div>
 
-          <div className="about-hero-image">
 
-            <img
-              src={heroTech}
-              alt="HamaraShops.ai technology solutions"
-            />
+          {/* =================================================
+              ABSTRACT AI VISUAL
+          ================================================= */}
+
+          <div className="about-ai-hero-visual">
+
+            <div className="ai-orbit ai-orbit-one"></div>
+
+            <div className="ai-orbit ai-orbit-two"></div>
+
+            <div className="ai-orbit ai-orbit-three"></div>
+
+
+            <div className="ai-core">
+              <span>AI</span>
+            </div>
+
+
+            <div className="ai-node ai-node-one">
+              01
+            </div>
+
+
+            <div className="ai-node ai-node-two">
+              AI
+            </div>
+
+
+            <div className="ai-node ai-node-three">
+              ML
+            </div>
+
+
+            <div className="ai-node ai-node-four">
+              ∞
+            </div>
 
           </div>
 
@@ -49,41 +142,64 @@ function About() {
 
 
       {/* =====================================================
-          WHO WE ARE
-          ===================================================== */}
+          COMPANY VIDEO SECTION
+      ===================================================== */}
 
-      <section className="about-introduction">
+      <section className="about-ai-video-section">
 
-        <div className="about-container about-intro-grid">
+        <div className="about-ai-container">
 
-          <div>
+          <div className="about-ai-video-header">
 
-            <p className="about-small-label">
-              WHO WE ARE
+            <p className="about-ai-small-label">
+              DISCOVER HAMARASHOPS.AI
             </p>
 
+
             <h2>
-              Building digital
+              Watch our journey
               <br />
-              experiences that matter.
+              <span>in action.</span>
             </h2>
 
-          </div>
-
-          <div className="about-intro-content">
 
             <p>
-              HamaraShops.ai is a technology-focused digital
-              solutions company helping businesses use modern
-              technology to solve real-world challenges.
+              Explore our vision, technology and approach
+              through our company video.
             </p>
 
-            <p>
-              From application development and cloud
-              modernization to AI-powered automation and data
-              solutions, we focus on creating practical,
-              scalable and meaningful digital experiences.
-            </p>
+
+            {/* =================================================
+                YOUTUBE VIDEO
+            ================================================= */}
+
+            <div
+              className="about-ai-video-wrapper"
+              style={{
+                position: "relative",
+                width: "100%",
+                maxWidth: "900px",
+                margin: "30px auto 0",
+                aspectRatio: "16 / 9",
+                overflow: "hidden",
+                borderRadius: "16px",
+              }}
+            >
+
+              <iframe
+                src={youtubeUrl}
+                title="HamaraShops.ai Company Video"
+                width="100%"
+                height="100%"
+                style={{
+                  border: "none",
+                  display: "block",
+                }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+
+            </div>
 
           </div>
 
@@ -93,244 +209,59 @@ function About() {
 
 
       {/* =====================================================
-          STATS
-          ===================================================== */}
+          CTA SECTION
+      ===================================================== */}
 
-      <section className="about-stats">
+      <section className="about-ai-cta">
 
-        <div className="about-container about-stats-grid">
+        <div className="about-ai-container">
 
-          <div className="about-stat">
-            <strong>100+</strong>
-            <span>Digital Initiatives</span>
-          </div>
+          <div className="about-ai-cta-content">
 
-          <div className="about-stat">
-            <strong>50+</strong>
-            <span>Technology Skills</span>
-          </div>
-
-          <div className="about-stat">
-            <strong>24/7</strong>
-            <span>Digital Mindset</span>
-          </div>
-
-          <div className="about-stat">
-            <strong>1</strong>
-            <span>Purpose — Business Growth</span>
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* =====================================================
-          APPROACH
-          ===================================================== */}
-
-      <section className="about-approach">
-
-        <div className="about-container">
-
-          <div className="about-section-heading">
-
-            <p className="about-small-label">
-              OUR APPROACH
+            <p className="about-ai-small-label">
+              BUILD THE FUTURE WITH AI
             </p>
+
 
             <h2>
-              Think. Build.
+              Unlock the potential
               <br />
-              Transform.
+              of intelligent
+              <br />
+              <span>AI products.</span>
             </h2>
 
-          </div>
 
-
-          <div className="about-approach-grid">
-
-            <div className="about-approach-card">
-
-              <span>01</span>
-
-              <h3>
-                Understand
-              </h3>
-
-              <p>
-                We begin by understanding your business,
-                customers, challenges and goals.
-              </p>
-
-            </div>
-
-
-            <div className="about-approach-card">
-
-              <span>02</span>
-
-              <h3>
-                Design
-              </h3>
-
-              <p>
-                We design practical digital experiences
-                around real user and business requirements.
-              </p>
-
-            </div>
-
-
-            <div className="about-approach-card">
-
-              <span>03</span>
-
-              <h3>
-                Build
-              </h3>
-
-              <p>
-                We use modern technologies and engineering
-                practices to build scalable solutions.
-              </p>
-
-            </div>
-
-
-            <div className="about-approach-card">
-
-              <span>04</span>
-
-              <h3>
-                Transform
-              </h3>
-
-              <p>
-                We continuously improve solutions to create
-                measurable and lasting business value.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* =====================================================
-          CAPABILITIES
-          ===================================================== */}
-
-      <section className="about-capabilities">
-
-        <div className="about-container">
-
-          <div className="about-section-heading">
-
-            <p className="about-small-label">
-              OUR CAPABILITIES
+            <p className="about-ai-cta-text">
+              Partner with HamaraShops.ai to build a smarter,
+              more automated future today.
             </p>
 
-            <h2>
-              Technology built
-              <br />
-              around your goals.
-            </h2>
+
+            <Link
+              to="/contact"
+              className="about-ai-cta-button"
+            >
+              Let's Connect
+              <span>→</span>
+            </Link>
 
           </div>
 
 
-          <div className="about-capabilities-list">
+          {/* CTA PATTERN */}
 
-            <div className="about-capability">
+          <div className="about-ai-cta-pattern">
 
-              <span>01</span>
+            <div className="cta-circle cta-circle-one"></div>
 
-              <div>
+            <div className="cta-circle cta-circle-two"></div>
 
-                <h3>
-                  Digital Engineering
-                </h3>
+            <div className="cta-circle cta-circle-three"></div>
 
-                <p>
-                  Modern applications, platforms and digital
-                  products built for performance and scale.
-                </p>
-
-              </div>
-
-              <strong>↗</strong>
-
-            </div>
-
-
-            <div className="about-capability">
-
-              <span>02</span>
-
-              <div>
-
-                <h3>
-                  Cloud Solutions
-                </h3>
-
-                <p>
-                  Cloud-ready architectures and modernization
-                  solutions for flexible digital operations.
-                </p>
-
-              </div>
-
-              <strong>↗</strong>
-
-            </div>
-
-
-            <div className="about-capability">
-
-              <span>03</span>
-
-              <div>
-
-                <h3>
-                  AI & Automation
-                </h3>
-
-                <p>
-                  Intelligent automation and AI solutions that
-                  improve productivity and business processes.
-                </p>
-
-              </div>
-
-              <strong>↗</strong>
-
-            </div>
-
-
-            <div className="about-capability">
-
-              <span>04</span>
-
-              <div>
-
-                <h3>
-                  Data & Analytics
-                </h3>
-
-                <p>
-                  Data-driven solutions that help organizations
-                  discover insights and make better decisions.
-                </p>
-
-              </div>
-
-              <strong>↗</strong>
-
-            </div>
+            <span>
+              AI
+            </span>
 
           </div>
 
@@ -340,108 +271,244 @@ function About() {
 
 
       {/* =====================================================
-          WHY US
-          ===================================================== */}
+          FOOTER
+      ===================================================== */}
 
-      <section className="about-why">
+      <footer className="about-ai-footer">
 
-        <div className="about-container about-why-grid">
+        <div className="about-ai-container">
 
-          <div>
+          <div className="about-ai-footer-grid">
 
-            <p className="about-small-label">
-              WHY HAMARASHOPS.AI
-            </p>
 
-            <h2>
-              Technology is
-              <br />
-              only valuable when
-              <br />
-              it creates impact.
-            </h2>
+            {/* =================================================
+                BRAND + PROFILE
+            ================================================= */}
+
+            <div className="about-ai-footer-brand">
+
+
+              {/* BRAND LOGO */}
+
+              <Link
+                to="/"
+                className="about-ai-footer-logo"
+              >
+                HamaraShops.ai
+              </Link>
+
+
+              {/* BRAND DESCRIPTION */}
+
+              <p>
+                HamaraShops.ai is at the forefront of AI
+                innovation, delivering products that leverage
+                machine learning and cognitive computing to
+                solve complex business challenges.
+              </p>
+
+
+              {/* CONTACT */}
+
+              <Link
+                to="/contact"
+                className="footer-contact-link"
+              >
+                Start a conversation →
+              </Link>
+
+
+              {/* =================================================
+                  PROFILE
+              ================================================= */}
+
+              <div className="about-ai-profile">
+
+
+                <img
+                  src="/bhavani.jpeg"
+                  alt="Bhavani"
+                  className="about-ai-profile-image"
+                />
+
+
+                <div className="about-ai-profile-info">
+
+                  <h4>
+                    Bhavani
+                  </h4>
+
+
+                  <a
+                    href={linkedinUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="linkedin-link"
+                  >
+
+                    <span className="linkedin-icon">
+                      in
+                    </span>
+
+                    <span>
+                      View LinkedIn Profile
+                    </span>
+
+                    <span>
+                      ↗
+                    </span>
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            {/* =================================================
+                RESOURCES
+            ================================================= */}
+
+            <div className="about-ai-footer-column">
+
+              <h4>
+                Resources
+              </h4>
+
+
+              <Link to="/about">
+                About AI
+              </Link>
+
+
+              <Link to="/integrations">
+                Integrations
+              </Link>
+
+
+              <Link to="/case-studies">
+                Case Studies
+              </Link>
+
+
+              <Link to="/api-docs">
+                API Docs
+              </Link>
+
+
+              <Link to="/ethics">
+                AI Ethics Policy
+              </Link>
+
+            </div>
+
+
+            {/* =================================================
+                PRODUCT LINE
+            ================================================= */}
+
+            <div className="about-ai-footer-column">
+
+              <h4>
+                Product Line
+              </h4>
+
+
+              <Link to="/product/cognitive-automation">
+                Cognitive Automation
+              </Link>
+
+
+              <Link to="/product/data-intelligence">
+                Data Intelligence
+              </Link>
+
+
+              <Link to="/product/defensive-ai">
+                Defensive AI
+              </Link>
+
+
+              <Link to="/product/mlops-hub">
+                MLOps Platform
+              </Link>
+
+
+              <Link to="/product/nlp-engines">
+                NLP Engine
+              </Link>
+
+
+              <Link to="/product/vision-ai">
+                Vision AI
+              </Link>
+
+            </div>
+
+
+            {/* =================================================
+                COMPANY
+            ================================================= */}
+
+            <div className="about-ai-footer-column">
+
+              <h4>
+                Company
+              </h4>
+
+
+              <Link to="/about">
+                About Us
+              </Link>
+
+
+              <Link to="/services">
+                Services
+              </Link>
+
+
+              <Link to="/solutions">
+                Solutions
+              </Link>
+
+
+              <Link to="/careers">
+                Careers
+              </Link>
+
+
+              <Link to="/contact">
+                Contact Us
+              </Link>
+
+            </div>
 
           </div>
 
 
-          <div className="about-why-list">
+          {/* =================================================
+              FOOTER BOTTOM
+          ================================================= */}
 
-            <div>
+          <div className="about-ai-footer-bottom">
 
-              <span>01</span>
-
-              <div>
-
-                <h3>
-                  Business First
-                </h3>
-
-                <p>
-                  We connect technology decisions with real
-                  business objectives.
-                </p>
-
-              </div>
-
-            </div>
+            <span>
+              © 2026 HamaraShops.ai. All Rights Reserved.
+            </span>
 
 
             <div>
 
-              <span>02</span>
-
-              <div>
-
-                <h3>
-                  Modern Technology
-                </h3>
-
-                <p>
-                  We embrace modern technologies to create
-                  reliable and future-ready solutions.
-                </p>
-
-              </div>
-
-            </div>
+              <Link to="/privacy">
+                Privacy Policy
+              </Link>
 
 
-            <div>
-
-              <span>03</span>
-
-              <div>
-
-                <h3>
-                  Practical Innovation
-                </h3>
-
-                <p>
-                  We focus on innovation that solves problems
-                  rather than technology for technology's sake.
-                </p>
-
-              </div>
-
-            </div>
-
-
-            <div>
-
-              <span>04</span>
-
-              <div>
-
-                <h3>
-                  Long-Term Thinking
-                </h3>
-
-                <p>
-                  We build solutions with scalability,
-                  maintainability and growth in mind.
-                </p>
-
-              </div>
+              <Link to="/sales-terms">
+                Sales Terms
+              </Link>
 
             </div>
 
@@ -449,34 +516,7 @@ function About() {
 
         </div>
 
-      </section>
-
-
-      {/* =====================================================
-          CTA
-          ===================================================== */}
-
-      <section className="about-cta">
-
-        <div className="about-container">
-
-          <p>
-            LET'S BUILD SOMETHING BETTER
-          </p>
-
-          <h2>
-            Have a challenge?
-            <br />
-            Let's solve it together.
-          </h2>
-
-          <Link to="/contact">
-            Let's Connect →
-          </Link>
-
-        </div>
-
-      </section>
+      </footer>
 
     </div>
   );

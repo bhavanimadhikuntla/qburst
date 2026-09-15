@@ -1,785 +1,628 @@
 /* =========================================================
-   HAMARASHOPS.AI — SOLUTIONS PAGE
-   Premium • Professional • Modern
-   ========================================================= */
+   SOLUTIONS PAGE
+========================================================= */
 
 .solutions-page {
   width: 100%;
   background: #ffffff;
-  color: #172033;
-  overflow: hidden;
+  color: #111827;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
+
+/* =========================================================
+   COMMON CONTAINER
+========================================================= */
+
 .solutions-container {
-  width: min(1160px, calc(100% - 56px));
+  width: min(1200px, 92%);
   margin: 0 auto;
 }
 
 
 /* =========================================================
    HERO
-   ========================================================= */
+========================================================= */
 
 .solutions-hero {
-  padding: 90px 0 100px;
-  background: linear-gradient(135deg, #071a33 0%, #0d315d 100%);
-  color: #ffffff;
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(37, 99, 235, 0.10),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #f8fafc 0%,
+      #eef4ff 50%,
+      #ffffff 100%
+    );
+  border-bottom: 1px solid #e5e7eb;
 }
 
-.solutions-hero-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.7fr;
-  gap: 60px;
-  align-items: center;
+.solutions-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 8%;
+  width: 280px;
+  height: 280px;
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  border-radius: 50%;
+}
+
+.solutions-hero::after {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  right: 15%;
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  transform: rotate(45deg);
 }
 
 .solutions-hero-content {
-  max-width: 680px;
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  padding: 90px 0;
 }
+
+
+/* =========================================================
+   LABELS
+========================================================= */
 
 .solutions-label,
 .solutions-section-label {
-  margin: 0 0 18px;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 2px;
+  margin: 0 0 22px;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
 }
 
-.solutions-label {
-  color: #8eb4ff;
-}
 
-.solutions-section-label {
-  color: #1769ff;
-}
+/* =========================================================
+   HERO TITLE
+========================================================= */
 
 .solutions-hero h1 {
-  max-width: 820px;
-  margin: 0 0 26px;
-
-  font-size: clamp(48px, 5.5vw, 70px);
+  margin: 0;
+  max-width: 850px;
+  font-size: clamp(48px, 6vw, 82px);
   line-height: 1.02;
-  letter-spacing: -3.5px;
-  font-weight: 800;
+  font-weight: 700;
+  letter-spacing: -3px;
+  color: #0f172a;
 }
 
 .solutions-hero h1 span {
-  display: block;
-  color: #69a0ff;
+  display: inline;
+  color: #2563eb;
 }
 
-.solutions-hero-text {
-  max-width: 640px;
-  margin: 0 0 30px;
 
-  color: #c4d2e5;
-  font-size: 16px;
+/* =========================================================
+   HERO TEXT
+========================================================= */
+
+.solutions-hero-text {
+  max-width: 700px;
+  margin: 32px 0 38px;
+  color: #64748b;
+  font-size: 18px;
   line-height: 1.8;
 }
 
 
 /* =========================================================
    HERO BUTTON
-   ========================================================= */
+========================================================= */
 
 .solutions-hero-button {
   display: inline-flex;
   align-items: center;
-
-  padding: 14px 22px;
-
-  background: #1769ff;
+  justify-content: center;
+  padding: 15px 28px;
+  background: #2563eb;
   color: #ffffff;
-
   text-decoration: none;
-
-  border-radius: 4px;
-
-  font-size: 13px;
-  font-weight: 700;
-
-  transition: 0.3s ease;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .solutions-hero-button:hover {
-  background: #4085ff;
+  background: #1d4ed8;
   color: #ffffff;
-  transform: translateY(-2px);
-}
-
-
-/* =========================================================
-   HERO IMAGE
-   ========================================================= */
-
-.solutions-hero-image {
-  width: 100%;
-  max-width: 410px;
-  height: 290px;
-
-  margin-left: auto;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  overflow: hidden;
-
-  background: rgba(255, 255, 255, 0.05);
-
-  border: 1px solid rgba(255, 255, 255, 0.08);
-
-  border-radius: 12px;
-}
-
-.solutions-hero-image img {
-  width: 100%;
-  height: 100%;
-
-  display: block;
-
-  object-fit: contain;
-  object-position: center;
-
-  padding: 15px;
-
-  transition: transform 0.5s ease;
-}
-
-.solutions-hero-image:hover img {
-  transform: scale(1.03);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(37, 99, 235, 0.22);
 }
 
 
 /* =========================================================
    INTRO
-   ========================================================= */
+========================================================= */
 
 .solutions-intro {
-  padding: 105px 0;
+  padding: 110px 0;
   background: #ffffff;
 }
 
 .solutions-intro-grid {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
-
-  gap: 80px;
+  gap: 100px;
+  align-items: start;
 }
 
 .solutions-intro h2,
 .solutions-technology h2 {
   margin: 0;
-
-  color: #111b2d;
-
-  font-size: clamp(40px, 4.2vw, 54px);
-
-  line-height: 1.06;
-
-  letter-spacing: -2.5px;
+  color: #0f172a;
+  font-size: clamp(38px, 4vw, 56px);
+  line-height: 1.08;
+  letter-spacing: -2px;
+  font-weight: 700;
 }
 
 .solutions-intro-grid > div:last-child {
-  padding-top: 8px;
+  padding-top: 5px;
 }
 
-.solutions-intro-grid > div:last-child p {
-  margin: 0 0 22px;
-
-  color: #667085;
-
-  font-size: 16px;
-
+.solutions-intro-grid p:not(.solutions-section-label) {
+  margin: 0 0 25px;
+  color: #64748b;
+  font-size: 17px;
   line-height: 1.8;
 }
 
 
 /* =========================================================
    SOLUTIONS LIST
-   ========================================================= */
+========================================================= */
 
 .solutions-list {
-  padding: 85px 0;
-
-  background: #f5f8fc;
+  padding: 0 0 120px;
+  background: #ffffff;
 }
 
-
-/* =========================================================
-   SOLUTION CARD
-   ========================================================= */
-
 .solution-card {
+  position: relative;
   display: grid;
-
-  grid-template-columns: 230px 55px 1fr 35px;
-
-  align-items: center;
-
-  gap: 25px;
-
-  padding: 32px 15px;
-
-  border-top: 1px solid #d9e1ec;
-
+  grid-template-columns: 90px minmax(0, 1fr) 60px;
+  gap: 40px;
+  align-items: start;
+  padding: 55px 0;
+  border-top: 1px solid #e2e8f0;
   transition:
-    background 0.3s ease,
-    padding 0.3s ease;
+    padding 0.3s ease,
+    background 0.3s ease;
 }
 
 .solution-card:last-child {
-  border-bottom: 1px solid #d9e1ec;
-}
-
-.solution-card:hover {
-  background: #ffffff;
-
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-
-/* =========================================================
-   SOLUTION IMAGE
-   ========================================================= */
-
-.solution-image {
-  width: 230px;
-  height: 150px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  overflow: hidden;
-
-  background: #ffffff;
-
-  border: 1px solid #e0e7f0;
-
-  border-radius: 8px;
-}
-
-.solution-image img {
-  width: 100%;
-  height: 100%;
-
-  display: block;
-
-  object-fit: contain;
-  object-position: center;
-
-  padding: 8px;
-
-  transition: transform 0.5s ease;
-}
-
-.solution-card:hover .solution-image img {
-  transform: scale(1.04);
+  border-bottom: 1px solid #e2e8f0;
 }
 
 
 /* =========================================================
    NUMBER
-   ========================================================= */
+========================================================= */
 
 .solution-number {
-  align-self: start;
-
   padding-top: 5px;
-
-  color: #1769ff;
-
-  font-size: 12px;
-
-  font-weight: 800;
-
-  letter-spacing: 0.5px;
+  color: #2563eb;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 
 /* =========================================================
-   CONTENT
-   ========================================================= */
+   SOLUTION CONTENT
+========================================================= */
 
 .solution-content {
-  min-width: 0;
+  max-width: 850px;
 }
 
 .solution-content h2 {
-  margin: 0 0 11px;
-
-  color: #172033;
-
-  font-size: 29px;
-
-  line-height: 1.2;
-
+  margin: 0 0 18px;
+  color: #0f172a;
+  font-size: clamp(28px, 3vw, 42px);
+  line-height: 1.15;
+  font-weight: 700;
   letter-spacing: -1px;
+  transition: color 0.3s ease;
 }
 
 .solution-description {
-  max-width: 680px;
-
-  margin: 0;
-
-  color: #667085;
-
-  font-size: 15px;
-
+  max-width: 750px;
+  margin: 0 0 28px;
+  color: #64748b;
+  font-size: 16px;
   line-height: 1.75;
 }
 
 
 /* =========================================================
    CAPABILITIES
-   ========================================================= */
+========================================================= */
 
 .solution-capabilities {
   display: flex;
-
   flex-wrap: wrap;
-
-  gap: 7px;
-
-  margin-top: 18px;
+  gap: 10px;
 }
 
 .solution-capabilities span {
-  padding: 7px 11px;
-
-  background: #eaf2ff;
-
-  border: 1px solid #d9e7ff;
-
-  color: #1769ff;
-
-  font-size: 10px;
-
-  font-weight: 700;
-
-  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 14px;
+  border: 1px solid #dbe3ef;
+  border-radius: 4px;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 500;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
 }
 
 
 /* =========================================================
    ARROW
-   ========================================================= */
+========================================================= */
 
 .solution-arrow {
-  color: #1769ff;
-
-  font-size: 24px;
-
-  text-align: right;
-
-  transition: transform 0.3s ease;
-}
-
-.solution-card:hover .solution-arrow {
-  transform: translate(3px, -3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #dbe3ef;
+  border-radius: 50%;
+  color: #2563eb;
+  font-size: 22px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 
 /* =========================================================
-   TECHNOLOGY
-   ========================================================= */
+   CARD HOVER
+========================================================= */
+
+.solution-card:hover .solution-content h2 {
+  color: #2563eb;
+}
+
+.solution-card:hover .solution-capabilities span {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1d4ed8;
+}
+
+.solution-card:hover .solution-arrow {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+  transform: translate(4px, -4px);
+}
+
+
+/* =========================================================
+   TECHNOLOGY SECTION
+========================================================= */
 
 .solutions-technology {
-  padding: 105px 0;
-
-  background: #ffffff;
+  padding: 120px 0;
+  background: #f8fafc;
+  border-top: 1px solid #e5e7eb;
 }
 
 .solutions-technology-grid {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
-
-  gap: 80px;
+  gap: 100px;
+  align-items: start;
 }
 
 .solutions-technology-text {
-  max-width: 600px;
-
-  margin: 0 0 28px;
-
-  color: #667085;
-
-  font-size: 16px;
-
+  max-width: 650px;
+  margin: 0 0 35px;
+  color: #64748b;
+  font-size: 17px;
   line-height: 1.8;
-}
-
-.solutions-tech-list {
-  display: flex;
-
-  flex-wrap: wrap;
-
-  gap: 9px;
-}
-
-.solutions-tech-list span {
-  padding: 10px 15px;
-
-  background: #f5f8fc;
-
-  border: 1px solid #d8e1ec;
-
-  color: #344054;
-
-  font-size: 12px;
-
-  font-weight: 600;
-
-  border-radius: 3px;
-
-  transition: 0.25s ease;
-}
-
-.solutions-tech-list span:hover {
-  background: #eaf2ff;
-
-  border-color: #bcd2ff;
-
-  color: #1769ff;
 }
 
 
 /* =========================================================
-   CTA
-   ========================================================= */
+   TECHNOLOGY LIST
+========================================================= */
 
-.solutions-cta {
-  padding: 105px 20px;
-
-  background: linear-gradient(
-    135deg,
-    #0b2447,
-    #123e6d
-  );
-
-  color: #ffffff;
-
-  text-align: center;
+.solutions-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-.solutions-cta .solutions-section-label {
-  color: #8eb4ff;
+.solutions-tech-list span {
+  padding: 12px 18px;
+  background: #ffffff;
+  border: 1px solid #dbe3ef;
+  border-radius: 5px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
-.solutions-cta h2 {
-  max-width: 700px;
-
-  margin: 0 auto 35px;
-
-  font-size: clamp(44px, 5vw, 62px);
-
-  line-height: 1.05;
-
-  letter-spacing: -3px;
-}
-
-.solutions-cta-button {
-  display: inline-flex;
-
-  align-items: center;
-  justify-content: center;
-
-  padding: 15px 25px;
-
-  background: #1769ff;
-
-  color: #ffffff;
-
-  text-decoration: none;
-
-  border-radius: 4px;
-
-  font-size: 13px;
-
-  font-weight: 700;
-
-  transition: 0.25s ease;
-}
-
-.solutions-cta-button:hover {
-  background: #4085ff;
-
-  color: #ffffff;
-
+.solutions-tech-list span:hover {
+  background: #eff6ff;
+  border-color: #93c5fd;
+  color: #2563eb;
   transform: translateY(-2px);
 }
 
 
 /* =========================================================
+   CTA
+========================================================= */
+
+.solutions-cta {
+  position: relative;
+  padding: 130px 20px;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(37, 99, 235, 0.12),
+      transparent 45%
+    ),
+    #0f172a;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.solutions-cta::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  left: -120px;
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+
+.solutions-cta::after {
+  content: "";
+  position: absolute;
+  bottom: -150px;
+  right: -100px;
+  width: 350px;
+  height: 350px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+
+.solutions-cta .solutions-section-label {
+  position: relative;
+  z-index: 2;
+  color: #60a5fa;
+}
+
+.solutions-cta h2 {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 38px;
+  color: #ffffff;
+  font-size: clamp(46px, 6vw, 78px);
+  line-height: 1.02;
+  letter-spacing: -3px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.solutions-cta-button {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  background: #ffffff;
+  color: #0f172a;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 5px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.solutions-cta-button:hover {
+  background: #2563eb;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
    TABLET
-   ========================================================= */
+========================================================= */
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
 
-  .solutions-container {
-    width: calc(100% - 48px);
-  }
-
-  .solutions-hero-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .solutions-hero-image {
-    max-width: 600px;
-
-    height: 300px;
-
-    margin-left: 0;
+  .solutions-hero {
+    min-height: 550px;
   }
 
   .solutions-intro-grid,
   .solutions-technology-grid {
     grid-template-columns: 1fr;
-
     gap: 45px;
   }
 
   .solution-card {
-    grid-template-columns: 200px 45px 1fr 30px;
-
-    gap: 20px;
+    grid-template-columns: 70px minmax(0, 1fr) 50px;
+    gap: 25px;
   }
 
-  .solution-image {
-    width: 200px;
-    height: 135px;
+  .solutions-intro {
+    padding: 85px 0;
   }
+
+  .solutions-technology {
+    padding: 90px 0;
+  }
+
 }
 
 
 /* =========================================================
    MOBILE
-   ========================================================= */
+========================================================= */
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
   .solutions-container {
-    width: calc(100% - 36px);
+    width: 90%;
   }
-
-
-  /* HERO */
 
   .solutions-hero {
-    padding: 65px 0 70px;
+    min-height: auto;
   }
 
-  .solutions-hero-grid {
-    gap: 35px;
+  .solutions-hero-content {
+    padding: 75px 0;
   }
 
   .solutions-hero h1 {
-    margin-bottom: 22px;
+    font-size: 44px;
+    letter-spacing: -2px;
+  }
 
-    font-size: 45px;
-
-    line-height: 1.04;
-
-    letter-spacing: -2.5px;
+  .solutions-hero h1 span {
+    display: block;
+    margin-top: 5px;
   }
 
   .solutions-hero-text {
-    font-size: 15px;
-
-    line-height: 1.75;
+    font-size: 16px;
+    line-height: 1.7;
   }
-
-  .solutions-hero-image {
-    width: 100%;
-
-    max-width: 100%;
-
-    height: 220px;
-
-    margin: 0;
-  }
-
-  .solutions-hero-image img {
-    padding: 10px;
-  }
-
-
-  /* INTRO */
 
   .solutions-intro {
-    padding: 70px 0;
-  }
-
-  .solutions-intro-grid {
-    gap: 32px;
+    padding: 75px 0;
   }
 
   .solutions-intro h2,
   .solutions-technology h2 {
     font-size: 38px;
-
-    letter-spacing: -2px;
+    letter-spacing: -1.5px;
   }
 
-  .solutions-intro-grid > div:last-child p {
-    font-size: 15px;
+  .solutions-intro-grid {
+    gap: 35px;
   }
-
-
-  /* LIST */
 
   .solutions-list {
-    padding: 50px 0;
+    padding-bottom: 80px;
   }
-
-
-  /* CARD */
 
   .solution-card {
-    display: grid;
-
-    grid-template-columns: 35px 1fr;
-
-    gap: 12px;
-
-    padding: 30px 5px;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 40px 0;
   }
-
-  .solution-card:hover {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-
-
-  /* IMAGE */
-
-  .solution-image {
-    grid-column: 1 / -1;
-
-    width: 100%;
-
-    height: 180px;
-
-    margin-bottom: 8px;
-  }
-
-  .solution-image img {
-    padding: 8px;
-  }
-
-
-  /* NUMBER */
 
   .solution-number {
-    grid-column: 1;
-
-    padding-top: 4px;
-  }
-
-
-  /* CONTENT */
-
-  .solution-content {
-    grid-column: 2;
+    padding-top: 0;
   }
 
   .solution-content h2 {
-    font-size: 24px;
-
-    letter-spacing: -0.7px;
+    font-size: 30px;
   }
 
   .solution-description {
-    font-size: 14px;
-
-    line-height: 1.7;
-  }
-
-
-  /* CAPABILITIES */
-
-  .solution-capabilities {
-    margin-top: 16px;
-
-    gap: 6px;
-  }
-
-  .solution-capabilities span {
-    padding: 7px 9px;
-
-    font-size: 9px;
-  }
-
-
-  /* ARROW */
-
-  .solution-arrow {
-    display: none;
-  }
-
-
-  /* TECHNOLOGY */
-
-  .solutions-technology {
-    padding: 70px 0;
-  }
-
-  .solutions-technology-grid {
-    gap: 32px;
-  }
-
-  .solutions-technology-text {
     font-size: 15px;
   }
 
+  .solution-arrow {
+    position: absolute;
+    top: 38px;
+    right: 0;
+    width: 42px;
+    height: 42px;
+    font-size: 19px;
+  }
+
+  .solution-capabilities {
+    padding-right: 45px;
+  }
+
+  .solutions-technology {
+    padding: 80px 0;
+  }
+
   .solutions-tech-list {
-    gap: 7px;
+    gap: 8px;
   }
 
   .solutions-tech-list span {
-    padding: 8px 11px;
-
-    font-size: 11px;
+    padding: 10px 13px;
+    font-size: 13px;
   }
 
-
-  /* CTA */
-
   .solutions-cta {
-    padding: 75px 20px;
+    padding: 95px 20px;
   }
 
   .solutions-cta h2 {
-    font-size: 41px;
-
+    font-size: 48px;
     letter-spacing: -2px;
   }
 
-  .solutions-cta-button {
-    width: 100%;
-
-    max-width: 220px;
-  }
 }
 
 
 /* =========================================================
    SMALL MOBILE
-   ========================================================= */
+========================================================= */
 
 @media (max-width: 400px) {
 
   .solutions-hero h1 {
-    font-size: 39px;
-  }
-
-  .solutions-hero-image {
-    height: 190px;
+    font-size: 38px;
   }
 
   .solutions-intro h2,
@@ -787,15 +630,12 @@
     font-size: 34px;
   }
 
-  .solution-image {
-    height: 160px;
-  }
-
   .solution-content h2 {
-    font-size: 22px;
+    font-size: 27px;
   }
 
   .solutions-cta h2 {
-    font-size: 35px;
+    font-size: 42px;
   }
+
 }

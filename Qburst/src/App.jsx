@@ -20,12 +20,14 @@ import Navbar from "./components/Navbar";
 import AdminDashboard from "./pages/AdminDashboard";
 import Profile from "./pages/Profile";
 import EditProfile from "./pages/EditProfile";
+import AIProducts from "./pages/AIProducts";
 function App() {
   return (
     <BrowserRouter>
     <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/ai-products" element={<AIProducts/>}/>
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services/>}/>
         <Route path="/industries" element={<Industries/>}/>

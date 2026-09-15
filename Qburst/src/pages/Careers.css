@@ -1,97 +1,212 @@
+/* =========================================================
+   CAREERS PAGE
+========================================================= */
+
 .careers-page {
-  color: #172033;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
   background: #ffffff;
+  color: #0f172a;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
 
 .careers-container {
-  width: 100%;
-  max-width: 1240px;
+  width: min(1200px, 92%);
   margin: 0 auto;
-  padding-left: 28px;
-  padding-right: 28px;
 }
 
 
-/* =========================================
+/* =========================================================
    HERO
-   ========================================= */
+========================================================= */
 
 .careers-hero {
-  background: #071a33;
-  color: white;
-  padding: 120px 0 125px;
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 85% 25%,
+      rgba(37, 99, 235, 0.14),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #f8fafc 0%,
+      #eef4ff 55%,
+      #ffffff 100%
+    );
+
+  border-bottom: 1px solid #e2e8f0;
 }
 
-.careers-label,
-.careers-section-label {
-  color: #1769ff;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
+
+/* Decorative circles */
+
+.careers-hero::before {
+  content: "";
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  right: -100px;
+  top: -130px;
+
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  border-radius: 50%;
 }
 
-.careers-hero .careers-label {
-  color: #82aefc;
+.careers-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+
+  right: 15%;
+  bottom: -160px;
+
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  border-radius: 50%;
 }
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.careers-hero .careers-container {
+  position: relative;
+  z-index: 2;
+}
+
+.careers-label {
+  margin: 0 0 22px;
+
+  color: #2563eb;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
 
 .careers-hero h1 {
   max-width: 850px;
 
-  margin: 0 0 30px;
+  margin: 0;
 
-  font-size: 82px;
+  color: #0f172a;
+
+  font-size: clamp(52px, 7vw, 88px);
   line-height: 1;
-
   letter-spacing: -4px;
+
+  font-weight: 700;
 }
 
 .careers-hero h1 span {
-  color: #69a0ff;
+  display: block;
+  color: #2563eb;
 }
+
+
+/* =========================================================
+   HERO TEXT
+========================================================= */
 
 .careers-hero-text {
   max-width: 700px;
 
-  color: #b9c7db;
+  margin: 32px 0 36px;
 
-  font-size: 19px;
+  color: #64748b;
+
+  font-size: 18px;
   line-height: 1.8;
-
-  margin-bottom: 35px;
 }
+
+
+/* =========================================================
+   HERO BUTTON
+========================================================= */
 
 .careers-hero-button {
   display: inline-flex;
 
-  padding: 15px 24px;
+  align-items: center;
+  justify-content: center;
 
-  background: #1769ff;
+  padding: 15px 28px;
 
-  color: white;
+  background: #2563eb;
+  color: #ffffff;
+
+  border-radius: 5px;
 
   text-decoration: none;
 
+  font-size: 14px;
   font-weight: 700;
 
-  transition: 0.25s ease;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .careers-hero-button:hover {
-  background: #4085ff;
+  background: #1d4ed8;
 
-  color: white;
+  transform: translateY(-3px);
 
-  transform: translateY(-2px);
+  box-shadow:
+    0 12px 25px rgba(37, 99, 235, 0.2);
 }
 
 
-/* =========================================
-   INTRO
-   ========================================= */
+/* =========================================================
+   SECTION LABEL
+========================================================= */
+
+.careers-section-label {
+  margin: 0 0 20px;
+
+  color: #2563eb;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   CAREERS INTRO
+========================================================= */
 
 .careers-intro {
   padding: 110px 0;
+
+  background: #ffffff;
 }
 
 .careers-intro-grid {
@@ -100,46 +215,66 @@
   grid-template-columns: 1fr 1fr;
 
   gap: 100px;
+
+  align-items: start;
 }
+
+
+/* =========================================================
+   INTRO HEADING
+========================================================= */
 
 .careers-intro h2,
 .benefits-heading h2,
 .jobs-heading h2 {
-  color: #111b2d;
-
-  font-size: 55px;
-
-  line-height: 1.06;
-
-  letter-spacing: -2.5px;
-
   margin: 0;
+
+  color: #0f172a;
+
+  font-size: clamp(38px, 4vw, 56px);
+
+  line-height: 1.08;
+
+  letter-spacing: -2px;
 }
 
+
+/* =========================================================
+   INTRO CONTENT
+========================================================= */
+
 .careers-intro-content {
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .careers-intro-content p {
-  color: #667085;
+  margin: 0 0 25px;
 
-  font-size: 18px;
+  color: #64748b;
+
+  font-size: 17px;
 
   line-height: 1.8;
-
-  margin-bottom: 25px;
 }
 
 
-/* =========================================
-   BENEFITS
-   ========================================= */
+/* =========================================================
+   BENEFITS SECTION
+========================================================= */
 
 .careers-benefits {
-  background: #f4f7fb;
+  padding: 120px 0;
 
-  padding: 110px 0;
+  background: #f8fafc;
+
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
 }
+
+
+/* =========================================================
+   BENEFITS HEADING
+========================================================= */
 
 .benefits-heading {
   display: grid;
@@ -148,71 +283,128 @@
 
   gap: 100px;
 
-  align-items: end;
-
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .benefits-heading > p {
-  color: #667085;
+  max-width: 620px;
 
-  font-size: 18px;
+  margin: 5px 0 0;
+
+  color: #64748b;
+
+  font-size: 17px;
 
   line-height: 1.8;
 }
+
+
+/* =========================================================
+   BENEFITS GRID
+========================================================= */
 
 .benefits-grid {
   display: grid;
 
   grid-template-columns: repeat(4, 1fr);
 
-  border-top: 1px solid #dfe5ee;
+  border-top: 1px solid #dbe3ef;
+  border-bottom: 1px solid #dbe3ef;
 }
+
+
+/* =========================================================
+   BENEFIT CARD
+========================================================= */
 
 .benefit-card {
-  min-height: 250px;
+  min-height: 280px;
 
-  padding: 30px 25px;
+  padding: 35px 28px;
 
-  border-right: 1px solid #dfe5ee;
+  border-right: 1px solid #dbe3ef;
+
+  background: transparent;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
-.benefit-card:first-child {
-  border-left: 1px solid #dfe5ee;
+.benefit-card:last-child {
+  border-right: none;
 }
 
-.benefit-card span {
-  color: #1769ff;
+.benefit-card:hover {
+  background: #ffffff;
 
-  font-size: 12px;
-
-  font-weight: 800;
+  transform: translateY(-5px);
 }
+
+
+/* =========================================================
+   BENEFIT NUMBER
+========================================================= */
+
+.benefit-card > span {
+  display: block;
+
+  margin-bottom: 55px;
+
+  color: #2563eb;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   BENEFIT TITLE
+========================================================= */
 
 .benefit-card h3 {
-  color: #111b2d;
+  margin: 0 0 13px;
+
+  color: #0f172a;
 
   font-size: 21px;
 
-  margin: 45px 0 15px;
+  line-height: 1.3;
 }
 
+
+/* =========================================================
+   BENEFIT DESCRIPTION
+========================================================= */
+
 .benefit-card p {
-  color: #667085;
+  margin: 0;
+
+  color: #64748b;
 
   font-size: 14px;
 
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 
-/* =========================================
-   JOBS
-   ========================================= */
+/* =========================================================
+   JOBS SECTION
+========================================================= */
 
 .jobs-section {
-  padding: 110px 0;
+  padding: 120px 0;
+
+  background: #ffffff;
 }
+
+
+/* =========================================================
+   JOBS HEADING
+========================================================= */
 
 .jobs-heading {
   display: grid;
@@ -221,108 +413,208 @@
 
   gap: 100px;
 
-  align-items: end;
-
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .jobs-heading > p {
-  color: #667085;
+  max-width: 620px;
 
-  font-size: 18px;
+  margin: 5px 0 0;
+
+  color: #64748b;
+
+  font-size: 17px;
 
   line-height: 1.8;
 }
 
-.jobs-list {
-  border-top: 1px solid #d8e0eb;
+
+/* =========================================================
+   JOB MESSAGE
+========================================================= */
+
+.jobs-message {
+  padding: 50px 30px;
+
+  text-align: center;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 6px;
+
+  color: #64748b;
+
+  font-size: 16px;
 }
 
+
+/* =========================================================
+   JOB LIST
+========================================================= */
+
+.jobs-list {
+  border-top: 1px solid #dbe3ef;
+}
+
+
+/* =========================================================
+   JOB CARD
+========================================================= */
+
 .job-card {
+  position: relative;
+
   display: grid;
 
-  grid-template-columns: 70px 1fr 130px;
+  grid-template-columns: 65px minmax(0, 1fr) auto;
 
-  gap: 25px;
-
-  padding: 35px 20px;
-
-  border-bottom: 1px solid #d8e0eb;
+  gap: 30px;
 
   align-items: center;
 
-  transition: 0.25s ease;
+  padding: 38px 0;
+
+  border-bottom: 1px solid #dbe3ef;
+
+  transition:
+    padding 0.3s ease,
+    background 0.3s ease;
 }
 
 .job-card:hover {
-  background: #f4f7fb;
+  padding-left: 12px;
+  padding-right: 12px;
 
-  padding-left: 30px;
-
-  padding-right: 30px;
+  background: #f8fafc;
 }
+
+
+/* =========================================================
+   JOB NUMBER
+========================================================= */
 
 .job-number {
-  color: #1769ff;
+  align-self: start;
 
-  font-size: 12px;
+  padding-top: 5px;
 
-  font-weight: 800;
+  color: #2563eb;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
 }
+
+
+/* =========================================================
+   JOB MAIN
+========================================================= */
+
+.job-main {
+  min-width: 0;
+}
+
+
+/* =========================================================
+   JOB TOP
+========================================================= */
 
 .job-top {
   display: flex;
 
-  align-items: center;
+  align-items: flex-start;
 
   justify-content: space-between;
 
-  gap: 20px;
+  gap: 30px;
+
+  margin-bottom: 18px;
 }
 
-.job-main h3 {
-  color: #111b2d;
+.job-top h3 {
+  margin: 0 0 7px;
 
-  font-size: 24px;
+  color: #0f172a;
 
-  margin: 0 0 6px;
+  font-size: 25px;
+
+  line-height: 1.25;
+
+  letter-spacing: -0.5px;
 }
 
 .job-department {
-  color: #667085;
+  margin: 0;
+
+  color: #64748b;
 
   font-size: 13px;
 
-  margin: 0;
+  font-weight: 600;
 }
 
+
+/* =========================================================
+   JOB TYPE
+========================================================= */
+
 .job-type {
+  flex-shrink: 0;
+
   padding: 7px 12px;
 
-  background: #edf3ff;
+  background: #eff6ff;
 
-  color: #1769ff;
+  border: 1px solid #bfdbfe;
+
+  border-radius: 4px;
+
+  color: #1d4ed8;
 
   font-size: 11px;
 
   font-weight: 700;
 
-  white-space: nowrap;
+  letter-spacing: 0.5px;
+
+  text-transform: uppercase;
 }
+
+
+/* =========================================================
+   JOB INFO
+========================================================= */
 
 .job-info {
   display: flex;
 
   flex-wrap: wrap;
 
-  gap: 25px;
+  gap: 22px;
 
-  margin-top: 18px;
+  margin-bottom: 18px;
 
-  color: #667085;
+  color: #64748b;
 
   font-size: 13px;
 }
+
+.job-info span {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+}
+
+
+/* =========================================================
+   JOB SKILLS
+========================================================= */
 
 .job-skills {
   display: flex;
@@ -330,164 +622,359 @@
   flex-wrap: wrap;
 
   gap: 7px;
-
-  margin-top: 18px;
 }
 
 .job-skills span {
   padding: 6px 10px;
 
-  border: 1px solid #d6deea;
+  background: #f8fafc;
 
-  color: #475467;
+  border: 1px solid #dbe3ef;
+
+  border-radius: 4px;
+
+  color: #475569;
 
   font-size: 11px;
+
+  font-weight: 600;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
 }
 
+.job-card:hover .job-skills span {
+  background: #eff6ff;
+
+  border-color: #bfdbfe;
+
+  color: #1d4ed8;
+}
+
+
+/* =========================================================
+   JOB APPLY BUTTON
+========================================================= */
+
 .job-apply {
-  color: #1769ff;
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-width: 125px;
+
+  padding: 13px 20px;
+
+  border: 1px solid #2563eb;
+
+  border-radius: 5px;
+
+  background: #ffffff;
+
+  color: #2563eb;
 
   text-decoration: none;
 
   font-size: 13px;
 
-  font-weight: 800;
-
-  text-align: right;
+  font-weight: 700;
 
   white-space: nowrap;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .job-apply:hover {
-  color: #0b2447;
-}
+  background: #2563eb;
 
-
-/* =========================================
-   CTA
-   ========================================= */
-
-.careers-cta {
-  background: #0b2447;
-
-  color: white;
-
-  text-align: center;
-
-  padding: 120px 25px;
-}
-
-.careers-cta .careers-section-label {
-  color: #82aefc;
-}
-
-.careers-cta h2 {
-  font-size: 62px;
-
-  line-height: 1.05;
-
-  letter-spacing: -3px;
-
-  margin: 0 auto 25px;
-}
-
-.careers-cta > p:not(.careers-section-label) {
-  max-width: 600px;
-
-  margin: 0 auto 35px;
-
-  color: #b9c7db;
-
-  font-size: 17px;
-
-  line-height: 1.7;
-}
-
-.careers-cta-button {
-  display: inline-flex;
-
-  padding: 15px 25px;
-
-  background: #1769ff;
-
-  color: white;
-
-  text-decoration: none;
-
-  font-weight: 700;
-
-  transition: 0.25s ease;
-}
-
-.careers-cta-button:hover {
-  background: #4085ff;
-
-  color: white;
+  color: #ffffff;
 
   transform: translateY(-2px);
 }
 
 
-/* =========================================
+/* =========================================================
+   CAREER CTA
+========================================================= */
+
+.careers-cta {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 130px 20px;
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(37, 99, 235, 0.15),
+      transparent 45%
+    ),
+    #0f172a;
+}
+
+
+/* Decorative circles */
+
+.careers-cta::before {
+  content: "";
+
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  left: -130px;
+  top: -180px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 50%;
+}
+
+.careers-cta::after {
+  content: "";
+
+  position: absolute;
+
+  width: 400px;
+  height: 400px;
+
+  right: -180px;
+  bottom: -220px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 50%;
+}
+
+
+/* =========================================================
+   CTA LABEL
+========================================================= */
+
+.careers-cta .careers-section-label {
+  position: relative;
+
+  z-index: 2;
+
+  color: #60a5fa;
+}
+
+
+/* =========================================================
+   CTA TITLE
+========================================================= */
+
+.careers-cta h2 {
+  position: relative;
+
+  z-index: 2;
+
+  margin: 0 0 25px;
+
+  color: #ffffff;
+
+  font-size: clamp(45px, 6vw, 76px);
+
+  line-height: 1.04;
+
+  letter-spacing: -3px;
+}
+
+
+/* =========================================================
+   CTA TEXT
+========================================================= */
+
+.careers-cta > p:not(.careers-section-label) {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 600px;
+
+  margin: 0 auto 35px;
+
+  color: #94a3b8;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.careers-cta-button {
+  position: relative;
+
+  z-index: 2;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px 30px;
+
+  background: #ffffff;
+
+  color: #0f172a;
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.careers-cta-button:hover {
+  background: #2563eb;
+
+  color: #ffffff;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
    TABLET
-   ========================================= */
+========================================================= */
 
-@media (max-width: 900px) {
-
-  .careers-hero h1 {
-    font-size: 65px;
-  }
+@media (max-width: 1000px) {
 
   .careers-intro-grid,
   .benefits-heading,
   .jobs-heading {
-    grid-template-columns: 1fr;
-
-    gap: 40px;
+    gap: 60px;
   }
 
   .benefits-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .benefit-card:nth-child(2) {
+    border-right: none;
+  }
+
+  .benefit-card:nth-child(-n + 2) {
+    border-bottom: 1px solid #dbe3ef;
+  }
+
+  .job-card {
+    grid-template-columns: 55px minmax(0, 1fr) auto;
+
+    gap: 22px;
+  }
+
 }
 
 
-/* =========================================
-   MOBILE
-   ========================================= */
+/* =========================================================
+   TABLET / SMALL DESKTOP
+========================================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
 
-  .careers-container {
-    padding-left: 20px;
-    padding-right: 20px;
+  .careers-intro-grid,
+  .benefits-heading,
+  .jobs-heading {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
   }
 
+  .benefits-heading,
+  .jobs-heading {
+    margin-bottom: 50px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .careers-container {
+    width: 90%;
+  }
+
+
+  /* HERO */
+
   .careers-hero {
+    min-height: auto;
+  }
+
+  .careers-hero-content {
+    padding: 0;
+  }
+
+  .careers-hero .careers-container {
     padding: 80px 0;
   }
 
   .careers-hero h1 {
-    font-size: 48px;
+    font-size: 46px;
 
-    letter-spacing: -2px;
+    line-height: 1.04;
+
+    letter-spacing: -2.5px;
   }
 
   .careers-hero-text {
+    margin-top: 25px;
+
     font-size: 16px;
+
+    line-height: 1.7;
   }
 
-  .careers-intro,
-  .careers-benefits,
-  .jobs-section {
+
+  /* INTRO */
+
+  .careers-intro {
     padding: 75px 0;
   }
 
   .careers-intro h2,
   .benefits-heading h2,
   .jobs-heading h2 {
-    font-size: 40px;
+    font-size: 38px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .careers-intro-content p {
+    font-size: 16px;
+  }
+
+
+  /* BENEFITS */
+
+  .careers-benefits {
+    padding: 80px 0;
   }
 
   .benefits-grid {
@@ -495,39 +982,138 @@
   }
 
   .benefit-card {
-    border-left: 1px solid #dfe5ee;
+    min-height: auto;
+
+    padding: 30px 25px;
+
+    border-right: none;
+
+    border-bottom: 1px solid #dbe3ef;
   }
+
+  .benefit-card:nth-child(-n + 2) {
+    border-bottom: 1px solid #dbe3ef;
+  }
+
+  .benefit-card:last-child {
+    border-bottom: none;
+  }
+
+  .benefit-card > span {
+    margin-bottom: 28px;
+  }
+
+
+  /* JOBS */
+
+  .jobs-section {
+    padding: 80px 0;
+  }
+
+  .jobs-heading {
+    margin-bottom: 45px;
+  }
+
+  .jobs-heading > p {
+    font-size: 16px;
+  }
+
+
+  /* JOB CARD */
 
   .job-card {
-    grid-template-columns: 40px 1fr;
+    grid-template-columns: 1fr;
 
-    gap: 15px;
+    gap: 18px;
 
-    padding: 30px 10px;
+    padding: 32px 0;
   }
 
-  .job-apply {
-    grid-column: 2;
-
-    text-align: left;
+  .job-card:hover {
+    padding-left: 0;
+    padding-right: 0;
   }
+
+  .job-number {
+    padding-top: 0;
+  }
+
+
+  /* JOB TOP */
 
   .job-top {
-    align-items: flex-start;
-
     flex-direction: column;
+
+    gap: 15px;
   }
 
-  .job-main h3 {
-    font-size: 21px;
+  .job-top h3 {
+    font-size: 23px;
   }
+
+  .job-type {
+    align-self: flex-start;
+  }
+
+
+  /* JOB INFO */
+
+  .job-info {
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+
+  /* APPLY */
+
+  .job-apply {
+    width: 100%;
+
+    margin-top: 8px;
+  }
+
+
+  /* CTA */
 
   .careers-cta {
-    padding: 85px 20px;
+    padding: 90px 20px;
   }
 
   .careers-cta h2 {
-    font-size: 43px;
+    font-size: 45px;
+
+    letter-spacing: -2px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .careers-hero h1 {
+    font-size: 39px;
+  }
+
+  .careers-intro h2,
+  .benefits-heading h2,
+  .jobs-heading h2 {
+    font-size: 34px;
+  }
+
+  .careers-cta h2 {
+    font-size: 39px;
+  }
+
+  .careers-label,
+  .careers-section-label {
+    font-size: 11px;
+
+    letter-spacing: 2px;
   }
 
 }

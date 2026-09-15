@@ -1,17 +1,10 @@
 import { Link } from "react-router-dom";
 import "./Industries.css";
 
-import heroTech from "../assets/images/hero-tec.png";
-import digitalEngineering from "../assets/images/digital-engineering.png";
-import cloudSolutions from "../assets/images/cloud-solutions.png";
-import aiAutomation from "../assets/images/ai-automation.png";
-import dataAnalytics from "../assets/images/data-analytics.png";
-
 const industries = [
   {
     number: "01",
     title: "Retail & E-Commerce",
-    image: digitalEngineering,
     description:
       "Create connected digital shopping experiences, modern commerce platforms and smarter retail operations.",
     capabilities: [
@@ -24,7 +17,6 @@ const industries = [
   {
     number: "02",
     title: "Healthcare",
-    image: dataAnalytics,
     description:
       "Build secure and accessible digital solutions that improve healthcare experiences and operational efficiency.",
     capabilities: [
@@ -37,7 +29,6 @@ const industries = [
   {
     number: "03",
     title: "Financial Services",
-    image: cloudSolutions,
     description:
       "Develop secure technology solutions that support financial operations, customer experiences and digital transformation.",
     capabilities: [
@@ -50,7 +41,6 @@ const industries = [
   {
     number: "04",
     title: "Education",
-    image: aiAutomation,
     description:
       "Enable better learning and administration experiences through modern digital platforms and technology.",
     capabilities: [
@@ -63,7 +53,6 @@ const industries = [
   {
     number: "05",
     title: "Manufacturing",
-    image: heroTech,
     description:
       "Connect people, processes and data to improve manufacturing operations and business visibility.",
     capabilities: [
@@ -76,7 +65,6 @@ const industries = [
   {
     number: "06",
     title: "Technology",
-    image: digitalEngineering,
     description:
       "Help technology organizations build scalable products, modern platforms and better digital experiences.",
     capabilities: [
@@ -94,11 +82,11 @@ function Industries() {
 
       {/* =====================================================
           HERO
-          ===================================================== */}
+      ===================================================== */}
 
       <section className="industries-hero">
 
-        <div className="industries-container industries-hero-grid">
+        <div className="industries-container">
 
           <div className="industries-hero-content">
 
@@ -108,7 +96,7 @@ function Industries() {
 
             <h1>
               Technology shaped
-              <span>around your industry.</span>
+              <span> around your industry.</span>
             </h1>
 
             <p className="industries-hero-text">
@@ -119,15 +107,6 @@ function Industries() {
 
           </div>
 
-          <div className="industries-hero-image">
-
-            <img
-              src={heroTech}
-              alt="Technology solutions for different industries"
-            />
-
-          </div>
-
         </div>
 
       </section>
@@ -135,7 +114,7 @@ function Industries() {
 
       {/* =====================================================
           INTRO
-          ===================================================== */}
+      ===================================================== */}
 
       <section className="industries-intro">
 
@@ -179,7 +158,7 @@ function Industries() {
 
       {/* =====================================================
           INDUSTRIES LIST
-          ===================================================== */}
+      ===================================================== */}
 
       <section className="industries-list">
 
@@ -199,14 +178,19 @@ function Industries() {
               </div>
 
 
-              {/* IMAGE */}
+              {/* CSS VISUAL */}
 
-              <div className="industry-image">
+              <div className="industry-visual">
 
-                <img
-                  src={industry.image}
-                  alt={industry.title}
-                />
+                <div className="industry-visual-circle"></div>
+
+                <span>
+                  {industry.number}
+                </span>
+
+                <small>
+                  INDUSTRY
+                </small>
 
               </div>
 
@@ -258,7 +242,7 @@ function Industries() {
 
       {/* =====================================================
           WHY HAMARASHOPS
-          ===================================================== */}
+      ===================================================== */}
 
       <section className="industries-why">
 
@@ -294,7 +278,6 @@ function Industries() {
           <div className="industries-points">
 
             <div>
-
               <span>01</span>
 
               <h3>
@@ -304,12 +287,10 @@ function Industries() {
               <p>
                 We understand your business objectives, users and challenges.
               </p>
-
             </div>
 
 
             <div>
-
               <span>02</span>
 
               <h3>
@@ -319,12 +300,10 @@ function Industries() {
               <p>
                 We design solutions around real-world business requirements.
               </p>
-
             </div>
 
 
             <div>
-
               <span>03</span>
 
               <h3>
@@ -334,12 +313,10 @@ function Industries() {
               <p>
                 We develop scalable and maintainable digital solutions.
               </p>
-
             </div>
 
 
             <div>
-
               <span>04</span>
 
               <h3>
@@ -349,7 +326,6 @@ function Industries() {
               <p>
                 We continuously improve the solution as your business grows.
               </p>
-
             </div>
 
           </div>
@@ -361,7 +337,7 @@ function Industries() {
 
       {/* =====================================================
           STATS
-          ===================================================== */}
+      ===================================================== */}
 
       <section className="industries-stats">
 
@@ -370,54 +346,23 @@ function Industries() {
           <div className="stats-grid">
 
             <div>
-
-              <strong>
-                6+
-              </strong>
-
-              <span>
-                Industry Areas
-              </span>
-
+              <strong>6+</strong>
+              <span>Industry Areas</span>
             </div>
 
-
             <div>
-
-              <strong>
-                24/7
-              </strong>
-
-              <span>
-                Digital Mindset
-              </span>
-
+              <strong>24/7</strong>
+              <span>Digital Mindset</span>
             </div>
 
-
             <div>
-
-              <strong>
-                360°
-              </strong>
-
-              <span>
-                Technology Solutions
-              </span>
-
+              <strong>360°</strong>
+              <span>Technology Solutions</span>
             </div>
 
-
             <div>
-
-              <strong>
-                1
-              </strong>
-
-              <span>
-                Purpose — Business Growth
-              </span>
-
+              <strong>1</strong>
+              <span>Purpose — Business Growth</span>
             </div>
 
           </div>
@@ -429,7 +374,7 @@ function Industries() {
 
       {/* =====================================================
           CTA
-          ===================================================== */}
+      ===================================================== */}
 
       <section className="industries-cta">
 

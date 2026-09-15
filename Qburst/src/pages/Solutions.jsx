@@ -1,17 +1,10 @@
 import { Link } from "react-router-dom";
 import "./Solutions.css";
 
-import heroTech from "../assets/images/hero-tec.png";
-import digitalEngineering from "../assets/images/digital-engineering.png";
-import cloudSolutions from "../assets/images/cloud-solutions.png";
-import aiAutomation from "../assets/images/ai-automation.png";
-import dataAnalytics from "../assets/images/data-analytics.png";
-
 const solutions = [
   {
     number: "01",
     title: "Digital Experience",
-    image: digitalEngineering,
     description:
       "Create engaging digital experiences that connect businesses with their customers across modern channels.",
     capabilities: [
@@ -24,7 +17,6 @@ const solutions = [
   {
     number: "02",
     title: "Product Engineering",
-    image: digitalEngineering,
     description:
       "Build scalable and reliable digital products from concept to development and continuous improvement.",
     capabilities: [
@@ -37,7 +29,6 @@ const solutions = [
   {
     number: "03",
     title: "Intelligent Enterprise",
-    image: aiAutomation,
     description:
       "Use automation, AI and connected systems to create smarter and more efficient business operations.",
     capabilities: [
@@ -50,7 +41,6 @@ const solutions = [
   {
     number: "04",
     title: "Cloud Modernization",
-    image: cloudSolutions,
     description:
       "Modernize applications and infrastructure with flexible, scalable and cloud-ready architectures.",
     capabilities: [
@@ -63,7 +53,6 @@ const solutions = [
   {
     number: "05",
     title: "Data & Analytics",
-    image: dataAnalytics,
     description:
       "Turn business data into useful insights that help organizations make faster and better decisions.",
     capabilities: [
@@ -76,7 +65,6 @@ const solutions = [
   {
     number: "06",
     title: "AI & Automation",
-    image: aiAutomation,
     description:
       "Apply artificial intelligence and automation to improve productivity and transform business processes.",
     capabilities: [
@@ -97,53 +85,35 @@ function Solutions() {
       ===================================================== */}
 
       <section className="solutions-hero">
-
         <div className="solutions-container">
 
-          <div className="solutions-hero-grid">
+          <div className="solutions-hero-content">
 
-            <div className="solutions-hero-content">
+            <p className="solutions-label">
+              OUR SOLUTIONS
+            </p>
 
-              <p className="solutions-label">
-                OUR SOLUTIONS
-              </p>
+            <h1>
+              Technology solutions
+              <span> built for real business.</span>
+            </h1>
 
-              <h1>
-                Technology solutions
-                <span> built for real business.</span>
-              </h1>
+            <p className="solutions-hero-text">
+              We combine technology, engineering and business
+              understanding to create solutions that help
+              organizations transform, innovate and grow.
+            </p>
 
-              <p className="solutions-hero-text">
-                We combine technology, engineering and business
-                understanding to create solutions that help
-                organizations transform, innovate and grow.
-              </p>
-
-              <Link
-                to="/contact"
-                className="solutions-hero-button"
-              >
-                Start a Conversation →
-              </Link>
-
-            </div>
-
-
-            {/* HERO IMAGE */}
-
-            <div className="solutions-hero-image">
-
-              <img
-                src={heroTech}
-                alt="HamaraShops.ai digital technology solutions"
-              />
-
-            </div>
+            <Link
+              to="/contact"
+              className="solutions-hero-button"
+            >
+              Start a Conversation →
+            </Link>
 
           </div>
 
         </div>
-
       </section>
 
 
@@ -204,18 +174,6 @@ function Solutions() {
               className="solution-card"
               key={solution.number}
             >
-
-              {/* IMAGE */}
-
-              <div className="solution-image">
-
-                <img
-                  src={solution.image}
-                  alt={solution.title}
-                />
-
-              </div>
-
 
               {/* NUMBER */}
 

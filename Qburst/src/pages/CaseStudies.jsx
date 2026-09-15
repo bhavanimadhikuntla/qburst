@@ -1,17 +1,11 @@
 import { Link } from "react-router-dom";
 import "./CaseStudies.css";
 
-import digitalEngineering from "../assets/images/digital-engineering.png";
-import cloudSolutions from "../assets/images/cloud-solutions.png";
-import aiAutomation from "../assets/images/ai-automation.png";
-import dataAnalytics from "../assets/images/data-analytics.png";
-
 const caseStudies = [
   {
     number: "01",
     industry: "RETAIL & E-COMMERCE",
     title: "Smart E-Commerce Platform",
-    image: digitalEngineering,
     description:
       "A modern commerce platform designed to simplify online shopping while improving product and order management.",
     challenge:
@@ -27,7 +21,6 @@ const caseStudies = [
     number: "02",
     industry: "HEALTHCARE",
     title: "Digital Healthcare Management",
-    image: dataAnalytics,
     description:
       "A centralized digital platform designed to simplify healthcare information and operational workflows.",
     challenge:
@@ -43,7 +36,6 @@ const caseStudies = [
     number: "03",
     industry: "FINANCIAL SERVICES",
     title: "Intelligent Finance Platform",
-    image: cloudSolutions,
     description:
       "A technology platform created to modernize financial processes and improve access to business information.",
     challenge:
@@ -59,7 +51,6 @@ const caseStudies = [
     number: "04",
     industry: "EDUCATION",
     title: "Digital Learning Platform",
-    image: aiAutomation,
     description:
       "A modern learning experience connecting students, educators and digital learning resources.",
     challenge:
@@ -75,7 +66,6 @@ const caseStudies = [
     number: "05",
     industry: "MANUFACTURING",
     title: "Smart Operations Platform",
-    image: dataAnalytics,
     description:
       "A centralized digital solution designed to improve operational visibility and support smarter decision-making.",
     challenge:
@@ -91,7 +81,6 @@ const caseStudies = [
     number: "06",
     industry: "TECHNOLOGY",
     title: "Cloud Product Platform",
-    image: cloudSolutions,
     description:
       "A scalable cloud-ready platform designed to support modern digital products and future growth.",
     challenge:
@@ -124,7 +113,7 @@ function CaseStudies() {
 
             <h1>
               Technology that
-              <span>creates real impact.</span>
+              <span> creates real impact.</span>
             </h1>
 
             <p className="case-studies-hero-text">
@@ -194,18 +183,30 @@ function CaseStudies() {
 
           <div className="featured-case-grid">
 
-            <div className="featured-case-image">
+            {/* FEATURED PROJECT VISUAL - NO IMAGE */}
 
-              <img
-                src={digitalEngineering}
-                alt="Smart E-Commerce Platform"
-              />
+            <div className="featured-case-visual">
 
-              <span className="featured-case-number">
+              <div className="featured-visual-number">
                 01
-              </span>
+              </div>
+
+              <div className="featured-visual-content">
+
+                <span>RETAIL</span>
+
+                <strong>
+                  E-COMMERCE
+                </strong>
+
+                <small>
+                  DIGITAL PLATFORM
+                </small>
+
+              </div>
 
             </div>
+
 
             <div className="featured-case-content">
 
@@ -298,18 +299,23 @@ function CaseStudies() {
                 key={study.number}
               >
 
-                {/* IMAGE */}
+                {/* NUMBER VISUAL - NO IMAGE */}
 
-                <div className="case-study-image">
-
-                  <img
-                    src={study.image}
-                    alt={study.title}
-                  />
+                <div className="case-study-visual">
 
                   <span>
                     {study.number}
                   </span>
+
+                  <div>
+                    <small>
+                      {study.industry}
+                    </small>
+
+                    <strong>
+                      {study.title}
+                    </strong>
+                  </div>
 
                 </div>
 
